@@ -7,6 +7,14 @@
     <link rel="icon" type="image/png" href="img/mylogo1.png">
     <title>Shashank Mankala | Computer Science Engineer</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:1310px)" href="css/small1.css">
+    <link rel="stylesheet" media="screen and (max-width:1092px)" href="css/small2.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/small3.css">
+    <link rel="stylesheet" media="screen and (max-width:540px)" href="css/small4.css">
+    <link rel="stylesheet" media="screen and (max-width:450px)" href="css/small5.css">
+    <link rel="stylesheet" media="screen and (max-width:410px)" href="css/small6.css">
+    <link rel="stylesheet" media="screen and (max-width:392px)" href="css/small7.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +24,45 @@
 </head>
 <body>
     <div class="fullpage">
-        
+        <div class="leftpole">
+            <div class="leftpoletopimg">
+                <img src="img/mylogo1.png" alt="" onclick="location.href='#topp'";>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="leftpoleheader">
+                <h3>PORTFOLIO</h3>
+            </div>
+        </div>
+        <div class="leftwindow" id="leftwindow">
+            <div class="closeleftwindow">
+                <i class="fas fa-times" id="closeleftwindow"></i>
+            </div>
+            <div class="leftwindowoptdiv">
+                <div class="leftwinopts" id="leftwinabout">
+                    <h2>ABOUT</h2>
+                </div>
+                <div class="leftwinopts" id="leftwinprojects">
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="leftwinopts" id="leftwinskills">
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="leftwinopts" id="leftwinexper">
+                    <h2>EXPERIENCES / EDUCATION</h2>
+                </div>
+                <div class="leftwinopts" id="leftwinaward">
+                    <h2>AWARDS / CERTIFICATIONS</h2>
+                </div>
+                <div class="leftwinopts" id="leftwincontact">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="leftwinopts" onclick="viewresume()">
+                    <h2>RESUME</h2>
+                </div>
+            </div>
+        </div>
         <div class="lefttab" id="lefttab">
             <div class="nametitle" id="nametitle" onclick="location.href='#topp';"> <!--onclick topp-->
                 <h1 class="inthemef">Shashank</h1>
@@ -527,7 +573,7 @@
                             </div>
                             <div class="skillname">
                                 <div class="skillimg">
-                                    <img src="img/mongodb.png" alt="C++">
+                                    <img src="img/mongodb.png" alt="C++" id="mongoimg">
                                 </div>
                                 <div class="skillnamename">
                                     <h2>MongoDB</h2>
@@ -714,6 +760,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="contactfooter">
+                        <p>Copyright 2021 &copy; reserved | Designed by M Shashank</p>
                     </div>
                 </div>
             </section>
