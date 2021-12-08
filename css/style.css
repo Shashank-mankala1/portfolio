@@ -8,6 +8,10 @@
 body{
     scroll-behavior: smooth;
 }
+::selection {
+    color: white;
+    background: black;
+}
 .righttab::-webkit-scrollbar {
     width: 0.5em;
 }
@@ -167,6 +171,88 @@ body{
     overflow-y: hidden;
     /* background: url(../img/renderimg.png) repeat; */
 }
+.leftpole{
+    /* border: 1px solid red; */
+    height: 100vh;
+    width: 45px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.hamburger{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.leftpoleheader{
+    color: white;
+    transform: rotate(270deg);
+    margin-top: 230px;
+}
+.leftpoletopimg img{
+    width: 40px;
+}
+.leftwindow{
+    width: 156px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    animation-name: openleftwindow;
+    animation-duration: 0.2s;
+}
+@keyframes openleftwindow {
+    0%{
+        width: 0;
+    }
+    33.33%{
+        width: 51px;
+    }
+    66.67%{
+        width: 102px;
+    }
+    100%{
+        width: 156px;
+    }
+}
+.closeleftwindow{
+    color: white;
+    font-size: 33px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid white;
+}
+.closeleftwindow i{
+    margin-right: 10px;
+    margin-top: 13px;
+}
+.closeleftwindow i:hover{
+    cursor: pointer;
+}
+.leftwindowoptdiv{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.leftwinopts{
+    color: white;
+    height: 54px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #817575;
+}
+.leftwinopts:hover{
+    cursor: pointer;
+}
 .lefttab{
     width: 240px;
     height: 750px;
@@ -232,6 +318,7 @@ body{
     overflow-y: scroll;
     /* border: 1px solid red; */
     box-shadow: inset 0px 1px 5px 1px #aab4be;
+    /* opacity: 0.5; */
 }
 .topp{
     height: 100vh;
@@ -312,13 +399,14 @@ body{
     /* border: 1px solid red; */
 }
 .prs,.prshid{
-    width: 372px;
+    width: 30%;
     height: 360px;
     margin-left: 20px;
     margin-top: 60px;
     /* border: 1px solid red; */
     box-shadow: 0px 3px 5px 1px #aab4be;
     /* transition: height 2s; */
+    background:white;
 }
 .prgif{
     height: 220px;
@@ -461,6 +549,7 @@ body{
     margin-bottom: 70px;
     /* border: 1px solid red; */
     box-shadow: 0px 3px 5px 1px #aab4be;
+    background: white;
 }
 .typeheading{
     display: flex;
@@ -522,6 +611,7 @@ body{
 }
 .expercardheadbody{
     padding: 7px;
+    background: white;
     /* border: 1px solid red; */
 }
 #expercardheadbodylpu{
@@ -598,14 +688,14 @@ body{
     /* border: 1px solid red; */
 }
 .awardcard{
-    width: 45%;
+    width: 44%;
     height: 230px;
     margin-right: 20px;
     margin-bottom: 76px;
     padding: 14px;
     /* border: 1px solid blue; */
     box-shadow: 0px 3px 5px 1px #aab4be;
-
+    background: white;
 }
 .awardcardhead{
     height: 99px;
@@ -638,7 +728,10 @@ body{
 }
 
 .contactcontainer{
-    height: 39rem;
+    height: 41.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .contactdetails{
     margin: 50px;
@@ -736,4 +829,16 @@ body{
     flex-direction: row;
     width: 250px;
     justify-content: space-between;
+}
+.contactfooter{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 50px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

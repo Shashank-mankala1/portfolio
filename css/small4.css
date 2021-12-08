@@ -1,0 +1,73 @@
+.toppcontainer{
+    font-size: 14px;
+}
+
+.abouttxt{
+    font-size: 10px;
+
+}
+.prs{
+    width: 90%;
+
+}
+.skillname{
+    width: 136px;
+    margin-left: 15px;
+}
+.skillnamename{
+    font-size: 12px;
+}
+.skillname img{
+    width: 80px;
+}
+.skillimg{
+    justify-content: center;
+}
+
+#mongoimg{
+    height: 125px;
+}
+.awardcard{
+    width: 90%;
+}
+.awardcardhead{
+    margin-bottom: 5px;
+}
+.awardtitle{
+    font-size: 16px;
+    margin-bottom: 4px;
+
+}
+.awardtype{
+    font-size: 11px;
+}
+.awardcardbody{
+    font-size: 16px;
+}
+.contactsubcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.contactheaddiv{
+    width: 100%;
+}
+.contactlogo img{
+    height: 65px;
+}
+.contactmyname{
+    font-size: 16px;
+}
+
+.contactbodydiv p{
+    font-size: 16px;
+}
+.contactlinks{
+    width: 203px;
+}
+.contactoptlogodiv{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}

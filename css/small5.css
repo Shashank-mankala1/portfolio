@@ -1,0 +1,29 @@
+.panelbtndiv{
+    width: 55px;
+}
+.leftpole{
+    display: flex;
+}
+.lefttab{
+    display:none;
+}
+.secheading{
+    height: 70px;
+    font-size: 19px;
+}
+.expercardlogo img{
+    width: 39px;
+}
+.expercardtitle{
+    font-size: 13px;
+    margin-left: 4px;
+}
+.expercardrole{
+    font-size: 16px;
+}
+.contactcontainer{
+    height:40.5rem;
+}
+.contactfooter{
+    font-size: 12px;
+}
