@@ -107,6 +107,50 @@ function openclosecolors(){
 
 // theme color panel END
 
+var leftwindow=document.getElementById("leftwindow");
+var ham=document.getElementById("hamburger");
+ham.addEventListener('click',openleftwindow);
+function openleftwindow(){
+    leftwindow.style.display="block";
+}
+var closeleftwindow=document.getElementById("closeleftwindow");
+closeleftwindow.addEventListener('click',closeleftwindowfun);
+function closeleftwindowfun(){
+    leftwindow.style.display="none";
+}
+leftwinabout=document.getElementById("leftwinabout");
+leftwinprojects=document.getElementById("leftwinprojects");
+leftwinskills=document.getElementById("leftwinskills");
+leftwinexper=document.getElementById("leftwinexper");
+leftwinaward=document.getElementById("leftwinaward");
+leftwincontact=document.getElementById("leftwincontact");
+
+leftwinabout.addEventListener('click',()=>{
+    document.location.href="#aboutt";
+    leftwindow.style.display="none";
+})
+leftwinprojects.addEventListener('click',()=>{
+    document.location.href="#projects";
+    leftwindow.style.display="none";
+})
+leftwinskills.addEventListener('click',()=>{
+    document.location.href="#skillss";
+    leftwindow.style.display="none";
+})
+leftwinexper.addEventListener('click',()=>{
+    document.location.href="#exper";
+    leftwindow.style.display="none";
+})
+leftwinaward.addEventListener('click',()=>{
+    document.location.href="#awardss";
+    leftwindow.style.display="none";
+})
+leftwincontact.addEventListener('click',()=>{
+    document.location.href="#contactt";
+    leftwindow.style.display="none";
+})
+
+//left pole END
 var leftabt = document.getElementById("labout");
 var leftproj = document.getElementById("lproject");
 var leftskil = document.getElementById("lskills");
