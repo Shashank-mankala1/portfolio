@@ -1,5 +1,5 @@
 function viewresume(){
-    window.open('https://drive.google.com/file/d/1rEADlRcQ4iZF_4Vn-EKmRzx5Dfsbu6-Q/view?usp=sharing','_blank');
+    window.open('https://drive.google.com/file/d/1LGS_AJ3T-jgGn7bs7-K5sxKVEgQ7V_Sf/view?usp=sharing','_blank');
 }
 var coloronbtn=document.getElementById('panelbtncolor');
 var panelcolor0=document.getElementById('colorradio0');
