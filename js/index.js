@@ -367,7 +367,7 @@ viewproj3.addEventListener('click', viewp3);
 function viewp3() {
     window.open('https://shashank-mankala1.github.io/coronaliveupdate/', '_blank');
 }
-var viewrep3 = document.getElementById("viewrepo1");
+var viewrep3 = document.getElementById("viewrepo3");
 viewrep3.addEventListener('click', viewr3);
 function viewr3() {
     window.open('https://github.com/Shashank-mankala1/coronaliveupdate', '_blank');
