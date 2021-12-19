@@ -528,3 +528,164 @@ function ccrash(){
 function cproblem(){
     window.open('https://www.hackerrank.com/certificates/2bff8c03c48b', '_blank');
 }
+
+
+//share
+
+var sharebtn=document.getElementById("sharebtn");
+var shareask=document.getElementById("shareask");
+var shareclosei=document.getElementById("shareclosei");
+var shareoptqr=document.getElementById("shareoptqr");
+var shareoptlink=document.getElementById("shareoptlink");
+var sharelinkcontainer=document.getElementById("sharelinkcontainer");
+var sharelinkcontainer2=document.getElementById("sharelinkcontainer2");
+var sharelinkcontainer3=document.getElementById("sharelinkcontainer3");
+
+sharebtn.addEventListener('click',openshareopts);
+shareclosei.addEventListener('click',closeshareopts);
+
+function openshareopts(){
+    setSharelinks();
+    shareask.style.display="block";
+    sharebtn.style.display="none";
+    sharelinkcontainer.style.display="flex";
+    sharelinkcontainer2.style.display="none";
+    sharelinkcontainer3.style.display="none";
+}
+function closeshareopts(){
+    shareask.style.display="none";
+    sharebtn.style.display="block";
+    sharelinkcontainer2.style.display="none";
+    sharelinkcontainer3.style.display="none";
+}
+
+shareoptqr.addEventListener('click',()=>{
+    sharelinkcontainer.style.display="none";
+    sharelinkcontainer2.style.display="flex";
+    sharelinkcontainer3.style.display="none";
+})
+shareoptlink.addEventListener('click',()=>{
+    sharelinkcontainer.style.display="none";
+    sharelinkcontainer2.style.display="none";
+    sharelinkcontainer3.style.display="flex";
+})
+
+var socialwhtqr=document.getElementById("socialwhtqr");
+var socialfbqr=document.getElementById("socialfbqr");
+var socialmaiqr=document.getElementById("socialmaiqr");
+var sociallinqr=document.getElementById("sociallinqr");
+var socialwhtlink=document.getElementById("socialwhtlink");
+var socialfblink=document.getElementById("socialfblink");
+var socialmailink=document.getElementById("socialmailink");
+var sociallinlink=document.getElementById("sociallinlink");
+var qrcodeimg=document.getElementById("qrcodeimg");
+
+function socialwindowscreen(url) {
+    var left=(screen.width-570)/2;
+    var top=(screen.height-570)/2;
+    var params="menubar=yes,toolbar=yes,status=yes,width=570,height=570,top="+top +",left="+left;
+    window.open(url,"NewWindow",params);
+}
+function setSharelinks(){
+    var pageURL=encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+    // var tweet = encodeURIComponent($("meta[property=]"))
+
+    var imgURL=encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
+    
+    socialwhtqr.addEventListener('click',()=>{
+        url='https://wa.me/?text=' + imgURL;
+        socialwindowscreen(url);
+    })
+    socialfbqr.addEventListener('click',()=>{
+        url = "https://www.facebook.com/sharer.php?u="+imgURL;
+        socialwindowscreen(url);
+    })
+    socialmaiqr.addEventListener('click',()=>{
+        url="mailto:?subject=Portfolio_QRCode&body=Scan QR code from here "+imgURL;
+        socialwindowscreen(url);
+    })
+    sociallinqr.addEventListener('click',()=>{
+        url = "https://www.linkedin.com/shareArticle?mini=true&url="+imgURL;
+        socialwindowscreen(url);
+    })
+    
+    
+    
+    socialwhtlink.addEventListener('click',()=>{
+        url="https://wa.me/?text="+pageURL;
+        socialwindowscreen(url);
+    })
+    socialfblink.addEventListener('click',()=>{
+        url = "https://www.facebook.com/sharer.php?u="+pageURL;
+        socialwindowscreen(url);
+    })
+    socialmailink.addEventListener('click',()=>{
+        url="mailto:?subject=Portfolio_Link&body=Check out this site "+pageURL;
+        socialwindowscreen(url);
+    })
+    sociallinlink.addEventListener('click',()=>{
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" +pageURL;
+        socialwindowscreen(url);
+    })
+    
+    
+}
+
+
+//small-start
+var sshareimg=document.getElementById("sshareimg");
+var sshareimgin=document.getElementById("sshareimgin");
+var sshareoptsdiv=document.getElementById("sshareoptsdiv");
+var sshareoptwht=document.getElementById("sshareoptwht");
+var sshareoptmail=document.getElementById("sshareoptmail");
+var sshareoptlink=document.getElementById("sshareoptlink");
+var sshareoptfb=document.getElementById("sshareoptfb");
+//small-end
+
+sshareimg.addEventListener('click',()=>{
+    setSharelinkssmall();
+    sshareoptsdiv.style.display="flex";
+    sshareimg.style.display="none";
+})
+sshareimgin.addEventListener('click',()=>{
+    sshareoptsdiv.style.display="none";
+    sshareimg.style.display="block";
+})
+
+function socialwindowscreensmall(url) {
+    var left=(screen.width-70)/2;
+    var top=(screen.height-70)/2;
+    var width=(screen.width)*0.75;
+    var height=(screen.height)*0.5;
+    var params=`menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
+    window.open(url,"NewWindow",params);
+}
+function setSharelinkssmall(){
+    var pageURL=encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+    sshareoptwht.addEventListener('click',()=>{
+        url="https://wa.me/?text="+pageURL;
+        socialwindowscreensmall(url);
+    })
+    sshareoptfb.addEventListener('click',()=>{
+        url = "https://www.facebook.com/sharer.php?u="+pageURL;
+        socialwindowscreensmall(url);
+    })
+    sshareoptmail.addEventListener('click',()=>{
+        url="mailto:?subject=Portfolio_Link&body=Check out this site "+pageURL;
+        socialwindowscreensmall(url);
+    })
+    sshareoptlink.addEventListener('click',()=>{
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" +pageURL;
+        socialwindowscreensmall(url);
+    })
+}
+
+
+//very small screen display off
+var fullpage=document.querySelector(".fullpage");
+window.onload = function checkscreenwidth(){
+    if(screen.width<368){
+        fullpage.style.display="none";
+        setTimeout(() => {alert("Please open this site on another device as your screen size is very small to display"); }, 500);
+    }
+}
