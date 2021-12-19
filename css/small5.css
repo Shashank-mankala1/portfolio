@@ -11,6 +11,15 @@
     height: 70px;
     font-size: 19px;
 }
+.skillcards{
+    flex-direction: row;
+}
+.skillname{
+    width: calc(43%);
+}
+.prs{
+    margin-top: 45px;
+}
 .expercardlogo img{
     width: 39px;
 }
@@ -19,11 +28,19 @@
     margin-left: 4px;
 }
 .expercardrole{
-    font-size: 16px;
+    font-size: 12px;
 }
-.contactcontainer{
+/* .contactcontainer{
     height:40.5rem;
-}
+} */
 .contactfooter{
     font-size: 12px;
+}
+.sharelinkdiv {
+    display: none;
+}
+.contactsubcontainer{
+    height: fit-content;
+    margin-top: 0px;
+    margin-bottom: 300px;
 }

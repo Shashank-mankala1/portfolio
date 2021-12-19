@@ -177,20 +177,85 @@ body{
     width: 45px;
     background-color: black;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     display: none;
+}
+.leftpoletopdiv{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.leftpoletopsec{
+    margin-top: 1rem;
 }
 .hamburger{
     color: white;
     font-size: 25px;
     margin-top: 15px;
+    text-align: center;
 }
 .leftpoleheader{
     color: white;
     transform: rotate(270deg);
-    margin-top: 230px;
+    margin-top: 16rem;
 }
+.leftpoleshare{
+    position: relative;
+    bottom: 10px;
+}
+.leftpoleshare img{
+    width: 96%;
+    height: 90%;
+    border-radius: 15px;
+}
+.sshareoptsdiv{
+    width: 257px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -45px;
+    margin-left: -21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d7d7d7;
+    display: none;
+}
+.ssharebtn{
+    height: 43px;
+    width: 40px;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+.ssharebtn img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+.sshareopts{
+    width: 205px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sshareoptsicon{
+    height: 90%;
+}
+.sshareoptsicon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 .leftpoletopimg img{
     width: 40px;
 }
@@ -316,6 +381,7 @@ body{
     width:100%;
     background: url(../img/renderimg.png) repeat;
     overflow-y: scroll;
+    overflow-x: hidden;
     /* border: 1px solid red; */
     box-shadow: inset 0px 1px 5px 1px #aab4be;
     /* opacity: 0.5; */
@@ -727,12 +793,12 @@ body{
     line-height: 1.5;
 }
 
-.contactcontainer{
-    height: 41.5rem;
-    display: flex;
+/* .contactcontainer{
+    height: 38.9rem;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
+    justify-content: space-between; 
+} */
 .contactdetails{
     margin: 50px;
     margin-top: 23px;
@@ -830,10 +896,117 @@ body{
     width: 250px;
     justify-content: space-between;
 }
+.shareask{
+    background: rgb(240, 237, 237);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.sharelinkdiv{
+    /* border: 1px solid red; */
+    height: 270px;
+    width: 270px;
+    margin-right: 9rem;
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sharebtn{
+    height: 100%;
+}
+.sharebtn:hover{
+    cursor: pointer;
+}
+.sharelinkdivclose{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+.shareclosei{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+    font-size: 22px;
+}
+.shareclosei:hover{
+    cursor: pointer;
+}
+.sharelinkcontainer{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sharelinkcontainer2{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.sharelinkcontainer3{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.socialoptsdiv{
+    width: 192px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.socialapp{
+    /* border: 1px solid red; */
+    width: 60px;
+    height: 60px;
+    margin: 17px;
+}
+.socialapp:hover{
+    cursor: pointer;
+}
+.socialapplogo{
+    width: 100%;
+}
+.shareoptsdiv{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: fit-content;
+}
+.shareopt{
+    border: 3px solid rgb(1, 160, 252);
+    width: 95px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shareopt p{
+    font-weight: bold;
+}
+.shareopt:hover{
+    background:rgb(1, 160, 252) ;
+    color: white;
+    cursor: pointer;
+}
 .contactfooter{
     /* border: 1px solid red; */
     width: 100%;
-    height: 50px;
+    height: 51px;
     /* position: absolute; */
     /* bottom: 0; */
     background-color: black;

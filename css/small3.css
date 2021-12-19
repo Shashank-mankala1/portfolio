@@ -15,6 +15,9 @@
 .expercardtitle{
     font-size: 16px;
 }
+.expercardlogo img {
+    width: 46px;
+}
 
 .awardcard{
     width: 40%;
@@ -23,12 +26,6 @@
     padding-top: 3px;
 }
 
-.awardtitle{
-    font-size: 17px;
-}
 .awardtype{
     font-size: 9px;
-}
-.awardcardbody{
-    font-size: 13px;
 }

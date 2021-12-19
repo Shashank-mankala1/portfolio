@@ -12,7 +12,7 @@
 }
 
 .prtitle p{
-    font-size: 19px;
+    font-size: inherit;
 }
 .prdisc p{
     font-size: 14px;
@@ -40,7 +40,7 @@
     width: 51px;
 }
 .expercardtitle{
-    font-size: 19px;
+    font-size: inherit;
 }
 .exeprcardrole{
     font-size: 17px;
@@ -71,4 +71,11 @@
 }
 .contactsubcontainer{
     margin-left: 0;
+}
+.sharelinkdiv {
+    height: 200px;
+    width: 200px;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-right: 4rem;
 }
