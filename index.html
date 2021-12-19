@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" itemprop="image" content="https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing">
+    <link itemprop="thumbnailUrl" href="https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing"> 
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:updated_time" content="updatedtime">
+    <meta property="og:locale" content="en_GB" />
+
     <link rel="icon" type="image/png" href="img/mylogo1.png">
     <title>Shashank Mankala | Computer Science Engineer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:1310px)" href="css/small1.css">
+    <link rel="stylesheet" media="screen and (max-width:1328px)" href="css/small1.css">
+    <link rel="stylesheet" media="screen and (max-width:1153px)" href="css/small1-1.css">
     <link rel="stylesheet" media="screen and (max-width:1092px)" href="css/small2.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/small3.css">
+    <link rel="stylesheet" media="screen and (max-width:995px)" href="css/small2-1.css">
+    <link rel="stylesheet" media="screen and (max-width:816px)" href="css/small3.css">
+    <link rel="stylesheet" media="screen and (max-width:668px)" href="css/small3-1.css">
     <link rel="stylesheet" media="screen and (max-width:540px)" href="css/small4.css">
     <link rel="stylesheet" media="screen and (max-width:450px)" href="css/small5.css">
     <link rel="stylesheet" media="screen and (max-width:410px)" href="css/small6.css">
@@ -25,14 +38,40 @@
 <body>
     <div class="fullpage">
         <div class="leftpole">
-            <div class="leftpoletopimg">
-                <img src="img/mylogo1.png" alt="" onclick="location.href='#topp'";>
+            <div class="leftpoletopdiv">
+                <div class="leftpoletopsec">
+                    <div class="leftpoletopimg">
+                        <img src="img/mylogo1.png" alt="" onclick="location.href='#topp'";>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="leftpoleheader">
+                    <h3>PORTFOLIO</h3>
+                </div>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="leftpoleheader">
-                <h3>PORTFOLIO</h3>
+            <div class="leftpoleshare">
+                <img src="img/sshare.png" alt="" id="sshareimg">
+                <div class="sshareoptsdiv" id="sshareoptsdiv">
+                    <div class="ssharebtn">
+                        <img src="img/close.png" alt="" id="sshareimgin">
+                    </div>
+                    <div class="sshareopts">
+                        <div class="sshareoptsicon" >
+                            <img src="img/wht.png" alt="" id="sshareoptwht">
+                        </div>
+                        <div class="sshareoptsicon" >
+                            <img src="img/mail.png" alt="" id="sshareoptmail">
+                        </div>
+                        <div class="sshareoptsicon" >
+                            <img src="img/linkedin.png" alt="" id="sshareoptlink">
+                        </div>
+                        <div class="sshareoptsicon" >
+                            <img src="img/fb.png" alt="" id="sshareoptfb">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="leftwindow" id="leftwindow">
@@ -727,7 +766,6 @@
                     <p>CONTACT</p>
                 </div>
                 <div class="contactcontainer">
-                    
                     <div class="contactsubcontainer">
                         <div class="contactheaddiv">
                             <div class="contactlogo">
@@ -757,6 +795,58 @@
                                 </div>
                                 <div class="contactoptlogodiv inthemeb" title="Twitter">
                                     <i class="fab fa-twitter"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sharelinkdiv">
+                        <img src="img/qrcode.png" alt="qrcode" id="qrcodeimg" style="display: none;">
+                        <img src="img/send1.gif" alt="" class="sharebtn" id="sharebtn">
+                        <div class="shareask" id="shareask">
+                            <div class="sharelinkdivclose">
+                                <i class="fas fa-times shareclosei" id="shareclosei" style="float: right;"></i>
+                            </div>
+                            <hr>
+                            <div class="sharelinkcontainer" id="sharelinkcontainer">
+                                <div class="shareoptsdiv">
+                                    <div id="shareoptqr" class="shareopt">
+                                        <p>Share QR</p>
+                                    </div>
+                                    <div id="shareoptlink" class="shareopt">
+                                        <p>Share Link</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sharelinkcontainer2" id="sharelinkcontainer2">
+                                <div class="socialoptsdiv">
+                                    <div class="socialapp">
+                                        <img src="img/wht.png" alt="" class="socialapplogo" id="socialwhtqr">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/fb.png" alt="" class="socialapplogo" id="socialfbqr">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/mail.png" alt="" class="socialapplogo" id="socialmaiqr">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/linkedin.png" alt="" class="socialapplogo" id="sociallinqr">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sharelinkcontainer3" id="sharelinkcontainer3">
+                                <div class="socialoptsdiv">
+                                    <div class="socialapp">
+                                        <img src="img/wht.png" alt="" class="socialapplogo" id="socialwhtlink">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/fb.png" alt="" class="socialapplogo" id="socialfblink">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/mail.png" alt="" class="socialapplogo" id="socialmailink">
+                                    </div>
+                                    <div class="socialapp">
+                                        <img src="img/linkedin.png" alt="" class="socialapplogo" id="sociallinlink">
+                                    </div>
                                 </div>
                             </div>
                         </div>
