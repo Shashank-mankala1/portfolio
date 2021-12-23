@@ -106,13 +106,18 @@ function openclosecolors(){
 
 
 // theme color panel END
-
+var righttab=document.getElementById("righttab");
+righttab.addEventListener('click',closeanyopen);
+function closeanyopen(){
+    leftwindow.style.display="none";
+}
 var leftwindow=document.getElementById("leftwindow");
 var ham=document.getElementById("hamburger");
 ham.addEventListener('click',openleftwindow);
 function openleftwindow(){
     leftwindow.style.display="block";
 }
+
 var closeleftwindow=document.getElementById("closeleftwindow");
 closeleftwindow.addEventListener('click',closeleftwindowfun);
 function closeleftwindowfun(){
