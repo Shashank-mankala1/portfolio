@@ -1,158 +1,164 @@
-function viewresume(){
-    window.open('https://drive.google.com/file/d/1LGS_AJ3T-jgGn7bs7-K5sxKVEgQ7V_Sf/view?usp=sharing','_blank');
+function viewresume() {
+    window.open('https://drive.google.com/file/d/1LGS_AJ3T-jgGn7bs7-K5sxKVEgQ7V_Sf/view?usp=sharing', '_blank');
 }
-var coloronbtn=document.getElementById('panelbtncolor');
-var panelcolor0=document.getElementById('colorradio0');
-var panelcolor1=document.getElementById('colorradio1');
-var panelcolor2=document.getElementById('colorradio2');
-var panelcolor3=document.getElementById('colorradio3');
-var panelcolor4=document.getElementById('colorradio4');
-var panelcolor5=document.getElementById('colorradio5');
-var sitethemebg=document.getElementsByClassName('inthemeb');
-var sitethemef=document.getElementsByClassName('inthemef');
-var prtitle=document.getElementsByClassName('prtitle');
-var expercardtitle=document.getElementsByClassName('expercardtitle');
-var undlinecolor=document.querySelector('.txtbg');
-function setcolor(){
-    if(panelcolor0.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor0.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor0.value;
-            sitethemebg[i].style.color="white";
+var coloronbtn = document.getElementById('panelbtncolor');
+var panelcolor0 = document.getElementById('colorradio0');
+var panelcolor1 = document.getElementById('colorradio1');
+var panelcolor2 = document.getElementById('colorradio2');
+var panelcolor3 = document.getElementById('colorradio3');
+var panelcolor4 = document.getElementById('colorradio4');
+var panelcolor5 = document.getElementById('colorradio5');
+var sitethemebg = document.getElementsByClassName('inthemeb');
+var sitethemef = document.getElementsByClassName('inthemef');
+var prtitle = document.getElementsByClassName('prtitle');
+var expercardtitle = document.getElementsByClassName('expercardtitle');
+var undlinecolor = document.querySelector('.txtbg');
+function setcolor() {
+    if (panelcolor0.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor0.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor0.value;
+            sitethemebg[i].style.color = "white";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor0.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor0.value;
         }
-        undlinecolor.style.textDecorationColor=panelcolor0.value;
+        undlinecolor.style.textDecorationColor = panelcolor0.value;
     }
-    if(panelcolor1.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor1.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor1.value;
-            sitethemebg[i].style.color="black";
+    if (panelcolor1.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor1.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor1.value;
+            sitethemebg[i].style.color = "black";
             // sitethemebg[i].style.textShadow="0 0 black";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor1.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor1.value;
         }
-        for(var i=0;i<prtitle.length;i++){
-            prtitle[i].style.textShadow="0 0 black";
+        for (var i = 0; i < prtitle.length; i++) {
+            prtitle[i].style.textShadow = "0 0 black";
         }
-        undlinecolor.style.textDecorationColor=panelcolor1.value;
+        undlinecolor.style.textDecorationColor = panelcolor1.value;
     }
-    if(panelcolor2.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor2.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor2.value;
-            sitethemebg[i].style.color="white";
+    if (panelcolor2.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor2.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor2.value;
+            sitethemebg[i].style.color = "white";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor2.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor2.value;
         }
-        undlinecolor.style.textDecorationColor=panelcolor2.value;
+        undlinecolor.style.textDecorationColor = panelcolor2.value;
     }
-    if(panelcolor3.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor3.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor3.value;
-            sitethemebg[i].style.color="black";
+    if (panelcolor3.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor3.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor3.value;
+            sitethemebg[i].style.color = "black";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor3.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor3.value;
         }
-        for(var i=0;i<expercardtitle.length;i++){
-            expercardtitle[i].style.textShadow="0.5px 0px 0px #7a7a7a";
+        for (var i = 0; i < expercardtitle.length; i++) {
+            expercardtitle[i].style.textShadow = "0.5px 0px 0px #7a7a7a";
         }
-        undlinecolor.style.textDecorationColor=panelcolor3.value;
+        undlinecolor.style.textDecorationColor = panelcolor3.value;
     }
-    if(panelcolor4.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor4.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor4.value;
-            sitethemebg[i].style.color="black";
+    if (panelcolor4.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor4.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor4.value;
+            sitethemebg[i].style.color = "black";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor4.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor4.value;
         }
-        undlinecolor.style.textDecorationColor=panelcolor4.value;
+        undlinecolor.style.textDecorationColor = panelcolor4.value;
     }
-    if(panelcolor5.checked ==true){
-        coloronbtn.style.backgroundColor=panelcolor5.value;
-        for(var i=0;i<sitethemebg.length;i++){
-            sitethemebg[i].style.backgroundColor=panelcolor5.value;
-            sitethemebg[i].style.color="white";
+    if (panelcolor5.checked == true) {
+        coloronbtn.style.backgroundColor = panelcolor5.value;
+        for (var i = 0; i < sitethemebg.length; i++) {
+            sitethemebg[i].style.backgroundColor = panelcolor5.value;
+            sitethemebg[i].style.color = "white";
         }
-        for(var i=0;i<sitethemef.length;i++){
-            sitethemef[i].style.color=panelcolor5.value;
+        for (var i = 0; i < sitethemef.length; i++) {
+            sitethemef[i].style.color = panelcolor5.value;
         }
-        undlinecolor.style.textDecorationColor=panelcolor5.value;
+        undlinecolor.style.textDecorationColor = panelcolor5.value;
     }
 }
 
-var panelbtn=document.getElementById('panelbtn');
-var panelcolor=document.getElementById('panelcolorsdiv');
-var isopened=false;
-panelbtn.addEventListener('click',openclosecolors);
-function openclosecolors(){
-    if(isopened==false){
-        panelcolor.style.display='block';
-        isopened=true;
+var panelbtn = document.getElementById('panelbtn');
+var panelcolor = document.getElementById('panelcolorsdiv');
+var isopened = false;
+panelbtn.addEventListener('click', openclosecolors);
+function openclosecolors() {
+    if (isopened == false) {
+        panelcolor.style.display = 'block';
+        isopened = true;
     }
-    else{
-        panelcolor.style.display="none";
-        isopened=false;
+    else {
+        panelcolor.style.display = "none";
+        isopened = false;
     }
 }
 
 
 // theme color panel END
-var righttab=document.getElementById("righttab");
-righttab.addEventListener('click',closeanyopen);
-function closeanyopen(){
-    leftwindow.style.display="none";
+var feedbackdiv=document.getElementById("feedbackdiv");
+feedbackdiv.addEventListener('click',openfeedbackform);
+function openfeedbackform(){
+    window.open('Feedback.html','_self');
 }
-var leftwindow=document.getElementById("leftwindow");
-var ham=document.getElementById("hamburger");
-ham.addEventListener('click',openleftwindow);
-function openleftwindow(){
-    leftwindow.style.display="block";
+// Feedback btn
+var righttab = document.getElementById("righttab");
+righttab.addEventListener('click', closeanyopen);
+function closeanyopen() {
+    leftwindow.style.display = "none";
+}
+var leftwindow = document.getElementById("leftwindow");
+var ham = document.getElementById("hamburger");
+ham.addEventListener('click', openleftwindow);
+function openleftwindow() {
+    leftwindow.style.display = "block";
 }
 
-var closeleftwindow=document.getElementById("closeleftwindow");
-closeleftwindow.addEventListener('click',closeleftwindowfun);
-function closeleftwindowfun(){
-    leftwindow.style.display="none";
+var closeleftwindow = document.getElementById("closeleftwindow");
+closeleftwindow.addEventListener('click', closeleftwindowfun);
+function closeleftwindowfun() {
+    leftwindow.style.display = "none";
 }
-leftwinabout=document.getElementById("leftwinabout");
-leftwinprojects=document.getElementById("leftwinprojects");
-leftwinskills=document.getElementById("leftwinskills");
-leftwinexper=document.getElementById("leftwinexper");
-leftwinaward=document.getElementById("leftwinaward");
-leftwincontact=document.getElementById("leftwincontact");
+leftwinabout = document.getElementById("leftwinabout");
+leftwinprojects = document.getElementById("leftwinprojects");
+leftwinskills = document.getElementById("leftwinskills");
+leftwinexper = document.getElementById("leftwinexper");
+leftwinaward = document.getElementById("leftwinaward");
+leftwincontact = document.getElementById("leftwincontact");
 
-leftwinabout.addEventListener('click',()=>{
-    document.location.href="#aboutt";
-    leftwindow.style.display="none";
+leftwinabout.addEventListener('click', () => {
+    document.location.href = "#aboutt";
+    leftwindow.style.display = "none";
 })
-leftwinprojects.addEventListener('click',()=>{
-    document.location.href="#projects";
-    leftwindow.style.display="none";
+leftwinprojects.addEventListener('click', () => {
+    document.location.href = "#projects";
+    leftwindow.style.display = "none";
 })
-leftwinskills.addEventListener('click',()=>{
-    document.location.href="#skillss";
-    leftwindow.style.display="none";
+leftwinskills.addEventListener('click', () => {
+    document.location.href = "#skillss";
+    leftwindow.style.display = "none";
 })
-leftwinexper.addEventListener('click',()=>{
-    document.location.href="#exper";
-    leftwindow.style.display="none";
+leftwinexper.addEventListener('click', () => {
+    document.location.href = "#exper";
+    leftwindow.style.display = "none";
 })
-leftwinaward.addEventListener('click',()=>{
-    document.location.href="#awardss";
-    leftwindow.style.display="none";
+leftwinaward.addEventListener('click', () => {
+    document.location.href = "#awardss";
+    leftwindow.style.display = "none";
 })
-leftwincontact.addEventListener('click',()=>{
-    document.location.href="#contactt";
-    leftwindow.style.display="none";
+leftwincontact.addEventListener('click', () => {
+    document.location.href = "#contactt";
+    leftwindow.style.display = "none";
 })
 
 //left pole END
@@ -513,184 +519,184 @@ viewrep7.addEventListener('click', viewr7);
 function viewr7() {
     window.open('https://github.com/Shashank-mankala1/Income_tax', '_blank');
 }
-    // ---
+// ---
 
 
-var viewmodern=document.getElementById("certimodern");
-var viewcrash=document.getElementById("certicrash");
-var viewproblemSol=document.getElementById("certiproblemsol");
+var viewmodern = document.getElementById("certimodern");
+var viewcrash = document.getElementById("certicrash");
+var viewproblemSol = document.getElementById("certiproblemsol");
 
-viewmodern.addEventListener('click',cmodern);
-viewcrash.addEventListener('click',ccrash);
-viewproblemSol.addEventListener('click',cproblem);
+viewmodern.addEventListener('click', cmodern);
+viewcrash.addEventListener('click', ccrash);
+viewproblemSol.addEventListener('click', cproblem);
 
-function cmodern(){
+function cmodern() {
     window.open('https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/view?usp=sharing', '_blank');
 }
-function ccrash(){
+function ccrash() {
     window.open('https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/view?usp=sharing', '_blank');
 }
-function cproblem(){
+function cproblem() {
     window.open('https://www.hackerrank.com/certificates/2bff8c03c48b', '_blank');
 }
 
 
 //share
 
-var sharebtn=document.getElementById("sharebtn");
-var shareask=document.getElementById("shareask");
-var shareclosei=document.getElementById("shareclosei");
-var shareoptqr=document.getElementById("shareoptqr");
-var shareoptlink=document.getElementById("shareoptlink");
-var sharelinkcontainer=document.getElementById("sharelinkcontainer");
-var sharelinkcontainer2=document.getElementById("sharelinkcontainer2");
-var sharelinkcontainer3=document.getElementById("sharelinkcontainer3");
+var sharebtn = document.getElementById("sharebtn");
+var shareask = document.getElementById("shareask");
+var shareclosei = document.getElementById("shareclosei");
+var shareoptqr = document.getElementById("shareoptqr");
+var shareoptlink = document.getElementById("shareoptlink");
+var sharelinkcontainer = document.getElementById("sharelinkcontainer");
+var sharelinkcontainer2 = document.getElementById("sharelinkcontainer2");
+var sharelinkcontainer3 = document.getElementById("sharelinkcontainer3");
 
-sharebtn.addEventListener('click',openshareopts);
-shareclosei.addEventListener('click',closeshareopts);
+sharebtn.addEventListener('click', openshareopts);
+shareclosei.addEventListener('click', closeshareopts);
 
-function openshareopts(){
+function openshareopts() {
     setSharelinks();
-    shareask.style.display="block";
-    sharebtn.style.display="none";
-    sharelinkcontainer.style.display="flex";
-    sharelinkcontainer2.style.display="none";
-    sharelinkcontainer3.style.display="none";
+    shareask.style.display = "block";
+    sharebtn.style.display = "none";
+    sharelinkcontainer.style.display = "flex";
+    sharelinkcontainer2.style.display = "none";
+    sharelinkcontainer3.style.display = "none";
 }
-function closeshareopts(){
-    shareask.style.display="none";
-    sharebtn.style.display="block";
-    sharelinkcontainer2.style.display="none";
-    sharelinkcontainer3.style.display="none";
+function closeshareopts() {
+    shareask.style.display = "none";
+    sharebtn.style.display = "block";
+    sharelinkcontainer2.style.display = "none";
+    sharelinkcontainer3.style.display = "none";
 }
 
-shareoptqr.addEventListener('click',()=>{
-    sharelinkcontainer.style.display="none";
-    sharelinkcontainer2.style.display="flex";
-    sharelinkcontainer3.style.display="none";
+shareoptqr.addEventListener('click', () => {
+    sharelinkcontainer.style.display = "none";
+    sharelinkcontainer2.style.display = "flex";
+    sharelinkcontainer3.style.display = "none";
 })
-shareoptlink.addEventListener('click',()=>{
-    sharelinkcontainer.style.display="none";
-    sharelinkcontainer2.style.display="none";
-    sharelinkcontainer3.style.display="flex";
+shareoptlink.addEventListener('click', () => {
+    sharelinkcontainer.style.display = "none";
+    sharelinkcontainer2.style.display = "none";
+    sharelinkcontainer3.style.display = "flex";
 })
 
-var socialwhtqr=document.getElementById("socialwhtqr");
-var socialfbqr=document.getElementById("socialfbqr");
-var socialmaiqr=document.getElementById("socialmaiqr");
-var sociallinqr=document.getElementById("sociallinqr");
-var socialwhtlink=document.getElementById("socialwhtlink");
-var socialfblink=document.getElementById("socialfblink");
-var socialmailink=document.getElementById("socialmailink");
-var sociallinlink=document.getElementById("sociallinlink");
-var qrcodeimg=document.getElementById("qrcodeimg");
+var socialwhtqr = document.getElementById("socialwhtqr");
+var socialfbqr = document.getElementById("socialfbqr");
+var socialmaiqr = document.getElementById("socialmaiqr");
+var sociallinqr = document.getElementById("sociallinqr");
+var socialwhtlink = document.getElementById("socialwhtlink");
+var socialfblink = document.getElementById("socialfblink");
+var socialmailink = document.getElementById("socialmailink");
+var sociallinlink = document.getElementById("sociallinlink");
+var qrcodeimg = document.getElementById("qrcodeimg");
 
 function socialwindowscreen(url) {
-    var left=(screen.width-570)/2;
-    var top=(screen.height-570)/2;
-    var params="menubar=yes,toolbar=yes,status=yes,width=570,height=570,top="+top +",left="+left;
-    window.open(url,"NewWindow",params);
+    var left = (screen.width - 570) / 2;
+    var top = (screen.height - 570) / 2;
+    var params = "menubar=yes,toolbar=yes,status=yes,width=570,height=570,top=" + top + ",left=" + left;
+    window.open(url, "NewWindow", params);
 }
-function setSharelinks(){
-    var pageURL=encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+function setSharelinks() {
+    var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
     // var tweet = encodeURIComponent($("meta[property=]"))
 
-    var imgURL=encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
-    
-    socialwhtqr.addEventListener('click',()=>{
-        url='https://wa.me/?text=' + imgURL;
+    var imgURL = encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
+
+    socialwhtqr.addEventListener('click', () => {
+        url = 'https://wa.me/?text=' + imgURL;
         socialwindowscreen(url);
     })
-    socialfbqr.addEventListener('click',()=>{
-        url = "https://www.facebook.com/sharer.php?u="+imgURL;
+    socialfbqr.addEventListener('click', () => {
+        url = "https://www.facebook.com/sharer.php?u=" + imgURL;
         socialwindowscreen(url);
     })
-    socialmaiqr.addEventListener('click',()=>{
-        url="mailto:?subject=Portfolio_QRCode&body=Scan QR code from here "+imgURL;
+    socialmaiqr.addEventListener('click', () => {
+        url = "mailto:?subject=Portfolio_QRCode&body=Scan QR code from here " + imgURL;
         socialwindowscreen(url);
     })
-    sociallinqr.addEventListener('click',()=>{
-        url = "https://www.linkedin.com/shareArticle?mini=true&url="+imgURL;
+    sociallinqr.addEventListener('click', () => {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + imgURL;
         socialwindowscreen(url);
     })
-    
-    
-    
-    socialwhtlink.addEventListener('click',()=>{
-        url="https://wa.me/?text="+pageURL;
+
+
+
+    socialwhtlink.addEventListener('click', () => {
+        url = "https://wa.me/?text=" + pageURL;
         socialwindowscreen(url);
     })
-    socialfblink.addEventListener('click',()=>{
-        url = "https://www.facebook.com/sharer.php?u="+pageURL;
+    socialfblink.addEventListener('click', () => {
+        url = "https://www.facebook.com/sharer.php?u=" + pageURL;
         socialwindowscreen(url);
     })
-    socialmailink.addEventListener('click',()=>{
-        url="mailto:?subject=Portfolio_Link&body=Check out this site "+pageURL;
+    socialmailink.addEventListener('click', () => {
+        url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
         socialwindowscreen(url);
     })
-    sociallinlink.addEventListener('click',()=>{
-        url = "https://www.linkedin.com/shareArticle?mini=true&url=" +pageURL;
+    sociallinlink.addEventListener('click', () => {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
         socialwindowscreen(url);
     })
-    
-    
+
+
 }
 
 
 //small-start
-var sshareimg=document.getElementById("sshareimg");
-var sshareimgin=document.getElementById("sshareimgin");
-var sshareoptsdiv=document.getElementById("sshareoptsdiv");
-var sshareoptwht=document.getElementById("sshareoptwht");
-var sshareoptmail=document.getElementById("sshareoptmail");
-var sshareoptlink=document.getElementById("sshareoptlink");
-var sshareoptfb=document.getElementById("sshareoptfb");
+var sshareimg = document.getElementById("sshareimg");
+var sshareimgin = document.getElementById("sshareimgin");
+var sshareoptsdiv = document.getElementById("sshareoptsdiv");
+var sshareoptwht = document.getElementById("sshareoptwht");
+var sshareoptmail = document.getElementById("sshareoptmail");
+var sshareoptlink = document.getElementById("sshareoptlink");
+var sshareoptfb = document.getElementById("sshareoptfb");
 //small-end
 
-sshareimg.addEventListener('click',()=>{
+sshareimg.addEventListener('click', () => {
     setSharelinkssmall();
-    sshareoptsdiv.style.display="flex";
-    sshareimg.style.display="none";
+    sshareoptsdiv.style.display = "flex";
+    sshareimg.style.display = "none";
 })
-sshareimgin.addEventListener('click',()=>{
-    sshareoptsdiv.style.display="none";
-    sshareimg.style.display="block";
+sshareimgin.addEventListener('click', () => {
+    sshareoptsdiv.style.display = "none";
+    sshareimg.style.display = "block";
 })
 
 function socialwindowscreensmall(url) {
-    var left=(screen.width-70)/2;
-    var top=(screen.height-70)/2;
-    var width=(screen.width)*0.75;
-    var height=(screen.height)*0.5;
-    var params=`menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
-    window.open(url,"NewWindow",params);
+    var left = (screen.width - 70) / 2;
+    var top = (screen.height - 70) / 2;
+    var width = (screen.width) * 0.75;
+    var height = (screen.height) * 0.5;
+    var params = `menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
+    window.open(url, "NewWindow", params);
 }
-function setSharelinkssmall(){
-    var pageURL=encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
-    sshareoptwht.addEventListener('click',()=>{
-        url="https://wa.me/?text="+pageURL;
+function setSharelinkssmall() {
+    var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+    sshareoptwht.addEventListener('click', () => {
+        url = "https://wa.me/?text=" + pageURL;
         socialwindowscreensmall(url);
     })
-    sshareoptfb.addEventListener('click',()=>{
-        url = "https://www.facebook.com/sharer.php?u="+pageURL;
+    sshareoptfb.addEventListener('click', () => {
+        url = "https://www.facebook.com/sharer.php?u=" + pageURL;
         socialwindowscreensmall(url);
     })
-    sshareoptmail.addEventListener('click',()=>{
-        url="mailto:?subject=Portfolio_Link&body=Check out this site "+pageURL;
+    sshareoptmail.addEventListener('click', () => {
+        url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
         socialwindowscreensmall(url);
     })
-    sshareoptlink.addEventListener('click',()=>{
-        url = "https://www.linkedin.com/shareArticle?mini=true&url=" +pageURL;
+    sshareoptlink.addEventListener('click', () => {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
         socialwindowscreensmall(url);
     })
 }
 
 
 //very small screen display off
-var fullpage=document.querySelector(".fullpage");
-window.onload = function checkscreenwidth(){
-    if(screen.width<368){
-        fullpage.style.display="none";
-        setTimeout(() => {alert("Please open this site on another device as your screen size is very small to display"); }, 500);
+var fullpage = document.querySelector(".fullpage");
+window.onload = function checkscreenwidth() {
+    if (screen.width < 368) {
+        fullpage.style.display = "none";
+        setTimeout(() => { alert("Please open this site on another device as your screen size is very small to display"); }, 500);
     }
 }
