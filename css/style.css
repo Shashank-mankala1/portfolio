@@ -1,0 +1,1360 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+::selection {
+    color: white;
+    background: black;
+}
+.righttab::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+.righttab::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.righttab::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.inthemef{
+    color: #2196f3;
+}
+.inthemeb{
+    background: #2196f3;
+}
+/* Theme colors panel START */
+.temp{
+    width: 100%;
+    height: 1000px;
+    border: 1px solid red;
+}
+.colorpaneldiv{
+    display: flex;
+    flex-direction: row;
+    height: 232px;
+    justify-content: space-between;
+    float: right;
+    z-index: 5;
+    position: sticky;
+    top: 20px;
+}
+.panelbtndiv{
+    height: 50px;
+    width: 81px;
+}
+.panelbtn{
+    border: 1px solid black;
+    height: 70%;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding-left: 10px;
+    background-color: black;
+}
+.panelbtn:hover{
+    cursor: pointer;
+}
+.panelbtncolor{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #2196f3;
+    margin-top: 2px;
+}
+
+.panelcolorsdiv{
+    height: 100%;
+    display: none;
+    width: 150px;
+    animation-name: openpanel;
+    animation-duration: 0.2s;
+    background-color: #d2cecd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+@keyframes openpanel {
+    0%{
+        width: 0;
+    }
+    33.33%{
+        width: 50px;
+    }
+    66.67%{
+        width: 100px;
+    }
+    100%{
+        width: 150px;
+    }
+}
+.panelheading{
+    text-align: center;
+    margin: 6px 0px;
+    
+}
+.panelheading h2{
+    font-family: 'Yuji Boku';
+    font-size: 21px;
+}
+.panelcolors{
+    border: 1px solid transparent;
+    margin:12px;
+    height: 207px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 7px;
+}
+.spcolor{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid #8c7b7b;
+    margin: 0 9px 7px 1px;
+    display: flex;
+}
+.spcolor input[type=radio] {
+    opacity: 0;
+    width: 23px;
+    height: 23px;
+    margin-left: 2px;
+}
+.spcolor input[type=radio]:hover {
+    cursor: pointer;
+}
+.spcolor:hover {
+    cursor: pointer;
+}
+
+#color0{
+    background-color: #2196f3;
+}
+#color1{
+    background-color: #43dedee6;
+}
+#color2{
+    background-color: #f61212;
+}
+#color3{
+    background-color: #ecec0d;
+}
+#color4{
+    background-color: #27ff00;
+}
+#color5{
+    background-color: orange;
+}
+/* Theme colors panel END */
+/* Feedback div START */
+
+.feedbackdiv{
+    width: 55px;
+    height: 55px;
+    position: sticky;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    background: black;
+    color: white;
+    z-index: 1;
+}
+.feedbackdiv:hover{
+    cursor: pointer;
+}
+/* Feedback div END */
+
+.fullpage{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.leftpole{
+    height: 100vh;
+    width: 45px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+.leftpoletopdiv{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.leftpoletopsec{
+    margin-top: 1rem;
+}
+.hamburger{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.leftpoleheader{
+    color: white;
+    transform: rotate(270deg);
+    margin-top: 16rem;
+}
+.leftpoleshare{
+    position: relative;
+    bottom: 10px;
+}
+.leftpoleshare img{
+    width: 96%;
+    height: 90%;
+    border-radius: 15px;
+}
+.sshareoptsdiv{
+    width: 257px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -45px;
+    margin-left: -21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d7d7d7;
+    display: none;
+}
+.ssharebtn{
+    height: 43px;
+    width: 40px;
+    margin-left: 5px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+}
+.ssharebtn img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+.sshareopts{
+    width: 205px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sshareoptsicon{
+    height: 90%;
+}
+.sshareoptsicon img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.leftpoletopimg img{
+    width: 40px;
+}
+.leftwindow{
+    width: 156px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    animation-name: openleftwindow;
+    animation-duration: 0.2s;
+}
+@keyframes openleftwindow {
+    0%{
+        width: 0;
+    }
+    33.33%{
+        width: 51px;
+    }
+    66.67%{
+        width: 102px;
+    }
+    100%{
+        width: 156px;
+    }
+}
+.closeleftwindow{
+    color: white;
+    font-size: 33px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 4px solid white;
+}
+.closeleftwindow i{
+    margin-right: 10px;
+    margin-top: 13px;
+}
+.closeleftwindow i:hover{
+    cursor: pointer;
+}
+.leftwindowoptdiv{
+    width: 100%;
+    position: relative;
+}
+.leftwinopts{
+    color: white;
+    height: 54px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #c3bbbb;
+}
+.leftwinopts:hover{
+    cursor: pointer;
+}
+.lefttab{
+    width: 240px;
+    height: 750px;
+    background: white;
+}
+.nametitle{
+    font-family: 'Roboto', sans-serif;
+    height: 130px;
+    padding-top: 38px;
+    padding-left: 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dedede;
+}
+.nametitle:hover{
+    cursor: pointer;
+}
+.nametitle p{
+    font-size: 12px;
+}
+.navigations{
+    display: flex;
+    flex-direction: column;
+}
+.navdiv{
+    display: flex;
+    flex-direction: row;
+    height: 46px;
+    align-items: center;
+    padding-left: 16px;
+}
+.navdiv:hover{
+    cursor: pointer;
+    background-color: rgb(243, 242, 242);
+    border-left: 3px solid blue;
+}
+.navdiv:active{
+    background-color: rgb(228, 228, 228);
+}
+.awards{
+    height: 50px;
+}
+.navicon{
+    font-size: 22px;
+}
+.navtitle{
+    margin-left: 16px;
+    font-size: 19px;
+}
+
+/* Right tab */
+.righttab{
+    width:100%;
+    background: url(../img/renderimg.png) repeat;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: inset 0px 1px 5px 1px #aab4be;
+}
+.topp{
+    height: 100vh;
+    background: url(../img/bg1.jpg) no-repeat top center/cover;
+    position: relative;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.toppcontainer{
+    color: white;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    margin-top: 63px;
+    margin-left: 52px;
+    font-size: 23px;
+}
+.toppcontainer h2{
+    line-height: 150%;
+}
+.txtbg{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #2196f3;
+    text-underline-offset: 7px;
+}
+
+
+.secheading{
+    height: 90px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.aboutcontent{
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.abouttxt{
+    width: 90%;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* projects */
+.prcontainer{
+    display: flex;
+    justify-content: center;
+
+}
+.prcontent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 93%;
+    padding-top: 10px;
+    padding-bottom: 73px;
+}
+.prs,.prshid{
+    width: 30%;
+    height: 360px;
+    margin-left: 20px;
+    margin-top: 60px;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+    background:white;
+}
+.prgif{
+    height: 220px;
+
+}
+.prgif:hover{
+    cursor: pointer;
+}
+.prgifgif{
+    width: 100%;
+    height: 100%;
+}
+.prtitle{
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 25px;
+    font-weight: 600;
+}
+.prtitle p{
+    font-size: 22px;
+}
+.prtitle p:hover{
+    cursor: pointer;
+}
+.proptions{
+    display: flex;
+    width: 20px;
+    align-items: center;
+    height: 24px;
+    justify-content: center;
+}
+.proptions:hover{
+    cursor: pointer;
+}
+.prdisc{
+    padding: 10px;
+
+}
+.prdisc p{
+    font-size: 17px;
+}
+.prshidonoff{
+    display: none;
+    background-color: rgb(252, 251, 250);
+    position: relative;
+    animation-name: prshidslide;
+    animation-duration: 1s;
+}
+@keyframes prshidslide {
+    0%   {left:0px; top:100px; height: 100%;}
+    100% {left:0px; top:0px;height: 0%;}
+}
+.prdefhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    font-size: 25px;
+    padding: 0 24px 0 13px;
+}
+.prdefhead p:hover{
+    cursor: pointer;
+}
+.prdefhead i:hover{
+    cursor: pointer;
+}
+.prdefbody{
+    height: 189px;
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 18px;
+}
+.prdeffooter{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 91px;
+    align-items: center;
+}
+
+.prdeffooterdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 58px;
+    height: 58px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+    margin-left: 16px;
+    position: relative;
+    animation-name: delayvisi;
+    animation-duration: 0.3s;
+}
+@keyframes delayvisi {
+    0%{
+        visibility: hidden;
+    }
+    99%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.prdeffooterdiv:hover{
+    cursor: pointer;
+}
+
+.skillscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillscontent{
+    width: 89%;
+    height: 81%;
+    padding: 15px;
+    margin-top: 55px;
+    margin-bottom: 70px;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+    background: white;
+}
+.typeheading{
+    display: flex;
+    height: 68px;
+    align-items: center;
+    font-size: 31px;
+    font-weight: 600;
+}
+.skillcards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+.skillname{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 155px;
+    height: fit-content;
+    margin-top: 28px;
+    margin-left: 60px;
+}
+.skillimg{
+    display: flex;
+    justify-content: center;
+}
+.skillnamename{
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.expercontainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+
+}
+.experallcards{
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.expercards{
+    margin-top: 52px;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+
+}
+.expercardheadbody{
+    padding: 7px;
+    background: white;
+}
+#expercardheadbodylpu{
+    height: 210px;
+}
+.expercardhead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 11px;
+}
+.expercardlogo img{
+    width: 56px;
+    margin-top: 9px;
+    margin-left: 12px;
+}
+.expercardlogo:hover{
+    cursor: pointer;
+}
+.expercardtitle{
+    font-size: 23px;
+}
+.expercardtitle:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+.expercardrole{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.expercardbody{
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#expercardintro{
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.expercardbody ul{
+    margin-left: 30px;
+}
+.expercardfooter{
+    background-color: #e2e2e2;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.expercardfooter p{
+    margin-left: 7px;
+    padding: 16px;
+}
+
+/* Awards */
+.awardscontainer{
+    display: flex;
+    justify-content: center;
+}
+.awardscontent{
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 25px;
+    margin-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.awardcard{
+    width: 44%;
+    height: 230px;
+    margin-right: 20px;
+    margin-bottom: 76px;
+    padding: 14px;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+    background: white;
+}
+.awardcardhead{
+    height: 99px;
+    padding-top: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.awardtitle{
+    font-size: 25px;
+    width: fit-content;
+}
+.awardtitle:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.awardtype{
+    font-size: 16px;
+}
+.awardcardbody{
+    height: 126px;
+    padding-left: 17px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.contactdetails{
+    margin: 50px;
+    margin-top: 23px;
+}
+.contactoption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 25px;
+}
+.contactoptlogodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 5px 1px #aab4be;
+
+}
+.contactoptlogodiv:hover{
+    cursor: pointer;
+}
+.contactoptdet{
+    font-size: 19px;
+    margin-left: 22px;
+    font-weight: 600;
+}
+.contactoptdet:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+.contactsubcontainer{
+    height: 300px;
+    width: 500px;
+    margin-left: 29px;
+    margin-top: 41px;
+}
+.contactheaddiv{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contactlogo img{
+    height: 84px;
+}
+.contactmyname{
+    font-size: 26px;
+    font-family: 'Abril Fatface';
+}
+.contactmyname h1{
+    font-family: 'Abril Fatface';
+}
+.contactbodydiv{
+    width: 100%;
+    height: 100px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+.contactbodydiv p{
+    width: fit-content;
+    font-size: 19px;
+}
+.contactoptdet{
+    width: fit-content;
+}
+.contactfooterdiv{
+    width: 100%;
+    height: 94px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contactlinks{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-between;
+}
+.shareask{
+    background: rgb(240, 237, 237);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+}
+.sharelinkdiv{
+    height: 270px;
+    width: 270px;
+    margin-right: 9rem;
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sharebtn{
+    height: 100%;
+}
+.sharebtn:hover{
+    cursor: pointer;
+}
+.sharelinkdivclose{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+.shareclosei{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 9px;
+    font-size: 22px;
+}
+.shareclosei:hover{
+    cursor: pointer;
+}
+.sharelinkcontainer{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sharelinkcontainer2{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.sharelinkcontainer3{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.socialoptsdiv{
+    width: 192px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.socialapp{
+    width: 60px;
+    height: 60px;
+    margin: 17px;
+}
+.socialapp:hover{
+    cursor: pointer;
+}
+.socialapplogo{
+    width: 100%;
+}
+.shareoptsdiv{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+.shareopt{
+    border: 3px solid rgb(1, 160, 252);
+    width: 95px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shareopt p{
+    font-weight: bold;
+}
+.shareopt:hover{
+    background:rgb(1, 160, 252) ;
+    color: white;
+    cursor: pointer;
+}
+.contactfooter{
+    width: 100%;
+    height: 51px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsive media queries */
+
+@media only screen and (max-width: 1328px) {
+    .awardcardbody{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1153px) {
+    .awardtitle{
+        font-size: 22px;
+    }
+    .awardtype{
+        font-size:15px ;
+    }
+    .sharelinkdiv{
+        height: 200px;
+        width: 200px;
+        margin-top: -3rem;
+        margin-bottom: 3rem;
+    }
+    .socialoptsdiv {
+        width: 192px;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .socialapp {
+        width: 65px;
+        height: 65px;
+        margin: 5px;
+    }
+    .socialapplogo {
+        width: 90%;
+        height: 90%;
+    }
+}
+@media only screen and (max-width: 1092px) {
+    .abouttxt{
+        font-size: 18px;
+    }
+    .prs{
+        height: 316px;
+    }
+    .prgif{
+        height: 190px;
+    }
+    .prtitle{
+        height: 36px;
+    }
+    
+    .prtitle p{
+        font-size: inherit;
+    }
+    .prdisc p{
+        font-size: 14px;
+    }
+    .prshidonoff{
+        height: 100%;
+    }
+    .prdefhead{
+        height: 64px;
+        font-size: 20px;
+    }
+    .prdefbody{
+        height: 168px;
+    
+    }
+    .prdeffooter{
+        height: 72px;
+    }
+    .prdeffooterdiv{
+        width: 49px;
+        height: 49px;
+    }
+    
+    .expercardlogo{
+        width: 51px;
+    }
+    .expercardtitle{
+        font-size: inherit;
+    }
+    .exeprcardrole{
+        font-size: 17px;
+    }
+    .expercardbody{
+        font-size: 15px;
+    }
+    .expercardfooter p{
+        font-size: 14px;
+    }
+    .awardcard{
+        width: 42%;
+    }
+    .awardcardhead{
+        height: 84px;
+    }
+    .awardtitle{
+        font-size: 20px;
+    }
+    .awardtype{
+        font-size: 13px;
+    }
+    .awardcardbody{
+        font-size: 15px;
+    }
+    .contactcontainer{
+        align-items: center;
+    }
+    .contactsubcontainer{
+        margin-left: 0;
+    }
+    .sharelinkdiv {
+        height: 200px;
+        width: 200px;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        margin-right: 4rem;
+    }
+}
+@media only screen and (max-width: 995px) {
+    .awardtitle{
+        font-size: 15px;
+    }
+    .awardcardbody{
+        font-size: 11px;
+    }
+    .sharelinkdiv{
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width: 816px) {
+    .righttab{
+        overflow-x: hidden ;
+    }
+    .abouttxt{
+        font-size: 14px;
+    }
+    .prs{
+        width: 45%;
+    }
+    
+    .experallcards{
+        width: 79%;
+    
+    }
+    .expercardtitle{
+        font-size: 16px;
+    }
+    .expercardlogo img {
+        width: 46px;
+    }
+    
+    .awardcard{
+        width: 40%;
+    }
+    .awardcardhead{
+        padding-top: 3px;
+    }
+    
+    .awardtype{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 668px) {
+    .abouttxt{
+        font-size: 13px;
+        line-height: 28px;
+    }
+    .awardscontent,.skillcards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skillscontent{
+        width: 70%;
+    }
+    .skillname{
+        margin-left: 0px;
+    }
+    .awardcard{
+        width: 83%;
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+    .awardtitle{
+        font-size: 18px;
+    }
+    .awardtype{
+        font-size: 11px;
+    }
+    .awardcardbody{
+        font-size: 15px;
+    }
+    .expercardtitle{
+        margin-left: 14px;
+    }
+    .expercardtitle:hover{
+        text-underline-offset: 1px;
+        text-decoration-thickness: 2px;
+    }
+    .contactsubcontainer{
+        height: 284px;
+        width: 330px;
+    }
+    .contactlogo img {
+        height: 70px;
+    }
+    .contactmyname {
+        font-size: 18px;
+        font-family: 'Abril Fatface';
+    }
+    .contactbodydiv p {
+        width: fit-content;
+        font-size: 17px;
+    }
+    .sharelinkdiv {
+        height: 170px;
+        width: 170px;
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        margin-right: 0px;
+    }
+    .socialapp {
+        width: 60px;
+        height: 60px;
+        margin: 2px;
+    }
+    .socialapplogo {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .toppcontainer{
+        font-size: 14px;
+    }
+    
+    .abouttxt{
+        font-size: 10px;
+    
+    }
+    .prs{
+        width: 90%;
+    
+    }
+    .skillname{
+        width: 136px;
+        margin-left: 15px;
+    }
+    .skillnamename{
+        font-size: 12px;
+    }
+    .skillname img{
+        width: 80px;
+    }
+    .skillimg{
+        justify-content: center;
+    }
+    
+    #mongoimg{
+        height: 125px;
+    }
+    .awardcard{
+        width: 90%;
+    }
+    .awardcardhead{
+        height: 64px;
+        margin-bottom: 5px;
+    }
+    .awardtitle{
+        font-size: 16px;
+        margin-bottom: 4px;
+    
+    }
+    .awardtype{
+        font-size: 11px;
+    }
+    .awardcardbody{
+        font-size: 16px;
+    }
+    .contactsubcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .contactheaddiv{
+        width: 100%;
+    }
+    .contactlogo img{
+        height: 65px;
+    }
+    .contactmyname{
+        font-size: 16px;
+    }
+    
+    .contactbodydiv p{
+        font-size: 16px;
+    }
+    .contactlinks{
+        width: 203px;
+    }
+    .contactoptlogodiv{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .panelbtndiv{
+        width: 55px;
+    }
+    .leftpole{
+        display: flex;
+    }
+    .lefttab{
+        display:none;
+    }
+    .secheading{
+        height: 70px;
+        font-size: 19px;
+    }
+    .skillcards{
+        flex-direction: row;
+    }
+    .skillname{
+        width: calc(43%);
+    }
+    .prs{
+        margin-top: 45px;
+    }
+    .expercardlogo img{
+        width: 39px;
+    }
+    .expercardtitle{
+        font-size: 13px;
+        margin-left: 4px;
+    }
+    .expercardrole{
+        font-size: 12px;
+    }
+    .contactfooter{
+        font-size: 12px;
+    }
+    .sharelinkdiv {
+        display: none;
+    }
+    .contactsubcontainer{
+        height: fit-content;
+        margin-top: 0px;
+        margin-bottom: 300px;
+    }
+    .sshareoptsdiv{
+        animation-name: sharedivanim;
+        animation-duration: 0.3s;
+    }
+    @keyframes sharedivanim {
+        0%{
+            transform:rotate(270deg) ;
+            transform-origin:bottom left;
+            animation-timing-function: ease-in-out; 
+        }
+        33%{
+            transform:rotate(360deg) ;
+            transform-origin:bottom left;
+            animation-timing-function: ease-in-out; 
+        }
+        66%{
+            transform:rotate(340deg) ;
+            transform-origin:bottom left;
+            animation-timing-function: ease-in-out; 
+        }
+        100%{
+            transform: rotate(360deg);
+            animation-timing-function: ease-in-out; 
+        }
+    }
+}
+@media only screen and (max-width: 410px) {
+    .abouttxt{
+        font-size: 9px;
+    }
+    .prtitle{
+        margin-top: 7px;
+    }
+    .awardtitle{
+        font-size: 17px;
+    }
+    .awardcardbody{
+        font-size: 14px;
+    }    
+}
+@media only screen and (max-width: 392px) {
+    .skillname{
+        width: 40%;
+    }
+    .secheading{
+        height: 70px;
+        font-size: 19px;
+    }
+}
