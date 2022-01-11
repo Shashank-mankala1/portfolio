@@ -16,7 +16,7 @@
         onload="if(submitted){if(check){alert('Feedback Successfully submitted!!! \nThanks for your Valuable Feedback :)'); window.location='index.html';}}"></iframe>
     <div class="feedbackformdiv">
         <div class="formdiv1">
-            <form class="formdiv" target="hidden_iframe" onsubmit="submitted=true"
+            <form class="formdiv" target="hidden_iframe" onsubmit="submitted=true; check=funcheck();"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSet0VSzz6DGFFazhWdPn7iPMFggiLbprqU8b47orBbk_dAoDA/formResponse"
                 method="POST" target="_self">
                 <label for="name" class="feedbacklabels"><b>Name</b></label>
@@ -30,7 +30,7 @@
                 <label for="rating" class="feedbacklabels"><b> How much you would rate my website ? </b></label>
                 <div class="ratingdiv">
                     <p class="ratingnum">0</p><input type="range" name="entry.1318793904" id="rating" min="0" max="5"
-                        step="1" value="5" required />
+                        step="1" value="5" onclick="viewrating();" required />
                     <p class="ratingnum">5</p>
                 </div>
 
