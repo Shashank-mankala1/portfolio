@@ -13,7 +13,7 @@
 
 <body>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='index.html';}"></iframe>
+        onload="if(submitted){if(check){alert('Feedback Successfully submitted!!! \nThanks for your Valuable Feedback :)'); window.location='index.html';}}"></iframe>
     <div class="feedbackformdiv">
         <div class="formdiv1">
             <form class="formdiv" target="hidden_iframe" onsubmit="submitted=true"
@@ -40,7 +40,7 @@
 
                 <div class="submitdiv">
                     <!-- <button type="submit" id="feedbacksubmitbtn">Submit</button> -->
-                    <input id="submitbtn" type="submit" onclick="submitfeedback();"
+                    <input id="submitbtn" type="submit" 
                         style="width: 50%; height: 30px; border-radius: 5px; background: #83c5ff;"
                         onmouseover=cursoron();>
                 </div>
@@ -50,6 +50,7 @@
 </body>
 <script>
     var submitted = false;
+    var check=false;
     var feedbacksubmitbtn = document.getElementById("feedbacksubmitbtn");
 
     var fname=document.getElementById("name").value;
@@ -57,9 +58,12 @@
     var ffeedback=document.getElementById("feedback").value;
 
     feedbacksubmitbtn.addEventListener('click', submitfeedback);
-    function submitfeedback() {
+    function funcheck(){
         if(!(fname=="" || fmail=="" || ffeedback=="")){
-            alert("Feedback Successfully submitted!!! \nThanks for your Valuable Feedback :)");
+            return false;
+        }
+        else{
+            return true;
         }
     }
     function cursoron() {
