@@ -15,7 +15,7 @@ setTimeout(() => {
         typeSpeed:50,
         loop:false
     });
-}, 1200);
+}, 1450);
 var coloronbtn = document.getElementById('panelbtncolor');
 var panelcolor0 = document.getElementById('colorradio0');
 var panelcolor1 = document.getElementById('colorradio1');
