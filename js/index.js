@@ -1,6 +1,21 @@
 function viewresume() {
     window.open('https://drive.google.com/file/d/1fTXat61pqSDuDAE0QB6QdC728bXKPapv/view?usp=sharing', '_blank');
 }
+var typed = new Typed(".txtbg",{
+    strings:["Wow is the one"],
+    typeSpeed:50,
+    loop:false,
+    onComplete: function(self) {
+        self.cursor.remove();
+    }
+});
+setTimeout(() => {
+    var typed = new Typed(".typing",{
+        strings:["I aim for."],
+        typeSpeed:50,
+        loop:false
+    });
+}, 1200);
 var coloronbtn = document.getElementById('panelbtncolor');
 var panelcolor0 = document.getElementById('colorradio0');
 var panelcolor1 = document.getElementById('colorradio1');
