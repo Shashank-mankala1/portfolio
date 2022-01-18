@@ -296,6 +296,81 @@ function actcontover() {
 function actcontout() {
     leftcont.setAttribute("style", "background-color:white;border-left:none;")
 }
+// Projects prs 
+var prs1=document.getElementById("prs1");
+var prs2=document.getElementById("prs2");
+var prs3=document.getElementById("prs3");
+var prs4=document.getElementById("prs4");
+var prs5=document.getElementById("prs5");
+var prs6=document.getElementById("prs6");
+var prs7=document.getElementById("prs7");
+
+var prgifgif1=document.getElementById("prgifgif1");
+var prgifgif2=document.getElementById("prgifgif2");
+var prgifgif3=document.getElementById("prgifgif3");
+var prgifgif4=document.getElementById("prgifgif4");
+var prgifgif5=document.getElementById("prgifgif5");
+// var prgifgif6=document.getElementById("prgifgif6");
+var prgifgif7=document.getElementById("prgifgif7");
+
+prs1.addEventListener("mouseover",repgif1);
+prs1.addEventListener("mouseout",repimg1);
+function repgif1(){
+    prgifgif1.src="./img/fb.gif";
+}
+function repimg1(){
+    prgifgif1.src="./img/f1.png";
+}
+prs2.addEventListener("mouseover",repgif2);
+prs2.addEventListener("mouseout",repimg2);
+function repgif2(){
+    prgifgif2.src="./img/mp.gif";
+}
+function repimg2(){
+    prgifgif2.src="./img/mp1.webp";
+}
+prs3.addEventListener("mouseover",repgif3);
+prs3.addEventListener("mouseout",repimg3);
+function repgif3(){
+    prgifgif3.src="./img/coup.gif";
+}
+function repimg3(){
+    prgifgif3.src="./img/c1.png";
+}
+prs4.addEventListener("mouseover",repgif4);
+prs4.addEventListener("mouseout",repimg4);
+function repgif4(){
+    prgifgif4.src="./img/meals.gif";
+}
+function repimg4(){
+    prgifgif4.src="./img/m1.webp";
+}
+prs5.addEventListener("mouseover",repgif5);
+prs5.addEventListener("mouseout",repimg5);
+function repgif5(){
+    prgifgif5.src="./img/todo.gif";
+}
+function repimg5(){
+    prgifgif5.src="./img/t1.webp";
+}
+prs7.addEventListener("mouseover",repgif7);
+prs7.addEventListener("mouseout",repimg7);
+function repgif7(){
+    prgifgif7.src="./img/incometax.gif";
+}
+function repimg7(){
+    prgifgif7.src="./img/i1.webp";
+}
+var sharebtn=document.getElementById("sharebtn");
+sharebtn.addEventListener("mouseover",repgifcon);
+sharebtn.addEventListener("mouseout",repimgcon);
+function repgifcon(){
+    sharebtn.src="./img/send.gif";
+}
+function repimgcon(){
+    sharebtn.src="./img/send1-8.webp";
+}
+
 // 1
 var title1 = document.getElementById("prp1");
 var gif1 = document.getElementById("prgif1");
