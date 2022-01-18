@@ -67,6 +67,9 @@ body{
     border: 1px solid black;
     background-color: #2196f3;
     margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .panelcolorsdiv{
@@ -386,7 +389,7 @@ body{
 }
 .topp{
     height: 100vh;
-    background: url(../img/bg1.jpg) no-repeat top center/cover;
+    background: url(../img/bg1.webp) no-repeat top center/cover;
     position: relative;
 }
 .overlay{
@@ -462,6 +465,10 @@ body{
     margin-top: 60px;
     box-shadow: 0px 3px 5px 1px #aab4be;
     background:white;
+    border-radius: 5px;
+}
+.prs:hover,.prshid :hover{
+    transform: scale(1.04);
 }
 .prgif{
     height: 220px;
@@ -473,6 +480,8 @@ body{
 .prgifgif{
     width: 100%;
     height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .prtitle{
     display: flex;
@@ -512,7 +521,7 @@ body{
     background-color: rgb(252, 251, 250);
     position: relative;
     animation-name: prshidslide;
-    animation-duration: 1s;
+    animation-duration: 0.1s;
 }
 @keyframes prshidslide {
     0%   {left:0px; top:100px; height: 100%;}
@@ -561,7 +570,7 @@ body{
     margin-left: 16px;
     position: relative;
     animation-name: delayvisi;
-    animation-duration: 0.3s;
+    animation-duration: 0.1s;
 }
 @keyframes delayvisi {
     0%{
@@ -774,6 +783,7 @@ body{
 }
 .contactoptlogodiv:hover{
     cursor: pointer;
+    transform: scale(0.95);
 }
 .contactoptdet{
     font-size: 19px;
@@ -858,6 +868,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.sharelinkdiv:hover{
+    transform: scale(1.05);
 }
 .sharebtn{
     height: 100%;
