@@ -110,7 +110,7 @@ var isopened = false;
 panelbtn.addEventListener('click', openclosecolors);
 function openclosecolors() {
     if (isopened == false) {
-        panelcolor.style.display = 'block';
+        panelcolor.style.display = 'flex';
         isopened = true;
     }
     else {
@@ -119,8 +119,32 @@ function openclosecolors() {
     }
 }
 
-
 // theme color panel END
+
+// rightsidediv START 
+
+// const api = `https://codeforces.com/api/user.info?handles=${Shashankmankala}`;
+
+// fetch(api)
+//         .then(response =>{
+//             return response.json();
+//         })
+//         .then(data =>{
+//             name.innerText = `Hello, ${data.result[0].handle}`;
+//             currRating.innerText = `current rating : ${data.result[0].rating}`;
+//             currRank.innerText = `current rank : ${data.result[0].rank}`;
+//             maxRating.innerText = `max rating : ${data.result[0].maxRating}`;
+//             maxRank.innerText = `max rank : ${data.result[0].maxRank}`;
+//             if(!data.result[0].maxRating){
+//                 currRating.innerText = `current rating : Unrated`;
+//                 currRank.innerText = `current rank : 0`;
+//                 maxRating.innerText = `max rating : Unrated`;
+//                 maxRank.innerText = `max rank : 0`;
+//             }
+//         })
+
+//  rightsidediv END 
+
 var feedbackdiv=document.getElementById("feedbackdiv");
 feedbackdiv.addEventListener('click',openfeedbackform);
 function openfeedbackform(){
@@ -296,6 +320,29 @@ function actcontover() {
 function actcontout() {
     leftcont.setAttribute("style", "background-color:white;border-left:none;")
 }
+
+// Right drawer for programming profiles
+// var overlayfull=document.getElementById("overlayfull");
+// var rightdivbtn=document.getElementById("rightdivbtn");
+// var rightsidediv=document.getElementById("rightsidediv");
+// rightdivbtn.addEventListener('click',openrightdraw);
+// var isrightdrawopen=false;
+// function openrightdraw(){
+//     if(isrightdrawopen){
+//         overlayfull.style.display="block";
+//         rightsidediv.setAttribute("style", "transform: translateX(0); z-index: 6");
+//         isrightdrawopen=false;
+//     }
+//     else{
+//         overlayfull.style.display="none";
+//         rightsidediv.setAttribute("style", "transform: translateX(93%);");
+//         isrightdrawopen=true;
+//     }
+// }
+
+
+
+
 // Projects prs 
 var prs1=document.getElementById("prs1");
 var prs2=document.getElementById("prs2");
@@ -304,6 +351,7 @@ var prs4=document.getElementById("prs4");
 var prs5=document.getElementById("prs5");
 var prs6=document.getElementById("prs6");
 var prs7=document.getElementById("prs7");
+var prsn1=document.getElementById("prsn1");
 
 var prgifgif1=document.getElementById("prgifgif1");
 var prgifgif2=document.getElementById("prgifgif2");
@@ -312,7 +360,25 @@ var prgifgif4=document.getElementById("prgifgif4");
 var prgifgif5=document.getElementById("prgifgif5");
 // var prgifgif6=document.getElementById("prgifgif6");
 var prgifgif7=document.getElementById("prgifgif7");
+var prgifgifn0=document.getElementById("prgifgifn0");
+var prgifgifn1=document.getElementById("prgifgifn1");
 
+prsn0.addEventListener("mouseover",repgifn0);
+prsn0.addEventListener("mouseout",repimgn0);
+function repgifn0(){
+    prgifgifn0.src="./img/playstore.gif";
+}
+function repimgn0(){
+    prgifgifn0.src="./img/ps1.webp";
+}
+prsn1.addEventListener("mouseover",repgifn1);
+prsn1.addEventListener("mouseout",repimgn1);
+function repgifn1(){
+    prgifgifn1.src="./img/portfolio.gif";
+}
+function repimgn1(){
+    prgifgifn1.src="./img/p1.webp";
+}
 prs1.addEventListener("mouseover",repgif1);
 prs1.addEventListener("mouseout",repimg1);
 function repgif1(){
@@ -371,6 +437,74 @@ function repimgcon(){
     sharebtn.src="./img/send1-8.webp";
 }
 
+// n1
+var titlen1 = document.getElementById("prpn1");
+var gifn1 = document.getElementById("prgifn1");
+var optionn1 = document.getElementById("proptionn1");
+var hiddenn1 = document.getElementById("prshidonoffn1");
+var unhiddenn1 = document.getElementById("prsonoffn1");
+var closen1 = document.getElementById("closeoptn1");
+
+titlen1.addEventListener('click', myFunctionn1);
+gifn1.addEventListener('click', myFunctionn1);
+optionn1.addEventListener('click', myFunctionn1);
+
+function myFunctionn1() {
+    hiddenn1.style.display = 'block';
+    unhiddenn1.style.display = 'none';
+}
+
+closen1.addEventListener('click', myFunctionrn1);
+function myFunctionrn1() {
+    hiddenn1.style.display = 'none';
+    unhiddenn1.style.display = 'block';
+}
+
+var viewprojn1 = document.getElementById("viewprojectn1");
+viewprojn1.addEventListener('click', viewpn1);
+function viewpn1() {
+    window.open('https://shashank-mankala1.github.io/portfolio/', '_blank');
+}
+var viewrepn1 = document.getElementById("viewrepon1");
+viewrepn1.addEventListener('click', viewrn1);
+function viewrn1() {
+    window.open('https://github.com/Shashank-mankala1/portfolio', '_blank');
+}
+//---
+// n0
+var titlen0 = document.getElementById("prpn0");
+var gifn0 = document.getElementById("prgifn0");
+var optionn0 = document.getElementById("proptionn0");
+var hiddenn0 = document.getElementById("prshidonoffn0");
+var unhiddenn0 = document.getElementById("prsonoffn0");
+var closen0 = document.getElementById("closeoptn0");
+
+titlen0.addEventListener('click', myFunctionn0);
+gifn0.addEventListener('click', myFunctionn0);
+optionn0.addEventListener('click', myFunctionn0);
+
+function myFunctionn0() {
+    hiddenn0.style.display = 'block';
+    unhiddenn0.style.display = 'none';
+}
+
+closen0.addEventListener('click', myFunctionrn0);
+function myFunctionrn0() {
+    hiddenn0.style.display = 'none';
+    unhiddenn0.style.display = 'block';
+}
+
+// var viewprojn0 = document.getElementById("viewprojectn0");
+// viewprojn0.addEventListener('click', viewpn0);
+// function viewpn0() {
+//     window.open('https://shashank-mankala1.github.io/portfolio/', '_blank');
+// }
+var viewrepn0 = document.getElementById("viewrepon0");
+viewrepn0.addEventListener('click', viewrn0);
+function viewrn0() {
+    window.open('https://github.com/Shashank-mankala1/Google-Play-Store-Analysis', '_blank');
+}
+//---
 // 1
 var title1 = document.getElementById("prp1");
 var gif1 = document.getElementById("prgif1");
@@ -565,11 +699,11 @@ function myFunctionr6() {
     unhidden6.style.display = 'block';
 }
 
-var viewproj6 = document.getElementById("viewproject6");
-viewproj6.addEventListener('click', viewp6);
-function viewp6() {
-    window.open('ERSpythonreason.html', '_blank');
-}
+// var viewproj6 = document.getElementById("viewproject6");
+// viewproj6.addEventListener('click', viewp6);
+// function viewp6() {
+//     window.open('ERSpythonreason.html', '_blank');
+// }
 var viewrep6 = document.getElementById("viewrepo6");
 viewrep6.addEventListener('click', viewr6);
 function viewr6() {
@@ -612,14 +746,30 @@ function viewr7() {
 // ---
 
 
+var viewgfg= document.getElementById("certigfg");
+var viewsnackdown = document.getElementById("certisnackdown");
+var viewjumpstart = document.getElementById("certijumpstart");
 var viewmodern = document.getElementById("certimodern");
 var viewcrash = document.getElementById("certicrash");
 var viewproblemSol = document.getElementById("certiproblemsol");
 
+viewgfg.addEventListener('click', cgfg);
+viewsnackdown.addEventListener('click', csnackdown);
+viewjumpstart.addEventListener('click', cjumpstart);
 viewmodern.addEventListener('click', cmodern);
 viewcrash.addEventListener('click', ccrash);
 viewproblemSol.addEventListener('click', cproblem);
 
+
+function cgfg() {
+    window.open('https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/view?usp=sharing', '_blank');
+}
+function csnackdown() {
+    window.open('https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/view?usp=sharing', '_blank');
+}
+function cjumpstart() {
+    window.open('https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/view?usp=sharing', '_blank');
+}
 function cmodern() {
     window.open('https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/view?usp=sharing', '_blank');
 }
