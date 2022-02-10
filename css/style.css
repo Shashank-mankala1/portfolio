@@ -499,8 +499,14 @@ body{
 }
 .abouttxt{
     width: 90%;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 32px;
+}
+.abouttxt p{
+    margin-bottom: 14px;
+}
+.fa-dot-circle{
+    font-size: 17px;
 }
 
 /* projects */
@@ -1040,6 +1046,14 @@ body{
         font-size: 16px;
     }
 }
+@media only screen and (max-width: 1210px) {
+    .abouttxt{
+        font-size: 18px;
+    }
+    .abouttxt p{
+        margin-bottom: 10px;
+    }
+}
 @media only screen and (max-width: 1153px) {
     .awardtitle{
         font-size: 22px;
@@ -1154,6 +1168,14 @@ body{
         margin-right: 4rem;
     }
 }
+@media only screen and (max-width: 1063px) {
+    .abouttxt{
+        font-size: 16px;
+    }
+    .abouttxt p{
+        margin-bottom: 8px;
+    }
+}
 @media only screen and (max-width: 995px) {
     .awardtitle{
         font-size: 15px;
@@ -1165,12 +1187,20 @@ body{
         margin-right: 0px;
     }
 }
+@media only screen and (max-width: 865px) {
+    .abouttxt{
+        font-size: 13px;
+    }
+}
 @media only screen and (max-width: 816px) {
     .righttab{
         overflow-x: hidden ;
     }
     .abouttxt{
         font-size: 14px;
+    }
+    .abouttxt p {
+        line-height: 1.8;
     }
     .prs{
         width: 45%;
@@ -1266,6 +1296,14 @@ body{
         height: 80%;
     }
 }
+@media only screen and (max-width: 565px) {
+    .abouttxt{
+        font-size: 12px;
+    }
+    .abouttxt p{
+        line-height: 1.7;
+    }
+}
 @media only screen and (max-width: 540px) {
     .toppcontainer{
         font-size: 14px;
@@ -1343,6 +1381,9 @@ body{
     }
 }
 @media only screen and (max-width: 450px) {
+    .abouttxt{
+        font-size: 12px;
+    }
     .panelbtndiv{
         width: 55px;
     }
@@ -1414,7 +1455,10 @@ body{
 }
 @media only screen and (max-width: 410px) {
     .abouttxt{
-        font-size: 9px;
+        font-size: 10px;
+    }
+    .abouttxt p{
+        line-height: 2;
     }
     .prtitle{
         margin-top: 7px;
