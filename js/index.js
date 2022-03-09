@@ -1,5 +1,5 @@
 function viewresume() {
-    window.open('https://drive.google.com/file/d/1e6Y94kSoA2M3hAbNBbR3V2sqvjcpbBAX/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
 }
 var typed = new Typed(".txtbg",{
     strings:["Wow is the one"],
