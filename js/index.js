@@ -1,3 +1,7 @@
+
+
+
+
 function viewresume() {
     window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
 }
@@ -28,6 +32,7 @@ var sitethemef = document.getElementsByClassName('inthemef');
 var prtitle = document.getElementsByClassName('prtitle');
 var expercardtitle = document.getElementsByClassName('expercardtitle');
 var undlinecolor = document.querySelector('.txtbg');
+var bdcolor="blue";
 function setcolor() {
     if (panelcolor0.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor0.value;
@@ -39,6 +44,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor0.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor0.value;
+        bdcolor=panelcolor0.value;
     }
     if (panelcolor1.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor1.value;
@@ -54,6 +60,7 @@ function setcolor() {
             prtitle[i].style.textShadow = "0 0 black";
         }
         undlinecolor.style.textDecorationColor = panelcolor1.value;
+        bdcolor=panelcolor1.value;
     }
     if (panelcolor2.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor2.value;
@@ -65,6 +72,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor2.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor2.value;
+        bdcolor=panelcolor2.value;
     }
     if (panelcolor3.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor3.value;
@@ -79,6 +87,7 @@ function setcolor() {
             expercardtitle[i].style.textShadow = "0.5px 0px 0px #7a7a7a";
         }
         undlinecolor.style.textDecorationColor = panelcolor3.value;
+        bdcolor=panelcolor3.value;
     }
     if (panelcolor4.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor4.value;
@@ -90,6 +99,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor4.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor4.value;
+        bdcolor=panelcolor4.value;
     }
     if (panelcolor5.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor5.value;
@@ -101,6 +111,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor5.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor5.value;
+        bdcolor=panelcolor5.value;
     }
 }
 
@@ -175,6 +186,7 @@ leftwinexper = document.getElementById("leftwinexper");
 leftwinaward = document.getElementById("leftwinaward");
 leftwincontact = document.getElementById("leftwincontact");
 
+
 leftwinabout.addEventListener('click', () => {
     document.location.href = "#aboutt";
     leftwindow.style.display = "none";
@@ -207,11 +219,12 @@ var leftskil = document.getElementById("lskills");
 var leftexp = document.getElementById("lexper");
 var leftawa = document.getElementById("lawards");
 var leftcont = document.getElementById("lcontact");
+var leftresume = document.getElementById("lresume");
 
 leftabt.addEventListener('mouseover', lactabtover, false);
 leftabt.addEventListener('mouseout', lactabtout, false);
 function lactabtover() {
-    leftabt.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftabt.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactabtout() {
     leftabt.setAttribute("style", "background-color:white;border-left:none;")
@@ -220,7 +233,7 @@ function lactabtout() {
 leftproj.addEventListener('mouseover', lactprojover, false);
 leftproj.addEventListener('mouseout', lactprojout, false);
 function lactprojover() {
-    leftproj.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftproj.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactprojout() {
     leftproj.setAttribute("style", "background-color:white;border-left:none;")
@@ -229,7 +242,7 @@ function lactprojout() {
 leftskil.addEventListener('mouseover', lactskilover, false);
 leftskil.addEventListener('mouseout', lactskilout, false);
 function lactskilover() {
-    leftskil.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftskil.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactskilout() {
     leftskil.setAttribute("style", "background-color:white;border-left:none;")
@@ -238,7 +251,7 @@ function lactskilout() {
 leftexp.addEventListener('mouseover', lactexpover, false);
 leftexp.addEventListener('mouseout', lactexpout, false);
 function lactexpover() {
-    leftexp.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftexp.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactexpout() {
     leftexp.setAttribute("style", "background-color:white;border-left:none;")
@@ -246,7 +259,7 @@ function lactexpout() {
 leftawa.addEventListener('mouseover', lactawaover, false);
 leftawa.addEventListener('mouseout', lactawaout, false);
 function lactawaover() {
-    leftawa.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftawa.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactawaout() {
     leftawa.setAttribute("style", "background-color:white;border-left:none;")
@@ -254,10 +267,19 @@ function lactawaout() {
 leftcont.addEventListener('mouseover', lactcontover, false);
 leftcont.addEventListener('mouseout', lactcontout, false);
 function lactcontover() {
-    leftcont.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftcont.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function lactcontout() {
     leftcont.setAttribute("style", "background-color:white;border-left:none;")
+}
+
+leftresume.addEventListener('mouseover', lactresumeover, false);
+leftresume.addEventListener('mouseout', lactresumeout, false);
+function lactresumeover() {
+    leftresume.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+}
+function lactresumeout() {
+    leftresume.setAttribute("style", "background-color:white;border-left:none;")
 }
 
 var secabt = document.getElementById("aboutt");
@@ -746,6 +768,7 @@ function viewr7() {
 // ---
 
 
+var viewmongo= document.getElementById("certimongo");
 var viewgfg= document.getElementById("certigfg");
 var viewsnackdown = document.getElementById("certisnackdown");
 var viewjumpstart = document.getElementById("certijumpstart");
@@ -753,6 +776,7 @@ var viewmodern = document.getElementById("certimodern");
 var viewcrash = document.getElementById("certicrash");
 var viewproblemSol = document.getElementById("certiproblemsol");
 
+viewmongo.addEventListener('click', cmongo);
 viewgfg.addEventListener('click', cgfg);
 viewsnackdown.addEventListener('click', csnackdown);
 viewjumpstart.addEventListener('click', cjumpstart);
@@ -761,6 +785,9 @@ viewcrash.addEventListener('click', ccrash);
 viewproblemSol.addEventListener('click', cproblem);
 
 
+function cmongo() {
+    window.open('https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/view?usp=sharing', '_blank');
+}
 function cgfg() {
     window.open('https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/view?usp=sharing', '_blank');
 }
@@ -940,3 +967,4 @@ window.onload = function checkscreenwidth() {
         setTimeout(() => { alert("Please open this site on another device as your screen size is very small to display"); }, 500);
     }
 }
+
