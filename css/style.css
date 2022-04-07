@@ -3,9 +3,11 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
+    cursor:url('../img/cursor.png');
 }
 body{
     scroll-behavior: smooth;
+    
 }
 ::selection {
     color: white;
@@ -826,7 +828,10 @@ body{
     font-size: 20px;
     line-height: 1.5;
 }
-
+.smalltext{
+    font-size: 80%;
+    margin-left: 15px;
+}
 .contactdetails{
     margin: 50px;
     margin-top: 23px;
@@ -842,7 +847,7 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: #2196f3;
     width: 55px;
     height: 55px;
     font-size: 25px;
