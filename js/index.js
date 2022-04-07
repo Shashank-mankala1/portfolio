@@ -292,7 +292,7 @@ var seccont = document.getElementById("contactt");
 secabt.addEventListener('mouseover', actabtover, false);
 secabt.addEventListener('mouseout', actabtout, false);
 function actabtover() {
-    leftabt.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftabt.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actabtout() {
     leftabt.setAttribute("style", "background-color:white;border-left:none;")
@@ -301,7 +301,7 @@ function actabtout() {
 secproj.addEventListener('mouseover', actprojover, false);
 secproj.addEventListener('mouseout', actprojout, false);
 function actprojover() {
-    leftproj.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftproj.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actprojout() {
     leftproj.setAttribute("style", "background-color:white;border-left:none;")
@@ -310,7 +310,7 @@ function actprojout() {
 secskil.addEventListener('mouseover', actskilover, false);
 secskil.addEventListener('mouseout', actskilout, false);
 function actskilover() {
-    leftskil.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftskil.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actskilout() {
     leftskil.setAttribute("style", "background-color:white;border-left:none;")
@@ -319,7 +319,7 @@ function actskilout() {
 secexper.addEventListener('mouseover', actexpover, false);
 secexper.addEventListener('mouseout', actexpout, false);
 function actexpover() {
-    leftexp.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftexp.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actexpout() {
     leftexp.setAttribute("style", "background-color:white;border-left:none;")
@@ -328,7 +328,7 @@ function actexpout() {
 secaward.addEventListener('mouseover', actawaover, false);
 secaward.addEventListener('mouseout', actawaout, false);
 function actawaover() {
-    leftawa.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftawa.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actawaout() {
     leftawa.setAttribute("style", "background-color:white;border-left:none;")
@@ -337,7 +337,7 @@ function actawaout() {
 seccont.addEventListener('mouseover', actcontover, false);
 seccont.addEventListener('mouseout', actcontout, false);
 function actcontover() {
-    leftcont.setAttribute("style", "background-color: rgb(243, 242, 242);border-left: 3px solid blue;")
+    leftcont.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
 }
 function actcontout() {
     leftcont.setAttribute("style", "background-color:white;border-left:none;")
