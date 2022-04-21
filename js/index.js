@@ -1,7 +1,3 @@
-
-
-
-
 function viewresume() {
     window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
 }
@@ -32,7 +28,8 @@ var sitethemef = document.getElementsByClassName('inthemef');
 var prtitle = document.getElementsByClassName('prtitle');
 var expercardtitle = document.getElementsByClassName('expercardtitle');
 var undlinecolor = document.querySelector('.txtbg');
-var bdcolor="blue";
+var bdcolor="";
+// var bdcolor="blue";
 function setcolor() {
     if (panelcolor0.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor0.value;
@@ -374,6 +371,7 @@ var prs5=document.getElementById("prs5");
 var prs6=document.getElementById("prs6");
 var prs7=document.getElementById("prs7");
 var prsn1=document.getElementById("prsn1");
+var prsn2=document.getElementById("prsn2");
 
 var prgifgif1=document.getElementById("prgifgif1");
 var prgifgif2=document.getElementById("prgifgif2");
@@ -384,6 +382,26 @@ var prgifgif5=document.getElementById("prgifgif5");
 var prgifgif7=document.getElementById("prgifgif7");
 var prgifgifn0=document.getElementById("prgifgifn0");
 var prgifgifn1=document.getElementById("prgifgifn1");
+var prgifgifn2=document.getElementById("prgifgifn2");
+
+
+prsn2.addEventListener("mouseover",repgifn2);
+prsn2.addEventListener("mouseout",repimgn2);
+function repgifn2(){
+    prgifgifn2.src="./img/easychat.gif";
+}
+function repimgn2(){
+    prgifgifn2.src="./img/easychat.webp";
+}
+
+prsn1.addEventListener("mouseover",repgifn1);
+prsn1.addEventListener("mouseout",repimgn1);
+function repgifn1(){
+    prgifgifn1.src="./img/portfolio.gif";
+}
+function repimgn1(){
+    prgifgifn1.src="./img/p1.webp";
+}
 
 prsn0.addEventListener("mouseover",repgifn0);
 prsn0.addEventListener("mouseout",repimgn0);
@@ -393,14 +411,7 @@ function repgifn0(){
 function repimgn0(){
     prgifgifn0.src="./img/ps1.webp";
 }
-prsn1.addEventListener("mouseover",repgifn1);
-prsn1.addEventListener("mouseout",repimgn1);
-function repgifn1(){
-    prgifgifn1.src="./img/portfolio.gif";
-}
-function repimgn1(){
-    prgifgifn1.src="./img/p1.webp";
-}
+
 prs1.addEventListener("mouseover",repgif1);
 prs1.addEventListener("mouseout",repimg1);
 function repgif1(){
@@ -458,6 +469,38 @@ function repgifcon(){
 function repimgcon(){
     sharebtn.src="./img/send1-8.webp";
 }
+
+// n2
+var titlen2 = document.getElementById("prpn2");
+var gifn2 = document.getElementById("prgifn2");
+var optionn2 = document.getElementById("proptionn2");
+var hiddenn2 = document.getElementById("prshidonoffn2");
+var unhiddenn2 = document.getElementById("prsonoffn2");
+var closen2 = document.getElementById("closeoptn2");
+
+titlen2.addEventListener('click', myFunctionn2);
+gifn2.addEventListener('click', myFunctionn2);
+optionn2.addEventListener('click', myFunctionn2);
+
+function myFunctionn2() {
+    hiddenn2.style.display = 'block';
+    unhiddenn2.style.display = 'none';
+}
+
+closen2.addEventListener('click', myFunctionrn2);
+function myFunctionrn2() {
+    hiddenn2.style.display = 'none';
+    unhiddenn2.style.display = 'block';
+}
+
+var viewprojn2 = document.getElementById("viewprojectn2");
+viewprojn2.addEventListener('click', viewpn2);
+function viewpn2() {
+    window.open('http://easychat.lovestoblog.com/', '_blank');
+}
+//---
+
+
 
 // n1
 var titlen1 = document.getElementById("prpn1");
