@@ -1,5 +1,6 @@
 function viewresume() {
-    window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
+    // window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
+    window.open('../Resume.pdf', '_blank');
 }
 var typed = new Typed(".txtbg",{
     strings:["Wow is the one"],
@@ -28,8 +29,8 @@ var sitethemef = document.getElementsByClassName('inthemef');
 var prtitle = document.getElementsByClassName('prtitle');
 var expercardtitle = document.getElementsByClassName('expercardtitle');
 var undlinecolor = document.querySelector('.txtbg');
-var bdcolor="";
-// var bdcolor="blue";
+// var bdcolor="";
+var bdcolor="#2196f3";
 function setcolor() {
     if (panelcolor0.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor0.value;
