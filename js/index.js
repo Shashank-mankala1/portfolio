@@ -1,6 +1,6 @@
 function viewresume() {
     // window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
-    window.open('../Resume.pdf', '_blank');
+    window.open('Resume.pdf', '_blank');
 }
 var typed = new Typed(".txtbg",{
     strings:["Wow is the one"],
