@@ -1,0 +1,41 @@
+
+IDEAS
+
+-----
+
+Helper text
+
+- The purpose of my portfolio is to track my learning and development throughout my undergraduate years.
+
+- My portfolio is a collection and reflection of my experiences to get a clearer picture of my growth.
+
+A CSE undergraduate student with good algorithmic and problem solving skills, a python developer and a technology enthusiast. Looking forward to learn and solve challenging problems to fulfill the goals.
+
+
+Being aligned with the Intended Learning Outcomess of my program, I hope to improve my critical thinking
+ ability. I believe, regardless the field, we need to be able to think critically in terms of 
+ evaluating what is observed or expressed. I will apply this to my major study as well as my own
+  learning and development at a higher level. I will be reflective on my own development by assessing
+   it critically. The reflective judgment will help me to improve in the long run.
+
+
+const handle = userHandle.value;
+        const api = `https://codeforces.com/api/user.info?handles=${handle}`;
+
+        fetch(api)
+                .then(response =>{
+                    return response.json();
+                })
+                .then(data =>{
+                    name.innerText = `Hello, ${data.result[0].handle}`;
+                    currRating.innerText = `current rating : ${data.result[0].rating}`;
+                    currRank.innerText = `current rank : ${data.result[0].rank}`;
+                    maxRating.innerText = `max rating : ${data.result[0].maxRating}`;
+                    maxRank.innerText = `max rank : ${data.result[0].maxRank}`;
+                    if(!data.result[0].maxRating){
+                        currRating.innerText = `current rating : Unrated`;
+                        currRank.innerText = `current rank : 0`;
+                        maxRating.innerText = `max rating : Unrated`;
+                        maxRank.innerText = `max rank : 0`;
+                    }
+                })

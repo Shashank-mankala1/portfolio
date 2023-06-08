@@ -1,5 +1,4 @@
 function viewresume() {
-    // window.open('https://drive.google.com/file/d/1yfapZXSNxcQE1QHUE2rxNUhDhr7UhWOH/view?usp=sharing', '_blank');
     window.open('Resume.pdf', '_blank');
 }
 var typed = new Typed(".txtbg",{
@@ -373,6 +372,7 @@ var prs6=document.getElementById("prs6");
 var prs7=document.getElementById("prs7");
 var prsn1=document.getElementById("prsn1");
 var prsn2=document.getElementById("prsn2");
+var prsn3=document.getElementById("prsn3");
 
 var prgifgif1=document.getElementById("prgifgif1");
 var prgifgif2=document.getElementById("prgifgif2");
@@ -384,6 +384,7 @@ var prgifgif7=document.getElementById("prgifgif7");
 var prgifgifn0=document.getElementById("prgifgifn0");
 var prgifgifn1=document.getElementById("prgifgifn1");
 var prgifgifn2=document.getElementById("prgifgifn2");
+var prgifgifn3=document.getElementById("prgifgifn3");
 
 
 prsn2.addEventListener("mouseover",repgifn2);
@@ -470,6 +471,43 @@ function repgifcon(){
 function repimgcon(){
     sharebtn.src="./img/send1-8.webp";
 }
+
+
+// n3
+var titlen3 = document.getElementById("prpn3");
+var gifn3 = document.getElementById("prgifn3");
+var optionn3 = document.getElementById("proptionn3");
+var hiddenn3 = document.getElementById("prshidonoffn3");
+var unhiddenn3 = document.getElementById("prsonoffn3");
+var closen3 = document.getElementById("closeoptn3");
+
+titlen3.addEventListener('click', myFunctionn3);
+gifn3.addEventListener('click', myFunctionn3);
+optionn3.addEventListener('click', myFunctionn3);
+
+function myFunctionn3() {
+    hiddenn3.style.display = 'block';
+    unhiddenn3.style.display = 'none';
+}
+
+closen3.addEventListener('click', myFunctionrn3);
+function myFunctionrn3() {
+    hiddenn3.style.display = 'none';
+    unhiddenn3.style.display = 'block';
+}
+
+var viewprojn3 = document.getElementById("viewprojectn3");
+viewprojn3.addEventListener('click', viewpn3);
+function viewpn3() {
+    window.open('https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes', '_blank');
+}
+var viewrepn3 = document.getElementById("viewrepon3");
+viewrepn3.addEventListener('click', viewrn3);
+function viewrn3() {
+    window.open('https://github.com/Shashank-mankala1/Road-Accidents-Dashboard', '_blank');
+}
+//---
+
 
 // n2
 var titlen2 = document.getElementById("prpn2");

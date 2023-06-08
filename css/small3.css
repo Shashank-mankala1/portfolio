@@ -1,0 +1,31 @@
+.righttab{
+    overflow-x: hidden ;
+}
+.abouttxt{
+    font-size: 14px;
+}
+.prs{
+    width: 45%;
+}
+
+.experallcards{
+    width: 79%;
+
+}
+.expercardtitle{
+    font-size: 16px;
+}
+.expercardlogo img {
+    width: 46px;
+}
+
+.awardcard{
+    width: 40%;
+}
+.awardcardhead{
+    padding-top: 3px;
+}
+
+.awardtype{
+    font-size: 9px;
+}
