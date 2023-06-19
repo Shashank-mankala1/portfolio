@@ -850,6 +850,8 @@ function viewr7() {
 // ---
 
 
+var viewcareeressmicrosoft= document.getElementById("certicareeressmicrosoft");
+var viewsqlleetcode= document.getElementById("certisqlleetcode");
 var viewmongo= document.getElementById("certimongo");
 var viewgfg= document.getElementById("certigfg");
 var viewsnackdown = document.getElementById("certisnackdown");
@@ -858,6 +860,8 @@ var viewmodern = document.getElementById("certimodern");
 var viewcrash = document.getElementById("certicrash");
 var viewproblemSol = document.getElementById("certiproblemsol");
 
+viewcareeressmicrosoft.addEventListener('click', ccareermicrosoft);
+viewsqlleetcode.addEventListener('click', csqlleetcode);
 viewmongo.addEventListener('click', cmongo);
 viewgfg.addEventListener('click', cgfg);
 viewsnackdown.addEventListener('click', csnackdown);
@@ -866,6 +870,14 @@ viewmodern.addEventListener('click', cmodern);
 viewcrash.addEventListener('click', ccrash);
 viewproblemSol.addEventListener('click', cproblem);
 
+
+function ccareermicrosoft() {
+    window.open('https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/view?usp=sharing', '_blank');
+}
+
+function csqlleetcode() {
+    window.open('./img/Top_SQL_50.gif', '_blank');
+}
 
 function cmongo() {
     window.open('https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/view?usp=sharing', '_blank');
