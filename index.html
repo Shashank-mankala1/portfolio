@@ -43,6 +43,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -113,14 +114,14 @@
                 </div>
             </div>
         </div>
-        <div class="lefttab" id="lefttab">
-            <div class="nametitle" id="nametitle" onclick="location.href='#topp';">
+        <div class="lefttab darkmodebg" id="lefttab">
+            <div class="nametitle darkmodebg" id="nametitle" onclick="location.href='#topp';">
                 <!--onclick topp-->
                 <h1 class="inthemef">Shashank</h1>
                 <h1 class="inthemef">Mankala</h1>
-                <p>Computer Science Engineer</p>
+                <p class="darkmodefont">Computer Science Engineer</p>
             </div>
-            <div class="navigations">
+            <div class="navigations darkmodebg darkmodefont">
                 <div class="about navdiv" id="labout" onclick="location.href='#aboutt';">
                     <div class="navicon inthemef">
                         <i class="fas fa-user-alt"></i>
@@ -197,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panelcolorsdiv" id="panelcolorsdiv">
+                <div class="panelcolorsdiv darkmodebgcolorpanel darkmodefont" id="panelcolorsdiv">
                     <div class="panelheading">
                         <h2>Theme colors</h2>
                     </div>
@@ -226,7 +227,20 @@
                                 value="#ff7600">
                         </div>
                     </div>
+                    <div class = 'toggle-switch'>
+                        <div>
+                            <p class="Darkmodetext">Dark Mode: </p>
+                        </div>
+                        <div style="height: 100%;display: flex;align-items: center;position: relative;left: 6px;">
+                            <label class="darkmodeLabel">
+                                <input type = 'checkbox' class="darkmodeinput" id="darkmodecheckbox">
+                                <span class = 'darkmodeslider'></span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="btn btn-outline-dark" id="darkON" style="font-weight: 800;">Dark Mode On/Off</button> -->
                 </div>
+
             </div>
             <div class="feedbackdiv" id="feedbackdiv" title="Give Feedback">
                 <i class="far fa-question-circle"></i>
@@ -245,7 +259,7 @@
                 <div class="secheading inthemeb">
                     <p>ABOUT</p>
                 </div>
-                <div class="aboutcontent">
+                <div class="aboutcontent  darkmodefont">
                     <div class="abouttxt">
                         <p><i class="far fa-dot-circle inthemef"></i> &nbsp;I am currently pursued my Bachelor's degree
                             in Computer Science from Lovely Professional
@@ -272,10 +286,10 @@
                 <div class="secheading inthemeb">
                     <p>PROJECTS</p>
                 </div>
-                <div class="prcontainer">
-                    <div class="prcontent">
+                <div class="prcontainer  darkmodefont">
+                    <div class="prcontent darkmodeshadow">
                         <!-- pr Road accidents dashboard -->
-                        <div class="prs" id="prsn3">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prsn3">
                             <div class="prsonoff" id="prsonoffn3">
                                 <div class="prgif" id="prgifn3">
                                     <img src="img/road-accidents-dashboard.png" alt="road-accidents-dashboard.png"
@@ -292,7 +306,7 @@
                                         surfaces, location, vehicle type, and casualties.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoffn3">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoffn3">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeoptn3"></i>
@@ -311,10 +325,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb" id="viewprojectn3" title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn3" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepon3" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon3" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -326,7 +340,7 @@
 
 
                         <!-- pr easychat website -->
-                        <div class="prs" id="prsn2">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prsn2">
                             <div class="prsonoff" id="prsonoffn2">
                                 <div class="prgif" id="prgifn2">
                                     <img src="img/easychat.webp" alt="" class="prgifgif" id="prgifgifn2">
@@ -342,7 +356,7 @@
                                         link.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoffn2">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoffn2">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeoptn2"></i>
@@ -361,8 +375,8 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewprojectn2" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn2" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
                                 </div>
@@ -370,7 +384,7 @@
                         </div>
 
                         <!-- pr portfolio  -->
-                        <div class="prs" id="prsn1">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prsn1">
                             <div class="prsonoff" id="prsonoffn1">
                                 <div class="prgif" id="prgifn1">
                                     <img src="img/p1.webp" alt="" class="prgifgif" id="prgifgifn1">
@@ -386,7 +400,7 @@
                                         picture of my growth.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoffn1">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoffn1">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeoptn1"></i>
@@ -403,18 +417,18 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewprojectn1" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn1" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepon1" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon1" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- pr excel project -->
-                        <div class="prs" id="prsn0">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prsn0">
                             <div class="prsonoff" id="prsonoffn0">
                                 <div class="prgif" id="prgifn0">
                                     <img src="img/ps1.webp" alt="" class="prgifgif" id="prgifgifn0">
@@ -429,7 +443,7 @@
                                     <p>Analysis and Visualization of applications in Google Play Store.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoffn0">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoffn0">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeoptn0"></i>
@@ -446,18 +460,18 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <!-- <div class="prdeffooterdiv inthemeb" id="viewprojectn0" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn0" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepon0" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon0" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- ============= -->
-                        <div class="prs" id="prs1">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs1">
                             <div class="prsonoff" id="prsonoff1">
                                 <div class="prgif" id="prgif1">
                                     <img src="img/f1.png" alt="" class="prgifgif" id="prgifgif1">
@@ -472,7 +486,7 @@
                                     <p>A challenge to clone a professional website's styling and functionality.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff1">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff1">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt1"></i>
@@ -486,17 +500,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject1" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject1" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo1" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo1" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs2">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs2">
                             <div class="prsonoff" id="prsonoff2">
                                 <div class="prgif" id="prgif2">
                                     <img src="img/mp1.webp" alt="" class="prgifgif" id="prgifgif2">
@@ -511,7 +525,7 @@
                                     <p>Attractive music player interface and songs loaded in it.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff2">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff2">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt2"></i>
@@ -529,17 +543,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject2" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject2" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo2" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo2" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs3">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs3">
                             <div class="prsonoff" id="prsonoff3">
                                 <div class="prgif" id="prgif3">
                                     <img src="img/c1.png" alt="" class="prgifgif" id="prgifgif3">
@@ -554,7 +568,7 @@
                                     <p>Project on total number of Corona Virus cases globally.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff3">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff3">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt3"></i>
@@ -569,17 +583,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject3" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject3" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo3" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo3" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs4">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs4">
                             <div class="prsonoff" id="prsonoff4">
                                 <div class="prgif" id="prgif4">
                                     <img src="img/m1.webp" alt="" class="prgifgif" id="prgifgif4">
@@ -594,7 +608,7 @@
                                     <p>Responsive website format for Meals website.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff4">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff4">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt4"></i>
@@ -612,17 +626,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject4" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject4" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo4" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo4" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs5">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs5">
                             <div class="prsonoff" id="prsonoff5">
                                 <div class="prgif" id="prgif5">
                                     <img src="img/t1.webp" alt="" class="prgifgif" id="prgifgif5">
@@ -637,7 +651,7 @@
                                     <p>Can create any number of tasks and having impressive interface design.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff5">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff5">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt5"></i>
@@ -655,17 +669,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject5" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject5" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo5" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo5" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs6">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs6">
                             <div class="prsonoff" id="prsonoff6">
                                 <div class="prgif" id="prgif6">
                                     <img src="img/employeeManag.png" alt="" class="prgifgif" id="prgifgif6">
@@ -680,7 +694,7 @@
                                     <p>Python project, made by using Tkinter package.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff6">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff6">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt6"></i>
@@ -697,17 +711,17 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <!-- <div class="prdeffooterdiv inthemeb" id="viewproject6" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject6" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo6" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo6" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="prs" id="prs7">
+                        <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prs7">
                             <div class="prsonoff" id="prsonoff7">
                                 <div class="prgif" id="prgif7">
                                     <img src="img/i1.webp" alt="" class="prgifgif" id="prgifgif7">
@@ -722,7 +736,7 @@
                                     <p>Income Tax Website.</p>
                                 </div>
                             </div>
-                            <div class="prshidonoff" id="prshidonoff7">
+                            <div class="prshidonoff darkmodebg darkmodefont" id="prshidonoff7">
                                 <div class="prdefhead">
                                     <p>Accomplishments</p>
                                     <i class="fas fa-times" id="closeopt7"></i>
@@ -740,11 +754,11 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb" id="viewproject7" title="View project">
+                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject7" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb" id="viewrepo7" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo7" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -757,8 +771,8 @@
                 <div class="secheading inthemeb">
                     <p>SKILLS</p>
                 </div>
-                <div class="skillscontainer">
-                    <div class="skillscontent">
+                <div class="skillscontainer  darkmodefont">
+                    <div class="skillscontent  darkmodebg darkmodefont darkmodeshadow">
                         <div class="typeheading">
                             <p>Languages</p>
                         </div>
@@ -892,10 +906,10 @@
                 <div class="secheading inthemeb">
                     <p>EXPERIENCE / EDUCATION</p>
                 </div>
-                <div class="expercontainer">
+                <div class="expercontainer   darkmodefont">
                     <div class="experallcards">
-                        <div class="expercards">
-                            <div class="expercardheadbody">
+                        <div class="expercards darkmodeshadow">
+                            <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
                                     <div class="expercardlogo"
                                         onclick="window.open(`https://frugaltesting.com/`, '_blank');">
@@ -906,7 +920,7 @@
                                         <p> FRUGAL TESTING</p>
                                     </div>
                                     <div class="expercardrole">
-                                        <p>SDET INTERN</p>
+                                        <p>SOFTWARE ENGINEER INTERN</p>
                                     </div>
                                 </div>
                                 <hr>
@@ -936,12 +950,12 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="expercardfooter">
+                            <div class="expercardfooter darkmodebg darkmodefont">
                                 <p>June'22 - May'23 | On-site</p>
                             </div>
                         </div>
-                        <div class="expercards">
-                            <div class="expercardheadbody">
+                        <div class="expercards darkmodeshadow">
+                            <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
                                     <div class="expercardlogo"
                                         onclick="window.open(`https://www.coursera.org/`, '_blank');">
@@ -974,12 +988,12 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="expercardfooter">
+                            <div class="expercardfooter darkmodebg darkmodefont">
                                 <p>June'21 - July'21 | Online</p>
                             </div>
                         </div>
-                        <div class="expercards">
-                            <div class="expercardheadbody" id="expercardheadbodylpu">
+                        <div class="expercards darkmodeshadow">
+                            <div class="expercardheadbody darkmodebg darkmodefont" id="expercardheadbodylpu">
                                 <div class="expercardhead">
                                     <div class="expercardlogo" onclick="window.open(`https://www.lpu.in/`, '_blank');">
                                         <img src="img/lpu.png" alt="LPU">
@@ -1002,7 +1016,7 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="expercardfooter">
+                            <div class="expercardfooter darkmodebg darkmodefont">
                                 <p>July'19 - May'23 | Phagwara, Punjab</p>
                             </div>
                         </div>
@@ -1015,8 +1029,7 @@
                 </div>
                 <div class="awardscontainer">
                     <div class="awardscontent">
-
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certicareeressmicrosoft">Career Essentials in Data Analysis by
                                     Microsoft and LinkedIn Learning</p>
@@ -1031,7 +1044,7 @@
                             </div>
                         </div>
 
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certisqlleetcode">Top 50 SQL By Leetcode</p>
                                 <p class="awardtype">Earned SQL badge | June 2023</p>
@@ -1044,10 +1057,20 @@
                                 </ul>
                             </div>
                         </div>
-
-
-                        <!-- //////////////////// -->
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
+                            <div class="awardcardhead">
+                                <p class="awardtitle inthemef" id="certiadvsql">Advanced SQL Certificate by HackerRank</p>
+                                <p class="awardtype">Certificate of Appreciation | April 2023</p>
+                            </div>
+                            <div class="awardcardbody">
+                                <ul>
+                                    <li>
+                                        I have earned by clearing the advanced SQL assessment organised by HackerRank.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certimongo">MongoDB M001</p>
                                 <p class="awardtype">Certificate of Completion | April 2022</p>
@@ -1062,7 +1085,7 @@
                             </div>
                         </div>
 
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certigfg">GFG DSA self paced course</p>
                                 <p class="awardtype">Certificate of Completion | December 2021</p>
@@ -1075,7 +1098,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certisnackdown">Codechef Snackdown 2021 </p>
                                 <p class="awardtype">Certificate of Appreciation | December 2021</p>
@@ -1092,7 +1115,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certijumpstart">JUMPSTART FINALE CONTESTANT</p>
                                 <p class="awardtype">Certificate of Appreciation | August 2021</p>
@@ -1107,7 +1130,7 @@
                             </div>
                         </div>
 
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certimodern">MODERN BIG DATA ANALYSIS WITH SQL</p>
                                 <p class="awardtype">Certificate of Appreciation | July 2021</p>
@@ -1125,7 +1148,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certicrash">CRASH COURSE ON PYTHON </p>
                                 <p class="awardtype">Course Certificate by GOOGLE | May 2021</p>
@@ -1140,7 +1163,7 @@
                             </div>
                         </div>
 
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef">BEST #TOP 63 WORLD RANK IN HACKEREARTH PROGRAMMING</p>
                                 <p class="awardtype">Achievement | May 2021</p>
@@ -1155,7 +1178,7 @@
                             </div>
                         </div>
 
-                        <div class="awardcard">
+                        <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
                                 <p class="awardtitle inthemef" id="certiproblemsol">PROBLEM SOLVING CERTIFICATE BY
                                     HACKERRANK</p>
@@ -1164,8 +1187,7 @@
                             <div class="awardcardbody">
                                 <ul>
                                     <li>
-                                        I was part of an exclusive group of 150+ students from all over the country. I
-                                        have earned my entry through the Hackathon conducted by Publicis Sapient.
+                                        I have earned by clearing the problem solving assessment organised by HackerRank.
                                     </li>
                                 </ul>
                             </div>
@@ -1178,7 +1200,7 @@
                     <p>CONTACT</p>
                 </div>
                 <div class="contactcontainer">
-                    <div class="contactsubcontainer">
+                    <div class="contactsubcontainer darkmodefont">
                         <div class="contactheaddiv">
                             <div class="contactlogo">
                                 <img src="img/mylogo1.png" alt="lOgO">
@@ -1197,19 +1219,19 @@
                         </div>
                         <div class="contactfooterdiv">
                             <div class="contactlinks">
-                                <div class="contactoptlogodiv inthemeb" title="Email"
+                                <div class="contactoptlogodiv inthemeb darkmodeshadow" title="Email"
                                     onclick="window.open(`mailto:shashankmankala.5@gmail.com`, '_blank');">
                                     <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="contactoptlogodiv inthemeb" title="GitHub"
+                                <div class="contactoptlogodiv inthemeb darkmodeshadow" title="GitHub"
                                     onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');">
                                     <i class="fab fa-github"></i>
                                 </div>
-                                <div class="contactoptlogodiv inthemeb" title="LinkedIn"
+                                <div class="contactoptlogodiv inthemeb darkmodeshadow" title="LinkedIn"
                                     onclick="window.open(`https://www.linkedin.com/in/shashankmankala/`, '_blank');">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
-                                <div class="contactoptlogodiv inthemeb" title="Twitter">
+                                <div class="contactoptlogodiv inthemeb darkmodeshadow" title="Twitter">
                                     <i class="fab fa-twitter"></i>
                                 </div>
                             </div>
@@ -1217,8 +1239,8 @@
                     </div>
                     <div class="sharelinkdiv">
                         <img src="img/qrcode.png" alt="qrcode" id="qrcodeimg" style="display: none;">
-                        <img src="img/send1-8.webp" alt="" class="sharebtn" id="sharebtn">
-                        <div class="shareask" id="shareask">
+                        <img src="img/send.png" alt="" class="sharebtn" id="sharebtn">
+                        <div class="shareask darkmodebg darkmodefont" id="shareask">
                             <div class="sharelinkdivclose">
                                 <i class="fas fa-times shareclosei" id="shareclosei" style="float: right;"></i>
                             </div>

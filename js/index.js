@@ -1,3 +1,8 @@
+var bdcolor="#2196f3";
+var leftnavhover = 'rgb(243, 242, 242)';
+
+
+
 function viewresume() {
     window.open('Resume.pdf', '_blank');
 }
@@ -28,8 +33,9 @@ var sitethemef = document.getElementsByClassName('inthemef');
 var prtitle = document.getElementsByClassName('prtitle');
 var expercardtitle = document.getElementsByClassName('expercardtitle');
 var undlinecolor = document.querySelector('.txtbg');
-// var bdcolor="";
-var bdcolor="#2196f3";
+
+
+
 function setcolor() {
     if (panelcolor0.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor0.value;
@@ -127,6 +133,84 @@ function openclosecolors() {
     }
 }
 
+
+
+
+
+
+
+
+// Dark mode
+
+var darkmodebg = document.getElementsByClassName('darkmodebg');
+var darkmodefont = document.getElementsByClassName('darkmodefont');
+var darkmodeshadow = document.getElementsByClassName('darkmodeshadow');
+var darkmodebgcolorpanel = document.getElementsByClassName('darkmodebgcolorpanel');
+var darkmodecheckbox = document.getElementById('darkmodecheckbox');
+var righttab = document.getElementsByClassName('righttab');
+
+var ss = document.styleSheets[0];
+
+darkmodecheckbox.addEventListener('click', activateDarkMode);
+
+function activateDarkMode(){
+    if(darkmodecheckbox.checked){
+        for (var i = 0; i < darkmodebg.length; i++) {
+            darkmodebg[i].style.backgroundColor = "black";
+        }
+        for (var i = 0; i < darkmodebgcolorpanel.length; i++) {
+            darkmodebgcolorpanel[i].style.backgroundColor = "black";
+        }
+        for (var i = 0; i < darkmodefont.length; i++) {
+            darkmodefont[i].style.color = "white";
+        }
+        for (var i = 0; i < darkmodeshadow.length; i++) {
+            darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #363535";
+        }
+        righttab.style.background='url(../img/renderimgdark.jpg) repeat';
+        leftnavhover = 'rgb(92 89 89)';
+
+        ss.insertRule('*::selection { color: black !important; background: white !important; }', 1);
+    }
+    else{
+        for (var i = 0; i < darkmodebg.length; i++) {
+            darkmodebg[i].style.backgroundColor = "white";
+        }
+        for (var i = 0; i < darkmodebgcolorpanel.length; i++) {
+            darkmodebgcolorpanel[i].style.backgroundColor = "#d2cecd";
+        }
+        for (var i = 0; i < darkmodefont.length; i++) {
+            darkmodefont[i].style.color = "black";
+        }
+        for (var i = 0; i < darkmodeshadow.length; i++) {
+            darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #aab4be";
+        }
+        righttab.style.background='url(../img/renderimg.png) repeat';
+        leftnavhover = 'rgb(243, 242, 242)'
+
+        ss.deleteRule(1);
+    }
+}
+
+
+
+
+var sections = document.getElementsByTagName('section');
+for(var i=0;i<sections.length;i++){
+    sections[i].addEventListener('click', closecolorpanel);
+}
+
+
+function closecolorpanel(){
+    if (isopened == true)  {
+        panelcolor.style.display = "none";
+        isopened = false;
+    }
+}
+
+
+
+
 // theme color panel END
 
 // rightsidediv START 
@@ -221,62 +305,62 @@ var leftresume = document.getElementById("lresume");
 leftabt.addEventListener('mouseover', lactabtover, false);
 leftabt.addEventListener('mouseout', lactabtout, false);
 function lactabtover() {
-    leftabt.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftabt.setAttribute("style", `background-color: ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactabtout() {
-    leftabt.setAttribute("style", "background-color:white;border-left:none;")
+    leftabt.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 leftproj.addEventListener('mouseover', lactprojover, false);
 leftproj.addEventListener('mouseout', lactprojout, false);
 function lactprojover() {
-    leftproj.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftproj.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactprojout() {
-    leftproj.setAttribute("style", "background-color:white;border-left:none;")
+    leftproj.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 leftskil.addEventListener('mouseover', lactskilover, false);
 leftskil.addEventListener('mouseout', lactskilout, false);
 function lactskilover() {
-    leftskil.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftskil.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactskilout() {
-    leftskil.setAttribute("style", "background-color:white;border-left:none;")
+    leftskil.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 leftexp.addEventListener('mouseover', lactexpover, false);
 leftexp.addEventListener('mouseout', lactexpout, false);
 function lactexpover() {
-    leftexp.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftexp.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactexpout() {
-    leftexp.setAttribute("style", "background-color:white;border-left:none;")
+    leftexp.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 leftawa.addEventListener('mouseover', lactawaover, false);
 leftawa.addEventListener('mouseout', lactawaout, false);
 function lactawaover() {
-    leftawa.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftawa.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactawaout() {
-    leftawa.setAttribute("style", "background-color:white;border-left:none;")
+    leftawa.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 leftcont.addEventListener('mouseover', lactcontover, false);
 leftcont.addEventListener('mouseout', lactcontout, false);
 function lactcontover() {
-    leftcont.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftcont.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactcontout() {
-    leftcont.setAttribute("style", "background-color:white;border-left:none;")
+    leftcont.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 leftresume.addEventListener('mouseover', lactresumeover, false);
 leftresume.addEventListener('mouseout', lactresumeout, false);
 function lactresumeover() {
-    leftresume.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftresume.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function lactresumeout() {
-    leftresume.setAttribute("style", "background-color:white;border-left:none;")
+    leftresume.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 var secabt = document.getElementById("aboutt");
@@ -289,55 +373,55 @@ var seccont = document.getElementById("contactt");
 secabt.addEventListener('mouseover', actabtover, false);
 secabt.addEventListener('mouseout', actabtout, false);
 function actabtover() {
-    leftabt.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftabt.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actabtout() {
-    leftabt.setAttribute("style", "background-color:white;border-left:none;")
+    leftabt.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 secproj.addEventListener('mouseover', actprojover, false);
 secproj.addEventListener('mouseout', actprojout, false);
 function actprojover() {
-    leftproj.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftproj.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actprojout() {
-    leftproj.setAttribute("style", "background-color:white;border-left:none;")
+    leftproj.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 secskil.addEventListener('mouseover', actskilover, false);
 secskil.addEventListener('mouseout', actskilout, false);
 function actskilover() {
-    leftskil.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftskil.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actskilout() {
-    leftskil.setAttribute("style", "background-color:white;border-left:none;")
+    leftskil.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 secexper.addEventListener('mouseover', actexpover, false);
 secexper.addEventListener('mouseout', actexpout, false);
 function actexpover() {
-    leftexp.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftexp.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actexpout() {
-    leftexp.setAttribute("style", "background-color:white;border-left:none;")
+    leftexp.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 secaward.addEventListener('mouseover', actawaover, false);
 secaward.addEventListener('mouseout', actawaout, false);
 function actawaover() {
-    leftawa.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftawa.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actawaout() {
-    leftawa.setAttribute("style", "background-color:white;border-left:none;")
+    leftawa.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 seccont.addEventListener('mouseover', actcontover, false);
 seccont.addEventListener('mouseout', actcontout, false);
 function actcontover() {
-    leftcont.setAttribute("style", `background-color: rgb(243, 242, 242);border-left: 3px solid ${bdcolor};`)
+    leftcont.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
 }
 function actcontout() {
-    leftcont.setAttribute("style", "background-color:white;border-left:none;")
+    leftcont.setAttribute("style", "background-color:transparent;border-left:none;")
 }
 
 // Right drawer for programming profiles
@@ -469,7 +553,7 @@ function repgifcon(){
     sharebtn.src="./img/send.gif";
 }
 function repimgcon(){
-    sharebtn.src="./img/send1-8.webp";
+    sharebtn.src="./img/send.png";
 }
 
 
@@ -849,9 +933,9 @@ function viewr7() {
 }
 // ---
 
-
 var viewcareeressmicrosoft= document.getElementById("certicareeressmicrosoft");
 var viewsqlleetcode= document.getElementById("certisqlleetcode");
+var viewcertiadvsql= document.getElementById("certiadvsql");
 var viewmongo= document.getElementById("certimongo");
 var viewgfg= document.getElementById("certigfg");
 var viewsnackdown = document.getElementById("certisnackdown");
@@ -860,8 +944,10 @@ var viewmodern = document.getElementById("certimodern");
 var viewcrash = document.getElementById("certicrash");
 var viewproblemSol = document.getElementById("certiproblemsol");
 
+
 viewcareeressmicrosoft.addEventListener('click', ccareermicrosoft);
 viewsqlleetcode.addEventListener('click', csqlleetcode);
+viewcertiadvsql.addEventListener('click', cadvsql);
 viewmongo.addEventListener('click', cmongo);
 viewgfg.addEventListener('click', cgfg);
 viewsnackdown.addEventListener('click', csnackdown);
@@ -869,7 +955,6 @@ viewjumpstart.addEventListener('click', cjumpstart);
 viewmodern.addEventListener('click', cmodern);
 viewcrash.addEventListener('click', ccrash);
 viewproblemSol.addEventListener('click', cproblem);
-
 
 function ccareermicrosoft() {
     window.open('https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/view?usp=sharing', '_blank');
@@ -879,6 +964,9 @@ function csqlleetcode() {
     window.open('./img/Top_SQL_50.gif', '_blank');
 }
 
+function cadvsql() {
+    window.open('https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/view?usp=sharing', '_blank');
+}
 function cmongo() {
     window.open('https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/view?usp=sharing', '_blank');
 }
