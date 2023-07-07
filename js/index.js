@@ -1,4 +1,4 @@
-var bdcolor="#2196f3";
+var bdcolor = "#2196f3";
 var leftnavhover = 'rgb(243, 242, 242)';
 
 
@@ -6,19 +6,19 @@ var leftnavhover = 'rgb(243, 242, 242)';
 function viewresume() {
     window.open('Resume.pdf', '_blank');
 }
-var typed = new Typed(".txtbg",{
-    strings:["Wow is the one"],
-    typeSpeed:50,
-    loop:false,
-    onComplete: function(self) {
+var typed = new Typed(".txtbg", {
+    strings: ["Wow is the one"],
+    typeSpeed: 50,
+    loop: false,
+    onComplete: function (self) {
         self.cursor.remove();
     }
 });
 setTimeout(() => {
-    var typed = new Typed(".typing",{
-        strings:["I aim for."],
-        typeSpeed:50,
-        loop:false
+    var typed = new Typed(".typing", {
+        strings: ["I aim for."],
+        typeSpeed: 50,
+        loop: false
     });
 }, 1450);
 var coloronbtn = document.getElementById('panelbtncolor');
@@ -47,7 +47,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor0.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor0.value;
-        bdcolor=panelcolor0.value;
+        bdcolor = panelcolor0.value;
     }
     if (panelcolor1.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor1.value;
@@ -63,7 +63,7 @@ function setcolor() {
             prtitle[i].style.textShadow = "0 0 black";
         }
         undlinecolor.style.textDecorationColor = panelcolor1.value;
-        bdcolor=panelcolor1.value;
+        bdcolor = panelcolor1.value;
     }
     if (panelcolor2.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor2.value;
@@ -75,7 +75,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor2.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor2.value;
-        bdcolor=panelcolor2.value;
+        bdcolor = panelcolor2.value;
     }
     if (panelcolor3.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor3.value;
@@ -90,7 +90,7 @@ function setcolor() {
             expercardtitle[i].style.textShadow = "0.5px 0px 0px #7a7a7a";
         }
         undlinecolor.style.textDecorationColor = panelcolor3.value;
-        bdcolor=panelcolor3.value;
+        bdcolor = panelcolor3.value;
     }
     if (panelcolor4.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor4.value;
@@ -102,7 +102,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor4.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor4.value;
-        bdcolor=panelcolor4.value;
+        bdcolor = panelcolor4.value;
     }
     if (panelcolor5.checked == true) {
         coloronbtn.style.backgroundColor = panelcolor5.value;
@@ -114,7 +114,7 @@ function setcolor() {
             sitethemef[i].style.color = panelcolor5.value;
         }
         undlinecolor.style.textDecorationColor = panelcolor5.value;
-        bdcolor=panelcolor5.value;
+        bdcolor = panelcolor5.value;
     }
 }
 
@@ -134,12 +134,6 @@ function openclosecolors() {
 }
 
 
-
-
-
-
-
-
 // Dark mode
 
 var darkmodebg = document.getElementsByClassName('darkmodebg');
@@ -153,8 +147,8 @@ var ss = document.styleSheets[0];
 
 darkmodecheckbox.addEventListener('click', activateDarkMode);
 
-function activateDarkMode(){
-    if(darkmodecheckbox.checked){
+function activateDarkMode() {
+    if (darkmodecheckbox.checked) {
         for (var i = 0; i < darkmodebg.length; i++) {
             darkmodebg[i].style.backgroundColor = "black";
         }
@@ -167,12 +161,12 @@ function activateDarkMode(){
         for (var i = 0; i < darkmodeshadow.length; i++) {
             darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #363535";
         }
-        righttab.style.background='url(../img/renderimgdark.jpg) repeat';
+        righttab.style.background = "url(../img/renderimgdark.png) repeat";
         leftnavhover = 'rgb(92 89 89)';
 
         ss.insertRule('*::selection { color: black !important; background: white !important; }', 1);
     }
-    else{
+    else {
         for (var i = 0; i < darkmodebg.length; i++) {
             darkmodebg[i].style.backgroundColor = "white";
         }
@@ -185,8 +179,8 @@ function activateDarkMode(){
         for (var i = 0; i < darkmodeshadow.length; i++) {
             darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #aab4be";
         }
-        righttab.style.background='url(../img/renderimg.png) repeat';
-        leftnavhover = 'rgb(243, 242, 242)'
+        righttab.style.background = "url(../img/renderimg.png) repeat";
+        leftnavhover = 'rgb(243, 242, 242)';
 
         ss.deleteRule(1);
     }
@@ -196,13 +190,18 @@ function activateDarkMode(){
 
 
 var sections = document.getElementsByTagName('section');
-for(var i=0;i<sections.length;i++){
+for (var i = 0; i < sections.length; i++) {
     sections[i].addEventListener('click', closecolorpanel);
 }
 
+var classes = document.getElementsByClassName('leftbar');
+for (var i = 0; i < classes.length; i++) {
+    classes[i].addEventListener('click', closecolorpanel);
+}
 
-function closecolorpanel(){
-    if (isopened == true)  {
+
+function closecolorpanel() {
+    if (isopened == true) {
         panelcolor.style.display = "none";
         isopened = false;
     }
@@ -237,10 +236,10 @@ function closecolorpanel(){
 
 //  rightsidediv END 
 
-var feedbackdiv=document.getElementById("feedbackdiv");
-feedbackdiv.addEventListener('click',openfeedbackform);
-function openfeedbackform(){
-    window.open('Feedback.html','_self');
+var feedbackdiv = document.getElementById("feedbackdiv");
+feedbackdiv.addEventListener('click', openfeedbackform);
+function openfeedbackform() {
+    window.open('Feedback.html', '_self');
 }
 // Feedback btn
 var righttab = document.getElementById("righttab");
@@ -447,113 +446,113 @@ function actcontout() {
 
 
 // Projects prs 
-var prs1=document.getElementById("prs1");
-var prs2=document.getElementById("prs2");
-var prs3=document.getElementById("prs3");
-var prs4=document.getElementById("prs4");
-var prs5=document.getElementById("prs5");
-var prs6=document.getElementById("prs6");
-var prs7=document.getElementById("prs7");
-var prsn1=document.getElementById("prsn1");
-var prsn2=document.getElementById("prsn2");
-var prsn3=document.getElementById("prsn3");
+var prs1 = document.getElementById("prs1");
+var prs2 = document.getElementById("prs2");
+var prs3 = document.getElementById("prs3");
+var prs4 = document.getElementById("prs4");
+var prs5 = document.getElementById("prs5");
+var prs6 = document.getElementById("prs6");
+var prs7 = document.getElementById("prs7");
+var prsn1 = document.getElementById("prsn1");
+var prsn2 = document.getElementById("prsn2");
+var prsn3 = document.getElementById("prsn3");
 
-var prgifgif1=document.getElementById("prgifgif1");
-var prgifgif2=document.getElementById("prgifgif2");
-var prgifgif3=document.getElementById("prgifgif3");
-var prgifgif4=document.getElementById("prgifgif4");
-var prgifgif5=document.getElementById("prgifgif5");
+var prgifgif1 = document.getElementById("prgifgif1");
+var prgifgif2 = document.getElementById("prgifgif2");
+var prgifgif3 = document.getElementById("prgifgif3");
+var prgifgif4 = document.getElementById("prgifgif4");
+var prgifgif5 = document.getElementById("prgifgif5");
 // var prgifgif6=document.getElementById("prgifgif6");
-var prgifgif7=document.getElementById("prgifgif7");
-var prgifgifn0=document.getElementById("prgifgifn0");
-var prgifgifn1=document.getElementById("prgifgifn1");
-var prgifgifn2=document.getElementById("prgifgifn2");
-var prgifgifn3=document.getElementById("prgifgifn3");
+var prgifgif7 = document.getElementById("prgifgif7");
+var prgifgifn0 = document.getElementById("prgifgifn0");
+var prgifgifn1 = document.getElementById("prgifgifn1");
+var prgifgifn2 = document.getElementById("prgifgifn2");
+var prgifgifn3 = document.getElementById("prgifgifn3");
 
 
-prsn2.addEventListener("mouseover",repgifn2);
-prsn2.addEventListener("mouseout",repimgn2);
-function repgifn2(){
-    prgifgifn2.src="./img/easychat.gif";
+prsn2.addEventListener("mouseover", repgifn2);
+prsn2.addEventListener("mouseout", repimgn2);
+function repgifn2() {
+    prgifgifn2.src = "./img/easychat.gif";
 }
-function repimgn2(){
-    prgifgifn2.src="./img/easychat.webp";
-}
-
-prsn1.addEventListener("mouseover",repgifn1);
-prsn1.addEventListener("mouseout",repimgn1);
-function repgifn1(){
-    prgifgifn1.src="./img/portfolio.gif";
-}
-function repimgn1(){
-    prgifgifn1.src="./img/p1.webp";
+function repimgn2() {
+    prgifgifn2.src = "./img/easychat.webp";
 }
 
-prsn0.addEventListener("mouseover",repgifn0);
-prsn0.addEventListener("mouseout",repimgn0);
-function repgifn0(){
-    prgifgifn0.src="./img/playstore.gif";
+prsn1.addEventListener("mouseover", repgifn1);
+prsn1.addEventListener("mouseout", repimgn1);
+function repgifn1() {
+    prgifgifn1.src = "./img/portfolio.gif";
 }
-function repimgn0(){
-    prgifgifn0.src="./img/ps1.webp";
+function repimgn1() {
+    prgifgifn1.src = "./img/p1.webp";
 }
 
-prs1.addEventListener("mouseover",repgif1);
-prs1.addEventListener("mouseout",repimg1);
-function repgif1(){
-    prgifgif1.src="./img/fb.gif";
+prsn0.addEventListener("mouseover", repgifn0);
+prsn0.addEventListener("mouseout", repimgn0);
+function repgifn0() {
+    prgifgifn0.src = "./img/playstore.gif";
 }
-function repimg1(){
-    prgifgif1.src="./img/f1.png";
+function repimgn0() {
+    prgifgifn0.src = "./img/ps1.webp";
 }
-prs2.addEventListener("mouseover",repgif2);
-prs2.addEventListener("mouseout",repimg2);
-function repgif2(){
-    prgifgif2.src="./img/mp.gif";
+
+prs1.addEventListener("mouseover", repgif1);
+prs1.addEventListener("mouseout", repimg1);
+function repgif1() {
+    prgifgif1.src = "./img/fb.gif";
 }
-function repimg2(){
-    prgifgif2.src="./img/mp1.webp";
+function repimg1() {
+    prgifgif1.src = "./img/f1.png";
 }
-prs3.addEventListener("mouseover",repgif3);
-prs3.addEventListener("mouseout",repimg3);
-function repgif3(){
-    prgifgif3.src="./img/coup.gif";
+prs2.addEventListener("mouseover", repgif2);
+prs2.addEventListener("mouseout", repimg2);
+function repgif2() {
+    prgifgif2.src = "./img/mp.gif";
 }
-function repimg3(){
-    prgifgif3.src="./img/c1.png";
+function repimg2() {
+    prgifgif2.src = "./img/mp1.webp";
 }
-prs4.addEventListener("mouseover",repgif4);
-prs4.addEventListener("mouseout",repimg4);
-function repgif4(){
-    prgifgif4.src="./img/meals.gif";
+prs3.addEventListener("mouseover", repgif3);
+prs3.addEventListener("mouseout", repimg3);
+function repgif3() {
+    prgifgif3.src = "./img/coup.gif";
 }
-function repimg4(){
-    prgifgif4.src="./img/m1.webp";
+function repimg3() {
+    prgifgif3.src = "./img/c1.png";
 }
-prs5.addEventListener("mouseover",repgif5);
-prs5.addEventListener("mouseout",repimg5);
-function repgif5(){
-    prgifgif5.src="./img/todo.gif";
+prs4.addEventListener("mouseover", repgif4);
+prs4.addEventListener("mouseout", repimg4);
+function repgif4() {
+    prgifgif4.src = "./img/meals.gif";
 }
-function repimg5(){
-    prgifgif5.src="./img/t1.webp";
+function repimg4() {
+    prgifgif4.src = "./img/m1.webp";
 }
-prs7.addEventListener("mouseover",repgif7);
-prs7.addEventListener("mouseout",repimg7);
-function repgif7(){
-    prgifgif7.src="./img/incometax.gif";
+prs5.addEventListener("mouseover", repgif5);
+prs5.addEventListener("mouseout", repimg5);
+function repgif5() {
+    prgifgif5.src = "./img/todo.gif";
 }
-function repimg7(){
-    prgifgif7.src="./img/i1.webp";
+function repimg5() {
+    prgifgif5.src = "./img/t1.webp";
 }
-var sharebtn=document.getElementById("sharebtn");
-sharebtn.addEventListener("mouseover",repgifcon);
-sharebtn.addEventListener("mouseout",repimgcon);
-function repgifcon(){
-    sharebtn.src="./img/send.gif";
+prs7.addEventListener("mouseover", repgif7);
+prs7.addEventListener("mouseout", repimg7);
+function repgif7() {
+    prgifgif7.src = "./img/incometax.gif";
 }
-function repimgcon(){
-    sharebtn.src="./img/send.png";
+function repimg7() {
+    prgifgif7.src = "./img/i1.webp";
+}
+var sharebtn = document.getElementById("sharebtn");
+sharebtn.addEventListener("mouseover", repgifcon);
+sharebtn.addEventListener("mouseout", repimgcon);
+function repgifcon() {
+    sharebtn.src = "./img/send.gif";
+}
+function repimgcon() {
+    sharebtn.src = "./img/send.png";
 }
 
 
@@ -933,11 +932,11 @@ function viewr7() {
 }
 // ---
 
-var viewcareeressmicrosoft= document.getElementById("certicareeressmicrosoft");
-var viewsqlleetcode= document.getElementById("certisqlleetcode");
-var viewcertiadvsql= document.getElementById("certiadvsql");
-var viewmongo= document.getElementById("certimongo");
-var viewgfg= document.getElementById("certigfg");
+var viewcareeressmicrosoft = document.getElementById("certicareeressmicrosoft");
+var viewsqlleetcode = document.getElementById("certisqlleetcode");
+var viewcertiadvsql = document.getElementById("certiadvsql");
+var viewmongo = document.getElementById("certimongo");
+var viewgfg = document.getElementById("certigfg");
 var viewsnackdown = document.getElementById("certisnackdown");
 var viewjumpstart = document.getElementById("certijumpstart");
 var viewmodern = document.getElementById("certimodern");

@@ -212,12 +212,12 @@ body {
     justify-content: flex-start;
 }
 
-.Darkmodetext{
+.Darkmodetext {
     font-size: 15px;
     font-weight: bold;
 }
 
-.darkmodeLabel{
+.darkmodeLabel {
     position: absolute;
     width: 57px;
     height: 30px;
@@ -225,11 +225,13 @@ body {
     border-radius: 50px;
     cursor: pointer;
 }
-.darkmodeinput{
+
+.darkmodeinput {
     position: absolute;
     display: none;
 }
-.darkmodeslider{
+
+.darkmodeslider {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -237,9 +239,10 @@ body {
     transition: 0.3s;
 }
 
-input:checked ~ .darkmodeslider {
+input:checked~.darkmodeslider {
     background-color: var(--light);
 }
+
 .darkmodeslider::before {
     content: "";
     position: absolute;
@@ -253,12 +256,12 @@ input:checked ~ .darkmodeslider {
     transition: 0.3s;
 }
 
-input:checked ~ .darkmodeslider::before {
+input:checked~.darkmodeslider::before {
     transform: translateX(20px);
     background-color: var(--dark);
     box-shadow: none;
 }
-  
+
 
 .btn-outline-dark {
     font-weight: bold;
