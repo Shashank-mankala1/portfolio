@@ -147,6 +147,8 @@ var ss = document.styleSheets[0];
 
 darkmodecheckbox.addEventListener('click', activateDarkMode);
 
+
+
 function activateDarkMode() {
     if (darkmodecheckbox.checked) {
         for (var i = 0; i < darkmodebg.length; i++) {
@@ -161,7 +163,7 @@ function activateDarkMode() {
         for (var i = 0; i < darkmodeshadow.length; i++) {
             darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #363535";
         }
-        righttab.style.background = "url(../img/renderimgdark.png) repeat";
+        righttab.style.background = "url(./img/renderimgdark.png) repeat";
         leftnavhover = 'rgb(92 89 89)';
 
         ss.insertRule('*::selection { color: black !important; background: white !important; }', 1);
@@ -179,7 +181,7 @@ function activateDarkMode() {
         for (var i = 0; i < darkmodeshadow.length; i++) {
             darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #aab4be";
         }
-        righttab.style.background = "url(../img/renderimg.png) repeat";
+        righttab.style.background = "url(./img/renderimg.png) repeat";
         leftnavhover = 'rgb(243, 242, 242)';
 
         ss.deleteRule(1);
