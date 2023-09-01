@@ -558,6 +558,52 @@ function repimgcon() {
 }
 
 
+// n4
+var titlen4 = document.getElementById("prpn4");
+var gifn4 = document.getElementById("prgifn4");
+var optionn4 = document.getElementById("proptionn4");
+var hiddenn4 = document.getElementById("prshidonoffn4");
+var unhiddenn4 = document.getElementById("prsonoffn4");
+var closen4 = document.getElementById("closeoptn4");
+
+titlen4.addEventListener('click', myFunctionn4);
+gifn4.addEventListener('click', myFunctionn4);
+optionn4.addEventListener('click', myFunctionn4);
+
+function myFunctionn4() {
+    hiddenn4.style.display = 'block';
+    unhiddenn4.style.display = 'none';
+}
+
+closen4.addEventListener('click', myFunctionrn4);
+function myFunctionrn4() {
+    hiddenn4.style.display = 'none';
+    unhiddenn4.style.display = 'block';
+}
+
+var viewprojn4 = document.getElementById("viewprojectn4");
+viewprojn4.addEventListener('click', viewpn4);
+function viewpn4() {
+    window.open('https://shashank-mankala1.github.io/chatbot/', '_blank');
+}
+var viewrepn4 = document.getElementById("viewrepon4");
+viewrepn4.addEventListener('click', viewrn4);
+function viewrn4() {
+    window.open('https://github.com/Shashank-mankala1/chatbot', '_blank');
+}
+var viewarticlen4 = document.getElementById("viewarticlen4");
+viewarticlen4.addEventListener('click', viewan4);
+function viewan4() {
+    window.open('https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79', '_blank');
+}
+var viewavideon4 = document.getElementById("viewavideon4");
+viewavideon4.addEventListener('click', viewvn4);
+function viewvn4() {
+    window.open('https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing', '_blank');
+}
+//---
+
+
 // n3
 var titlen3 = document.getElementById("prpn3");
 var gifn3 = document.getElementById("prgifn3");
