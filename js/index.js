@@ -1,11 +1,63 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navlink");
+
+    navLinks.forEach(function (link) {
+        link.style.textDecoration = "none";
+        link.style.outline = "none !important";
+        link.addEventListener("click", function (e) {
+            this.blur();
+            this.style.outline = "none"
+            e.preventDefault(); // Prevent the default behavior of the anchor tag
+            const targetId = this.getAttribute("href").substring(1); // Get the target section ID
+            const customname = this.getAttribute("data-target"); // Get the target section ID
+            const targetSection = document.getElementById(targetId); // Get the target section
+
+            if (targetSection) {
+                // Scroll to the target section
+                targetSection.scrollIntoView({ behavior: "smooth" });
+
+            }
+        });
+    });
+});
+
+
+
+
+
+
 var bdcolor = "#2196f3";
 var leftnavhover = 'rgb(243, 242, 242)';
 
+// function viewresume() {
+//     window.open('Resume.pdf', '_blank');
+// }
 
+var modal = document.getElementById("modal");
+var resumebtn = document.getElementById("lresume");
+var closeresumeframe = document.getElementById("closeresumeframe");
+var closeresumeframe1 = document.getElementById("frameclosebtn");
 
-function viewresume() {
-    window.open('Resume.pdf', '_blank');
+resumebtn.onclick = function () {
+    modal.style.display = "flex";
 }
+
+
+closeresumeframe.onclick = function () {
+    modal.style.display = "none";
+}
+closeresumeframe1.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
 var typed = new Typed(".txtbg", {
     strings: ["Wow is the one"],
     typeSpeed: 50,

@@ -542,12 +542,187 @@ input:checked~.darkmodeslider::before {
 
 .navicon {
     font-size: 22px;
+    width: 28px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navtitle {
+    color: black;
     margin-left: 16px;
     font-size: 19px;
 }
+
+.navlink {
+    text-decoration: none;
+}
+
+.navlink:active {
+    color: black;
+}
+
+/* Resume frame */
+
+
+.resumecontainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: scale(1);
+    animation: fadeIn .1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
+    /* transition: all 1s ease-in-out; */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(0, 0, 0, .0);
+        width: 0;
+        height: 0;
+    }
+
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .7);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        background: rgba(0, 0, 0, .0);
+        width: 100%;
+        height: 100%;
+    }
+
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+
+    100% {
+        background: rgba(0, 0, 0, .7);
+        width: 0;
+        height: 0;
+    }
+}
+
+
+.resumeframediv {
+    background-color: black;
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameheading {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#frameheading {
+    margin-left: 2%;
+}
+
+#closeresumeframe {
+    margin-right: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+#closeresumeframe:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+.framebody {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+
+
+.framebottom {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.framebottombtns {
+    margin-right: 2%;
+}
+
+.framebottombtn {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#frameclosebtn {
+    border-color: #e7e7e7;
+    margin-right: 5px;
+}
+
+#frameclosebtn:hover {
+    background: #e7e7e7;
+}
+
+#resumedownload {
+    background-color: rgba(43, 243, 43, 0.77);
+    border: none;
+    height: 50px;
+}
+
+#resumedownload:hover {
+    background-color: rgba(37, 213, 37, 0.77);
+    border: none;
+}
+
+
+
+
+
+
 
 /* Drawer for online programming ratings */
 .overlayfull {
@@ -915,6 +1090,11 @@ input:checked~.darkmodeslider::before {
 .skillimg {
     display: flex;
     justify-content: center;
+}
+
+#phpimg {
+    width: 130px;
+    height: 130px;
 }
 
 .skillnamename {
@@ -1684,6 +1864,10 @@ input:checked~.darkmodeslider::before {
 
     #mongoimg {
         height: 125px;
+    }
+
+    #phpimg {
+        width: 130px;
     }
 
     .awardcard {

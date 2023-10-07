@@ -115,73 +115,116 @@
             </div>
         </div>
         <div class="lefttab darkmodebg leftbar" id="lefttab">
-            <div class="nametitle darkmodebg" id="nametitle" onclick="location.href='#topp';">
-                <!--onclick topp-->
-                <h1 class="inthemef">Shashank</h1>
-                <h1 class="inthemef">Mankala</h1>
-                <p class="darkmodefont">Computer Science Engineer</p>
-            </div>
+            <a href="#topp" class="navlink" data-target="">
+                <div class="nametitle darkmodebg" id="nametitle">
+                    <!--onclick topp-->
+                    <h1 class="inthemef">Shashank</h1>
+                    <h1 class="inthemef">Mankala</h1>
+                    <p class="darkmodefont" style="color: black;">Computer Science Engineer</p>
+                </div>
+            </a>
             <div class="navigations darkmodebg darkmodefont">
-                <div class="about navdiv" id="labout" onclick="location.href='#aboutt';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-user-alt"></i>
+                <a href="#aboutt" class="navlink" data-target="about">
+                    <div class="about navdiv" id="labout">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>About</p>
+                        </div>
                     </div>
-                    <div class="navtitle">
-                        <p>About</p>
+                </a>
+                <a href="#projects" class="navlink" data-target="projects">
+                    <div class="projects navdiv" id="lproject">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>Projects</p>
+                        </div>
                     </div>
-                </div>
-                <div class="projects navdiv" id="lproject" onclick="location.href='#projects';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-project-diagram"></i>
+                </a>
+                <a href="#skillss" class="navlink" data-target="skills">
+                    <div class="skills navdiv" id="lskills">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>Skills</p>
+                        </div>
                     </div>
-                    <div class="navtitle">
-                        <p>Projects</p>
+                </a>
+                <a href="#exper" class="navlink" data-target="experience">
+                    <div class="experience navdiv" id="lexper">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>Experience</p>
+                        </div>
                     </div>
-                </div>
-                <div class="skills navdiv" id="lskills" onclick="location.href='#skillss';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-cogs"></i>
+                </a>
+                <a href="#awardss" class="navlink" data-target="achievements">
+                    <div class="awards navdiv" id="lawards">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-medal"></i>
+                            <!-- <i class="fas fa-trophy"></i> -->
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>Achievements/</p>
+                            <p>Certifications</p>
+                        </div>
                     </div>
-                    <div class="navtitle">
-                        <p>Skills</p>
+                </a>
+                <a href="#contactt" class="navlink" data-target="contact">
+                    <div class="contact navdiv" id="lcontact">
+                        <div class="navicon inthemef">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="navtitle darkmodefont">
+                            <p>Contact</p>
+                        </div>
                     </div>
-                </div>
-                <div class="experience navdiv" id="lexper" onclick="location.href='#exper';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="navtitle">
-                        <p>Experience</p>
-                    </div>
-                </div>
-                <div class="awards navdiv" id="lawards" onclick="location.href='#awardss';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-medal"></i>
-                        <!-- <i class="fas fa-trophy"></i> -->
-                    </div>
-                    <div class="navtitle">
-                        <p>Achievements/</p>
-                        <p>Certifications</p>
-                    </div>
-                </div>
-                <div class="contact navdiv" id="lcontact" onclick="location.href='#contactt';">
-                    <div class="navicon inthemef">
-                        <i class="fas fa-id-card"></i>
-                    </div>
-                    <div class="navtitle">
-                        <p>Contact</p>
-                    </div>
-                </div>
+                </a>
                 <div class="resume navdiv" id="lresume" onclick="viewresume()">
                     <div class="navicon inthemef">
                         <i class="fas fa-file-alt"></i>
                     </div>
-                    <div class="navtitle">
+                    <div class="navtitle darkmodefont">
                         <p>Resume</p>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- Resume Frame -->
+        <div class="resumecontainer" id="modal">
+            <div class="resumeframediv">
+                <div class="frameheading">
+                    <h3 id="frameheading">Resume</h3>
+                    <div class="darkmodeshadow" class="closeresumeframe" id="closeresumeframe">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+                </div>
+                <div class="framebody">
+                    <iframe src="Resume.pdf" frameborder="0" width="100%" height="100%"></iframe>
+                </div>
+                <div class="framebottom">
+                    <div class="framebottombtns">
+                        <button class="framebottombtn closeresumeframe" id="frameclosebtn">Cancel</button>
+                        <a href="Resume.pdf" download="ShashankMankalaResume">
+                            <button class="framebottombtn" id="resumedownload"><i class="fa fa-download"></i>
+                                Download</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- <div class="rightsidediv" id="rightsidediv">
             <div class="rightdivbtn" id="rightdivbtn">
                 <p>Coding Profiles</p>
@@ -261,24 +304,24 @@
                 </div>
                 <div class="aboutcontent  darkmodefont">
                     <div class="abouttxt">
-                        <p><i class="far fa-dot-circle inthemef"></i> &nbsp;I am currently pursued my Bachelor's degree
+                        <p><i class="far fa-dot-circle inthemef"></i> &nbsp;I pursued my Bachelor's degree
                             in Computer Science from Lovely Professional
                             University, Punjab. I’m excited to find a role where I can accomplish my goals and expand
                             my current skillset while also learning, growing and contributing to a great organization
                             that aligns with my values.</p>
-                        <p><i class="far fa-dot-circle inthemef"></i>&nbsp; A CSE undergraduate student with good
-                            algorithmic and problem solving skills, a python developer
-                            and a technology enthusiast. Looking forward to learn and solve challenging problems to
-                            fulfill
-                            the goals.</p>
+                        <p><i class="far fa-dot-circle inthemef"></i>&nbsp; A CSE undergraduate with good
+                            algorithmic and problem-solving skills, a Python developer
+                            and a technology enthusiast. I look forward to learning and solving challenging problems to
+                            fulfil my goals.</p>
                         <p><i class="far fa-dot-circle inthemef"></i>&nbsp; I am a keen learner, a highly motivated
                             individual, and an inquisitive personality interested
                             in making significant contributions and working on challenging ideas that hold the potential
                             to solve real-life problems.</p>
                         <p><i class="far fa-dot-circle inthemef"></i>&nbsp; As a Computer science Engineer, I enjoy the
                             community and the challenges that the field
-                            brings as well as the opportunity to solve problems. I look forward to challenging myself on
-                            a daily basis and excited to work alongside some of world's most brilliant minds.</p>
+                            brings as well as the opportunity to solve problems. I look forward to challenging myself
+                            daily
+                            and am excited to work alongside some of the world's most brilliant minds.</p>
                     </div>
                 </div>
             </section>
@@ -292,8 +335,7 @@
                         <div class="prs darkmodebg darkmodefont darkmodeshadow" id="prsn4">
                             <div class="prsonoff" id="prsonoffn4">
                                 <div class="prgif" id="prgifn4">
-                                    <img src="img/chatbot.png" alt="chatbot.png"
-                                        class="prgifgif" id="prgifgifn4">
+                                    <img src="img/chatbot.png" alt="chatbot.png" class="prgifgif" id="prgifgifn4">
                                 </div>
                                 <div class="prtitle inthemef" id="prtitlen4">
                                     <p id="prpn4">Chatbot using Diagflow</p>
@@ -302,7 +344,7 @@
                                     </div>
                                 </div>
                                 <div class="prdisc">
-                                    <p>A user-friendly chatbot for food ordering and tracking using Dialogflow, FastAPI, 
+                                    <p>A user-friendly chatbot for food ordering and tracking using Dialogflow, FastAPI,
                                         and GitHub, emphasizing adaptability and collaboration.</p>
                                 </div>
                             </div>
@@ -314,12 +356,15 @@
                                 <div class="prdefbody">
                                     <ul>
                                         <li>
-                                            <p>Integrated a user-friendly frontend with the chatbot, enabling menu exploration, 
+                                            <p>Integrated a user-friendly frontend with the chatbot, enabling menu
+                                                exploration,
                                                 ordering, and order tracking within one interface.</p>
                                         </li>
                                         <li>
-                                            <p>Proactively addressed challenges, ensured adaptability, and committed to ongoing 
-                                                project enhancements despite limitations, delivering a user-centric experience.</p>
+                                            <p>Proactively addressed challenges, ensured adaptability, and committed to
+                                                ongoing
+                                                project enhancements despite limitations, delivering a user-centric
+                                                experience.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -945,6 +990,14 @@
                                     <h2>MongoDB</h2>
                                 </div>
                             </div>
+                            <div class="skillname">
+                                <div class="skillimg">
+                                    <img src="img/php.png" alt="php" id="phpimg">
+                                </div>
+                                <div class="skillnamename">
+                                    <h2>PHP</h2>
+                                </div>
+                            </div>
                         </div>
 
                         <div class="typeheading">
@@ -978,6 +1031,22 @@
                             </div>
                         </div>
 
+                        <div class="typeheading">
+                            <p>Cloud</p>
+                        </div>
+                        <hr>
+
+                        <div class="skillcards">
+                            <div class="skillname">
+                                <div class="skillimg">
+                                    <img src="img/gcp.png" alt="GCP">
+                                </div>
+                                <div class="skillnamename">
+                                    <h2>Google Cloud</h2>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -999,34 +1068,39 @@
                                         <p> FRUGAL TESTING</p>
                                     </div>
                                     <div class="expercardrole">
-                                        <p>SOFTWARE ENGINEER INTERN</p>
+                                        <p>Software Engineer Intern</p>
                                     </div>
                                 </div>
                                 <hr>
                                 <div class="expercardbody">
-                                    <p id="expercardintro"><em> <b>Developed automation scripts </b>for <b>ONELERN </b>
-                                            and <b>NPCI</b> Projects.</em></p>
-                                    <ul>
-                                        <li>
-                                            <p>Developed and implemented automation frameworks for multiple projects,
-                                                resulting in a significant reduction in manual testing efforts.</p>
-                                        </li>
-                                        <li>
-                                            <p>Worked on cross-functional teams to deliver high-quality software on time
-                                                and within budget.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>Designed and implemented end-to-end testing solutions that integrated
-                                                with various third-party tools and systems.
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>Proactively identified areas for improvement in the software development
-                                                process, and worked with the team to implement solutions.
-                                            </p>
-                                        </li>
-                                    </ul>
+                                    <p id="expercardintro"><b>Developed automation scripts </b>for <b>ONELERN </b>
+                                        and <b>NPCI</b> Projects.</p>
+                                    <em>
+                                        <ul>
+                                            <li>
+                                                <p>Developed and implemented automation frameworks for multiple
+                                                    projects,
+                                                    resulting in a significant reduction in manual testing efforts.</p>
+                                            </li>
+                                            <li>
+                                                <p>Worked on cross-functional teams to deliver high-quality software on
+                                                    time
+                                                    and within budget.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Designed and implemented end-to-end testing solutions that integrated
+                                                    with various third-party tools and systems.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Proactively identified areas for improvement in the software
+                                                    development
+                                                    process, and worked with the team to implement solutions.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </em>
                                 </div>
                             </div>
                             <hr>
@@ -1051,20 +1125,23 @@
                                 </div>
                                 <hr>
                                 <div class="expercardbody">
-                                    <p id="expercardintro"><em> <b>Summmer Training</b> on Topic: "<b>Modern BigData
-                                                analysis with SQL</b>"</em></p>
-                                    <ul>
-                                        <li>
-                                            <p>Completed all weeks, of course, scoring 100% in all assessments</p>
-                                        </li>
-                                        <li>
-                                            <p>Learned how to use frameworks like Hadoop System and worked on Hive and
-                                                Impala</p>
-                                        </li>
-                                        <li>
-                                            <p>Queried some Big Data to analyse some real-life questions</p>
-                                        </li>
-                                    </ul>
+                                    <p id="expercardintro"> <b>Summmer Training</b> on: "<b>Modern BigData
+                                            analysis with SQL</b>"</p>
+                                    <em>
+                                        <ul>
+                                            <li>
+                                                <p>Completed all weeks, of course, scoring 100% in all assessments</p>
+                                            </li>
+                                            <li>
+                                                <p>Learned how to use frameworks like Hadoop System and worked on Hive
+                                                    and
+                                                    Impala</p>
+                                            </li>
+                                            <li>
+                                                <p>Queried some Big Data to analyse some real-life questions</p>
+                                            </li>
+                                        </ul>
+                                    </em>
                                 </div>
                             </div>
                             <hr>
@@ -1088,16 +1165,18 @@
                                 </div>
                                 <hr>
                                 <div class="expercardbody">
-                                    <p id="expercardintro"><em><b>Bachelors' of Technology</b> </em></p>
-                                    <ul>
-                                        <li>Branch- Computer Science and Engineering</li>
-                                        <li>Engineering Minor - Data Science</li>
-                                    </ul>
+                                    <p id="expercardintro"><b>Bachelors' of Technology</b> </p>
+                                    <em>
+                                        <ul>
+                                            <li>Branch- Computer Science and Engineering</li>
+                                            <li>Engineering Minor - Data Science</li>
+                                        </ul>
+                                    </em>
                                 </div>
                             </div>
                             <hr>
                             <div class="expercardfooter darkmodebg darkmodefont">
-                                <p>July'19 - May'23 | Phagwara, Punjab</p>
+                                <p>August'19 - July'23 | Phagwara, Punjab</p>
                             </div>
                         </div>
                     </div>
@@ -1119,7 +1198,7 @@
                             <div class="awardcardbody">
                                 <ul>
                                     <li>
-                                        I have been certified by Microsoft and LinkedIn Learning for completion of the
+                                        I have been certified by Microsoft and LinkedIn Learning for completing the
                                         course.
                                     </li>
                                 </ul>
@@ -1134,7 +1213,7 @@
                             <div class="awardcardbody">
                                 <ul>
                                     <li>
-                                        I have earned a badge for solving top 50 sql interview problems.
+                                        I earned a badge for solving top 50 SQL interview problems.
                                     </li>
                                 </ul>
                             </div>
@@ -1148,7 +1227,8 @@
                             <div class="awardcardbody">
                                 <ul>
                                     <li>
-                                        I have earned by clearing the advanced SQL assessment organised by HackerRank.
+                                        I have earned the certificate for clearing the advanced SQL assessment organised
+                                        by HackerRank.
                                     </li>
                                 </ul>
                             </div>
@@ -1190,7 +1270,7 @@
                                 <ul>
                                     <li>
                                         SnackDown is India's global programming event that invites coders from all over
-                                        the world
+                                        the world.
                                     </li>
                                     <li>
                                         I had qualified for the qualification and Round-1A rounds.
@@ -1207,7 +1287,7 @@
                                 <ul>
                                     <li>
                                         I was part of an exclusive group of 150+ students from all over the country. I
-                                        have earned my entry through the Hackathon conducted by Publicis Sapient.
+                                        earned my entry through the Hackathon conducted by Publicis Sapient.
                                     </li>
                                 </ul>
                             </div>
@@ -1254,8 +1334,9 @@
                             <div class="awardcardbody">
                                 <ul>
                                     <li>
-                                        After consistent coding for three months, I have ranked as the top 63rd coder
-                                        globally.
+                                        After three months of consistent coding, I was ranked as the top 63rd coder in
+                                        the
+                                        world.
                                     </li>
                                 </ul>
                             </div>
@@ -1329,7 +1410,6 @@
                             <div class="sharelinkdivclose">
                                 <i class="fas fa-times shareclosei" id="shareclosei" style="float: right;"></i>
                             </div>
-                            <hr>
                             <div class="sharelinkcontainer" id="sharelinkcontainer">
                                 <div class="shareoptsdiv">
                                     <div id="shareoptqr" class="shareopt">
