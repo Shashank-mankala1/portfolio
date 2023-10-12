@@ -290,12 +290,10 @@ function closecolorpanel() {
 
 //  rightsidediv END 
 
-var feedbackdiv = document.getElementById("feedbackdiv");
-feedbackdiv.addEventListener('click', openfeedbackform);
-function openfeedbackform() {
-    window.open('Feedback.html', '_self');
-}
-// Feedback btn
+
+
+
+
 var righttab = document.getElementById("righttab");
 righttab.addEventListener('click', closeanyopen);
 function closeanyopen() {
@@ -816,11 +814,11 @@ function myFunctionr1() {
     unhidden1.style.display = 'block';
 }
 
-var viewproj1 = document.getElementById("viewproject1");
-viewproj1.addEventListener('click', viewp1);
-function viewp1() {
-    window.open('fbreason.html', '_blank');
-}
+// var viewproj1 = document.getElementById("viewproject1");
+// viewproj1.addEventListener('click', viewp1);
+// function viewp1() {
+//     window.open('fbreason.html', '_blank');
+// }
 var viewrep1 = document.getElementById("viewrepo1");
 viewrep1.addEventListener('click', viewr1);
 function viewr1() {
@@ -1032,61 +1030,85 @@ function viewr7() {
 }
 // ---
 
-var viewcareeressmicrosoft = document.getElementById("certicareeressmicrosoft");
-var viewsqlleetcode = document.getElementById("certisqlleetcode");
-var viewcertiadvsql = document.getElementById("certiadvsql");
-var viewmongo = document.getElementById("certimongo");
-var viewgfg = document.getElementById("certigfg");
-var viewsnackdown = document.getElementById("certisnackdown");
-var viewjumpstart = document.getElementById("certijumpstart");
-var viewmodern = document.getElementById("certimodern");
-var viewcrash = document.getElementById("certicrash");
-var viewproblemSol = document.getElementById("certiproblemsol");
+var certificateiframe = document.getElementById("certificateiframe");
+var certificatemodal = document.getElementById("certificatemodal");
+var closecertificateframe = document.getElementById("closecertificateframe");
 
 
-viewcareeressmicrosoft.addEventListener('click', ccareermicrosoft);
-viewsqlleetcode.addEventListener('click', csqlleetcode);
-viewcertiadvsql.addEventListener('click', cadvsql);
-viewmongo.addEventListener('click', cmongo);
-viewgfg.addEventListener('click', cgfg);
-viewsnackdown.addEventListener('click', csnackdown);
-viewjumpstart.addEventListener('click', cjumpstart);
-viewmodern.addEventListener('click', cmodern);
-viewcrash.addEventListener('click', ccrash);
-viewproblemSol.addEventListener('click', cproblem);
 
-function ccareermicrosoft() {
-    window.open('https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/view?usp=sharing', '_blank');
+function viewCertificate(path) {
+    certificatemodal.style.display = "flex";
+    certificateiframe.src = path;
 }
 
-function csqlleetcode() {
-    window.open('./img/Top_SQL_50.gif', '_blank');
+closecertificateframe.onclick = function () {
+    certificatemodal.style.display = "none";
 }
 
-function cadvsql() {
-    window.open('https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/view?usp=sharing', '_blank');
+window.onclick = function (event) {
+    if (event.target == certificatemodal) {
+        certificatemodal.style.display = "none";
+    }
 }
-function cmongo() {
-    window.open('https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/view?usp=sharing', '_blank');
+
+// ---
+
+var feedbackmodal = document.getElementById("feedbackmodal");
+var feedbackdiv = document.getElementById("feedbackdiv");
+var closefeedbackframe = document.getElementById("closefeedbackframe");
+
+feedbackdiv.onclick = function () {
+    feedbackmodal.style.display = "flex";
 }
-function cgfg() {
-    window.open('https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/view?usp=sharing', '_blank');
+
+closefeedbackframe.onclick = function () {
+    feedbackmodal.style.display = "none";
 }
-function csnackdown() {
-    window.open('https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/view?usp=sharing', '_blank');
+
+window.onclick = function (event) {
+    if (event.target == feedbackmodal) {
+        feedbackmodal.style.display = "none";
+    }
 }
-function cjumpstart() {
-    window.open('https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/view?usp=sharing', '_blank');
+
+var facebookmodal = document.getElementById("facebookmodal");
+var facebookdiv = document.getElementById("facebookdiv");
+var closefacebookframe = document.getElementById("closefacebookframe");
+
+facebookdiv.onclick = function (){
+    facebookmodal.style.display = "flex";
 }
-function cmodern() {
-    window.open('https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/view?usp=sharing', '_blank');
+
+closefacebookframe.onclick = function () {
+    facebookmodal.style.display = "none";
 }
-function ccrash() {
-    window.open('https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/view?usp=sharing', '_blank');
+
+window.onclick = function (event) {
+    if (event.target == facebookmodal) {
+        facebookmodal.style.display = "none";
+    }
 }
-function cproblem() {
-    window.open('https://www.hackerrank.com/certificates/2bff8c03c48b', '_blank');
+
+
+var emppymodal = document.getElementById("emppymodal");
+var emppydiv = document.getElementById("emppydiv");
+var closeemppyframe = document.getElementById("closeemppyframe");
+
+emppydiv.onclick = function (){
+    emppymodal.style.display = "flex";
 }
+
+closeemppyframe.onclick = function () {
+    emppymodal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == emppymodal) {
+        emppymodal.style.display = "none";
+    }
+}
+
+
 
 
 //share

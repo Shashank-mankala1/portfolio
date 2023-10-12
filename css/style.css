@@ -721,6 +721,236 @@ input:checked~.darkmodeslider::before {
 
 
 
+/* Certificates Frame */
+
+.certificatecontainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: scale(1);
+    animation: fadeIn .1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
+    /* transition: all 1s ease-in-out; */
+}
+
+
+
+.certificateframediv {
+    /* background-color: black; */
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cframeheading {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+#certificateiframe {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#cframeheading {
+    margin-left: 2%;
+}
+
+#closecertificateframe {
+    margin-right: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+#closecertificateframe:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+.cframebody {
+    width: 100%;
+    height: 90%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+/* Feedback Frame */
+
+.feedbackcontainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: scale(1);
+    animation: fadeIn .1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
+    /* transition: all 1s ease-in-out; */
+}
+
+
+.feedbackframediv {
+    /* background-color: black; */
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#feedbackiframe {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#closefeedbackframe {
+    margin-right: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+#closefeedbackframe:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+/* facebook Frame */
+
+.facebookcontainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: scale(1);
+    animation: fadeIn .1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
+    /* transition: all 1s ease-in-out; */
+}
+
+
+.facebookframediv {
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#facebookiframe {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#closefacebookframe {
+    margin-right: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+#closefacebookframe:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+/* Emp Py Frame */
+
+.emppycontainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transform: scale(1);
+    animation: fadeIn .1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
+    /* transition: all 1s ease-in-out; */
+}
+
+
+.emppyframediv {
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#emppyiframe {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#closeemppyframe {
+    margin-right: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+}
+
+#closeemppyframe:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+
+
+
 
 
 
