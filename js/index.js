@@ -1,61 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".navlink");
-
-    navLinks.forEach(function (link) {
-        link.style.textDecoration = "none";
-        link.style.outline = "none !important";
-        link.addEventListener("click", function (e) {
-            this.blur();
-            this.style.outline = "none"
-            e.preventDefault(); // Prevent the default behavior of the anchor tag
-            const targetId = this.getAttribute("href").substring(1); // Get the target section ID
-            const customname = this.getAttribute("data-target"); // Get the target section ID
-            const targetSection = document.getElementById(targetId); // Get the target section
-
-            if (targetSection) {
-                // Scroll to the target section
-                targetSection.scrollIntoView({ behavior: "smooth" });
-
-            }
-        });
-    });
-});
-
-
-
-
-
-
 var bdcolor = "#2196f3";
 var leftnavhover = 'rgb(243, 242, 242)';
-
-// function viewresume() {
-//     window.open('Resume.pdf', '_blank');
-// }
-
-var modal = document.getElementById("modal");
-var resumebtn = document.getElementById("lresume");
-var closeresumeframe = document.getElementById("closeresumeframe");
-var closeresumeframe1 = document.getElementById("frameclosebtn");
-
-resumebtn.onclick = function () {
-    modal.style.display = "flex";
-}
-
-
-closeresumeframe.onclick = function () {
-    modal.style.display = "none";
-}
-closeresumeframe1.onclick = function () {
-    modal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
 
 
 var typed = new Typed(".txtbg", {
@@ -1028,86 +972,60 @@ viewrep7.addEventListener('click', viewr7);
 function viewr7() {
     window.open('https://github.com/Shashank-mankala1/Income_tax', '_blank');
 }
+
 // ---
+
+var pageopendict={
+    'mail':'mailto:shashankmankala.5@gmail.com',
+    'linkedin':'https://www.linkedin.com/in/shashankmankala/',
+    'github':'https://github.com/Shashank-mankala1',
+    'medium':'https://medium.com/@shashankmankala',
+    'frugaltesting':'https://frugaltesting.com/',
+    'coursera':'https://www.coursera.org/',
+    'lpu':'https://www.lpu.in/'
+}
+
+
+function pageOpen(page){
+    window.open(pageopendict[page], '_blank');
+}
+
+
+
+//---
+
 
 var certificateiframe = document.getElementById("certificateiframe");
 var certificatemodal = document.getElementById("certificatemodal");
 var closecertificateframe = document.getElementById("closecertificateframe");
 
+var certificatedict= {
+    'DAMLL':'https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview',
+    'SQLL':'./img/Top_SQL_50.gif',
+    'ASQLH':'https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview',
+    'MONGODB':'https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/preview',
+    'GFGDSA':'https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/preview',
+    'CCHEFSNACK':'https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/preview',
+    'JUMPSTART':'https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/preview',
+    'MBDASQL':'https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview',
+    'CRASHCPY':'https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview',
+    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
+    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview'
+
+}
 
 
-function viewCertificate(path) {
+function viewCertificate(certificatename) {
     certificatemodal.style.display = "flex";
-    certificateiframe.src = path;
+    certificateiframe.src = certificatedict[certificatename];
 }
 
 closecertificateframe.onclick = function () {
     certificatemodal.style.display = "none";
 }
 
-window.onclick = function (event) {
-    if (event.target == certificatemodal) {
-        certificatemodal.style.display = "none";
-    }
-}
 
 // ---
-
-var feedbackmodal = document.getElementById("feedbackmodal");
-var feedbackdiv = document.getElementById("feedbackdiv");
-var closefeedbackframe = document.getElementById("closefeedbackframe");
-
-feedbackdiv.onclick = function () {
-    feedbackmodal.style.display = "flex";
-}
-
-closefeedbackframe.onclick = function () {
-    feedbackmodal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == feedbackmodal) {
-        feedbackmodal.style.display = "none";
-    }
-}
-
-var facebookmodal = document.getElementById("facebookmodal");
-var facebookdiv = document.getElementById("facebookdiv");
-var closefacebookframe = document.getElementById("closefacebookframe");
-
-facebookdiv.onclick = function (){
-    facebookmodal.style.display = "flex";
-}
-
-closefacebookframe.onclick = function () {
-    facebookmodal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == facebookmodal) {
-        facebookmodal.style.display = "none";
-    }
-}
-
-
-var emppymodal = document.getElementById("emppymodal");
-var emppydiv = document.getElementById("emppydiv");
-var closeemppyframe = document.getElementById("closeemppyframe");
-
-emppydiv.onclick = function (){
-    emppymodal.style.display = "flex";
-}
-
-closeemppyframe.onclick = function () {
-    emppymodal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == emppymodal) {
-        emppymodal.style.display = "none";
-    }
-}
-
 
 
 
@@ -1271,3 +1189,116 @@ window.onload = function checkscreenwidth() {
     }
 }
 
+// 2.0
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navlink");
+
+    navLinks.forEach(function (link) {
+        link.style.textDecoration = "none";
+        link.style.outline = "none !important";
+        link.addEventListener("click", function (e) {
+            this.blur();
+            this.style.outline = "none"
+            e.preventDefault(); // Prevent the default behavior of the anchor tag
+            const targetId = this.getAttribute("href").substring(1); // Get the target section ID
+            const customname = this.getAttribute("data-target"); // Get the target section ID
+            const targetSection = document.getElementById(targetId); // Get the target section
+
+            if (targetSection) {
+                // Scroll to the target section
+                targetSection.scrollIntoView({ behavior: "smooth" });
+
+            }
+        });
+    });
+});
+
+
+var resumemodal = document.getElementById("resumemodal");
+var resumebtn = document.getElementById("lresume");
+var resumebtn1 = document.getElementById("lresumewindow");
+var closeresumeframe = document.getElementById("closeresumeframe");
+var closeresumeframe1 = document.getElementById("frameclosebtn");
+
+resumebtn.onclick = function () {
+    resumemodal.style.display = "flex";
+}
+resumebtn1.onclick = function () {
+    resumemodal.style.display = "flex";
+}
+
+
+closeresumeframe.onclick = function () {
+    resumemodal.style.display = "none";
+}
+closeresumeframe1.onclick = function () {
+    resumemodal.style.display = "none";
+}
+
+
+
+
+
+
+var feedbackmodal = document.getElementById("feedbackmodal");
+var feedbackdiv = document.getElementById("feedbackdiv");
+var closefeedbackframe = document.getElementById("closefeedbackframe");
+
+feedbackdiv.onclick = function () {
+    feedbackmodal.style.display = "flex";
+}
+
+closefeedbackframe.onclick = function () {
+    feedbackmodal.style.display = "none";
+}
+
+var facebookmodal = document.getElementById("facebookmodal");
+var facebookdiv = document.getElementById("facebookdiv");
+var closefacebookframe = document.getElementById("closefacebookframe");
+
+facebookdiv.onclick = function (){
+    facebookmodal.style.display = "flex";
+}
+
+closefacebookframe.onclick = function () {
+    facebookmodal.style.display = "none";
+}
+
+
+var emppymodal = document.getElementById("emppymodal");
+var emppydiv = document.getElementById("emppydiv");
+var closeemppyframe = document.getElementById("closeemppyframe");
+
+emppydiv.onclick = function (){
+    emppymodal.style.display = "flex";
+}
+
+closeemppyframe.onclick = function () {
+    emppymodal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == emppymodal) {
+        emppymodal.style.display = "none";
+    }
+    if (event.target == facebookmodal) {
+        facebookmodal.style.display = "none";
+    }
+    if (event.target == feedbackmodal) {
+        feedbackmodal.style.display = "none";
+    }
+    if (event.target == certificatemodal) {
+        certificatemodal.style.display = "none";
+    }
+    if (event.target == resumemodal) {
+        resumemodal.style.display = "none";
+    }
+}
+
+window.onmouseover = function(event){
+    if (event.target == emppymodal) {
+        document.body.style.cursor = 'url(./img/cursor1.png)';
+    }
+}

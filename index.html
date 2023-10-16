@@ -111,7 +111,7 @@
                 <div class="leftwinopts" id="leftwincontact">
                     <h2>CONTACT</h2>
                 </div>
-                <div class="leftwinopts" onclick="viewresume()">
+                <div class="leftwinopts" id="lresumewindow" onclick="viewresume()">
                     <h2>RESUME</h2>
                 </div>
             </div>
@@ -188,7 +188,7 @@
                         </div>
                     </div>
                 </a>
-                <div class="resume navdiv" id="lresume" onclick="viewresume()">
+                <div class="resume navdiv" id="lresume">
                     <div class="navicon inthemef">
                         <i class="fas fa-file-alt"></i>
                     </div>
@@ -201,7 +201,7 @@
 
 
         <!-- Resume Frame -->
-        <div class="resumecontainer" id="modal">
+        <div class="resumecontainer" id="resumemodal">
             <div class="resumeframediv">
                 <div class="frameheading">
                     <h3 id="frameheading">Resume</h3>
@@ -286,7 +286,8 @@
                     </div>
                 </div>
                 <div class="cframebody">
-                    <iframe id="emppyiframe" src="ERSpythonreason.html" frameborder="0" width="100%" height="100%"></iframe>
+                    <iframe id="emppyiframe" src="ERSpythonreason.html" frameborder="0" width="100%"
+                        height="100%"></iframe>
                 </div>
             </div>
         </div>
@@ -552,7 +553,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn2"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -595,7 +595,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn1"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -640,7 +639,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn0" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div> -->
@@ -681,9 +679,7 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="facebookdiv"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="facebookdiv" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo1"
@@ -726,7 +722,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject2"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -768,7 +763,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject3"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -813,7 +807,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject4"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -858,7 +851,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject5"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -902,12 +894,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="emppydiv" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo6"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo6" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -946,7 +936,6 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');"> -->
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject7"
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
@@ -1026,7 +1015,7 @@
                                     <img src="img/Rlogo.png" alt="R programming">
                                 </div>
                                 <div class="skillnamename">
-                                    <h2>R(programming)</h2>
+                                    <h2>R&nbsp;programming</h2>
                                 </div>
                             </div>
                         </div>
@@ -1130,11 +1119,11 @@
                             <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
                                     <div class="expercardlogo"
-                                        onclick="window.open(`https://frugaltesting.com/`, '_blank');">
+                                        onclick="pageOpen('frugaltesting')">
                                         <img src="img/ft.png" alt="coursera">
                                     </div>
                                     <div class="expercardtitle inthemef"
-                                        onclick="window.open(`https://frugaltesting.com/`, '_blank');">
+                                        onclick="pageOpen('frugaltesting')">
                                         <p> FRUGAL TESTING</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1182,11 +1171,11 @@
                             <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
                                     <div class="expercardlogo"
-                                        onclick="window.open(`https://www.coursera.org/`, '_blank');">
+                                        onclick="pageOpen('coursera')">
                                         <img src="img/coursera.png" alt="coursera">
                                     </div>
                                     <div class="expercardtitle inthemef"
-                                        onclick="window.open(`https://www.coursera.org/`, '_blank');">
+                                        onclick="pageOpen('coursera')">
                                         <p> COURSERA</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1200,15 +1189,15 @@
                                     <em>
                                         <ul>
                                             <li>
-                                                <p>Completed all weeks, of course, scoring 100% in all assessments</p>
+                                                <p>Completed all weeks, of course, scoring 100% in all assessments.</p>
                                             </li>
                                             <li>
                                                 <p>Learned how to use frameworks like Hadoop System and worked on Hive
                                                     and
-                                                    Impala</p>
+                                                    Impala.</p>
                                             </li>
                                             <li>
-                                                <p>Queried some Big Data to analyse some real-life questions</p>
+                                                <p>Queried some Big Data to analyse some real-life questions.</p>
                                             </li>
                                         </ul>
                                     </em>
@@ -1222,11 +1211,11 @@
                         <div class="expercards darkmodeshadow">
                             <div class="expercardheadbody darkmodebg darkmodefont" id="expercardheadbodylpu">
                                 <div class="expercardhead">
-                                    <div class="expercardlogo" onclick="window.open(`https://www.lpu.in/`, '_blank');">
+                                    <div class="expercardlogo" onclick="pageOpen('lpu')">
                                         <img src="img/lpu.png" alt="LPU">
                                     </div>
                                     <div class="expercardtitle inthemef"
-                                        onclick="window.open(`https://www.lpu.in/`, '_blank');">
+                                        onclick="pageOpen('lpu')">
                                         <p> LOVELY PROFESSIONAL UNIVERSITY</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1263,8 +1252,7 @@
                     <div class="awardscontent">
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`DAMLL`)">
                                     Career Essentials in Data
                                     Analysis by
                                     Microsoft and LinkedIn Learning</p>
@@ -1282,7 +1270,7 @@
 
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef" onclick="viewCertificate(`./img/Top_SQL_50.gif`)">Top 50
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`SQLL`)">Top 50
                                     SQL By Leetcode</p>
                                 <p class="awardtype">Earned SQL badge | June 2023</p>
                             </div>
@@ -1296,8 +1284,7 @@
                         </div>
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`ASQLH`)">
                                     Advanced SQL Certificate by HackerRank
                                 </p>
                                 <p class="awardtype">Certificate of Appreciation | April 2023</p>
@@ -1313,8 +1300,7 @@
                         </div>
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`MONGODB`)">
                                     MongoDB M001</p>
                                 <p class="awardtype">Certificate of Completion | April 2022</p>
                             </div>
@@ -1330,8 +1316,7 @@
 
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`GFGDSA`)">
                                     GFG DSA self paced course</p>
                                 <p class="awardtype">Certificate of Completion | December 2021</p>
                             </div>
@@ -1345,8 +1330,7 @@
                         </div>
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`CCHEFSNACK`)">
                                     Codechef Snackdown 2021 </p>
                                 <p class="awardtype">Certificate of Appreciation | December 2021</p>
                             </div>
@@ -1364,8 +1348,7 @@
                         </div>
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`JUMPSTART`)">
                                     JUMPSTART FINALE CONTESTANT</p>
                                 <p class="awardtype">Certificate of Appreciation | August 2021</p>
                             </div>
@@ -1381,8 +1364,7 @@
 
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`MBDASQL`)">
                                     MODERN BIG DATA ANALYSIS WITH SQL</p>
                                 <p class="awardtype">Certificate of Appreciation | July 2021</p>
                             </div>
@@ -1401,8 +1383,7 @@
                         </div>
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`CRASHCPY`)">
                                     CRASH COURSE ON PYTHON </p>
                                 <p class="awardtype">Course Certificate by GOOGLE | May 2021</p>
                             </div>
@@ -1425,8 +1406,7 @@
                                 <ul>
                                     <li>
                                         After three months of consistent coding, I was ranked as the top 63rd coder in
-                                        the
-                                        world.
+                                        the world.
                                     </li>
                                 </ul>
                             </div>
@@ -1434,8 +1414,7 @@
 
                         <div class="awardcard darkmodebg darkmodefont darkmodeshadow">
                             <div class="awardcardhead">
-                                <p class="awardtitle inthemef"
-                                    onclick="viewCertificate(`https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview`)">
+                                <p class="awardtitle inthemef" onclick="viewCertificate(`PSCH`)">
                                     PROBLEM SOLVING CERTIFICATE BY
                                     HACKERRANK</p>
                                 <p class="awardtype">Certificate of Appreciation | October 2020</p>
@@ -1468,7 +1447,7 @@
                         </div>
                         <div class="contactbodydiv">
                             <div class="contactoptdet inthemef"
-                                onclick="window.open(`mailto:shashankmankala.5@gmail.com`, '_blank');">
+                                onclick="pageOpen('mail')">
                                 <p>shashankmankala.5@gmail.com</p>
                             </div>
                             <p>Hyderabad, Telangana, India</p>
@@ -1477,19 +1456,19 @@
                         <div class="contactfooterdiv">
                             <div class="contactlinks">
                                 <div class="contactoptlogodiv inthemeb darkmodeshadow" title="Email"
-                                    onclick="window.open(`mailto:shashankmankala.5@gmail.com`, '_blank');">
+                                    onclick="pageOpen('mail')">
                                     <i class="fas fa-envelope"></i>
                                 </div>
                                 <div class="contactoptlogodiv inthemeb darkmodeshadow" title="GitHub"
-                                    onclick="window.open(`https://github.com/Shashank-mankala1`, '_blank');">
+                                    onclick="pageOpen('github')">
                                     <i class="fab fa-github"></i>
                                 </div>
                                 <div class="contactoptlogodiv inthemeb darkmodeshadow" title="LinkedIn"
-                                    onclick="window.open(`https://www.linkedin.com/in/shashankmankala/`, '_blank');">
+                                    onclick="pageOpen('linkedin')">
                                     <i class="fab fa-linkedin-in"></i>
                                 </div>
                                 <div class="contactoptlogodiv inthemeb darkmodeshadow" title="Medium.com"
-                                    onclick="window.open(`https://medium.com/@shashankmankala`, '_blank');">
+                                    onclick="pageOpen('medium')">
                                     <i class="fab fa-medium"></i>
                                 </div>
                             </div>
@@ -1547,8 +1526,7 @@
                         </div>
                     </div>
                     <div class="contactfooter">
-                        <p>&copy; 2021-2022 | All rights reserved with Copyright & Trademarks | Made with &hearts; by M
-                            Shashank</p>
+                        <p>&copy; 2022-2023 | All rights reserved with Copyright & Trademarks | Made with &hearts; by Shashank</p>
                     </div>
                 </div>
             </section>

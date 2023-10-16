@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/feedback.css">
     <title>Feedback Form</title>
     <link rel="icon" type="image/png" href="img/feedbacklogo.png">
@@ -13,7 +13,7 @@
 
 <body>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){if(check){alert('Feedback Successfully submitted!!! \nThanks for your Valuable Feedback :)'); window.location='index.html';}}"></iframe>
+        onload="if(submitted){if(check){alert(`Feedback Successfully submitted!!! \nThanks for your Valuable Feedback 😃`); window.location='index.html';}}"></iframe>
     <div class="feedbackformdiv">
         <div class="formdiv1">
             <form class="formdiv" target="hidden_iframe" onsubmit="submitted=true; check=funcheck();"
@@ -35,12 +35,12 @@
                 </div>
 
                 <label for="feedback" class="feedbacklabels"><b>Feedback or Suggestion:</b></label>
-                <textarea name="entry.522154431" id="feedback" cols="30" rows="10"
-                    placeholder="Write here :)" required ></textarea>
+                <textarea name="entry.522154431" id="feedback" cols="30" rows="10" placeholder="Write here :)"
+                    required></textarea>
 
                 <div class="submitdiv">
                     <!-- <button type="submit" id="feedbacksubmitbtn">Submit</button> -->
-                    <input id="submitbtn" type="submit" 
+                    <input id="submitbtn" type="submit"
                         style="width: 50%; height: 30px; border-radius: 5px; background: #83c5ff;"
                         onmouseover=cursoron();>
                 </div>
@@ -50,19 +50,19 @@
 </body>
 <script>
     var submitted = false;
-    var check=false;
+    var check = false;
     var feedbacksubmitbtn = document.getElementById("feedbacksubmitbtn");
 
-    var fname=document.getElementById("name").value;
-    var fmail=document.getElementById("mailid").value;
-    var ffeedback=document.getElementById("feedback").value;
+    var fname = document.getElementById("name").value;
+    var fmail = document.getElementById("mailid").value;
+    var ffeedback = document.getElementById("feedback").value;
 
     feedbacksubmitbtn.addEventListener('click', submitfeedback);
-    function funcheck(){
-        if(!(fname=="" || fmail=="" || ffeedback=="")){
+    function funcheck() {
+        if (!(fname == "" || fmail == "" || ffeedback == "")) {
             return false;
         }
-        else{
+        else {
             return true;
         }
     }
@@ -70,8 +70,8 @@
         document.getElementById("rating").style.cursor = "pointer";
         document.getElementById("submitbtn").style.cursor = "pointer";
     }
-    function viewrating(){
-        document.getElementById("rating").title=document.getElementById("rating").value;
+    function viewrating() {
+        document.getElementById("rating").title = document.getElementById("rating").value;
     }
 </script>
 
