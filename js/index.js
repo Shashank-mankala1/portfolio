@@ -982,7 +982,8 @@ var pageopendict={
     'medium':'https://medium.com/@shashankmankala',
     'frugaltesting':'https://frugaltesting.com/',
     'coursera':'https://www.coursera.org/',
-    'lpu':'https://www.lpu.in/'
+    'lpu':'https://www.lpu.in/',
+    'shadowfax':'https://www.shadowfax.in/'
 }
 
 
@@ -1000,6 +1001,7 @@ var certificatemodal = document.getElementById("certificatemodal");
 var closecertificateframe = document.getElementById("closecertificateframe");
 
 var certificatedict= {
+    'DAECISCO':'https://drive.google.com/file/d/1IPkdkrLc15L15uEDEvgz2zwdvj6MH9XR/preview',
     'DAMLL':'https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview',
     'SQLL':'./img/Top_SQL_50.gif',
     'ASQLH':'https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview',
@@ -1010,7 +1012,8 @@ var certificatedict= {
     'MBDASQL':'https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview',
     'CRASHCPY':'https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview',
     'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview'
+    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
+    'PYSQLDS':'https://drive.google.com/file/d/1og-RLSY4aZmHJ8VtJ88tGLSNIxkOo8X0/preview'
 
 }
 
@@ -1022,6 +1025,7 @@ function viewCertificate(certificatename) {
 
 closecertificateframe.onclick = function () {
     certificatemodal.style.display = "none";
+    certificateiframe.src = "";
 }
 
 
