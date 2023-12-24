@@ -37,18 +37,19 @@
 
         gtag('config', 'G-7YVFRYX6GS');
     </script>
-
+    <script src="https://kit.fontawesome.com/712e31168a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 
-<body onload="loadimg();">
+<body>
     <div class="fullpage">
         <div class="overlayfull" id="overlayfull"></div>
         <div class="leftpole leftbar">
@@ -237,8 +238,7 @@
                 </div>
                 <div class="cframebody">
                     <iframe id="certificateiframe" src="" frameborder="0" width="100%" height="100%"
-                        allow="autoplay"
-                        ></iframe>
+                        allow="autoplay"></iframe>
                 </div>
             </div>
         </div>
@@ -428,34 +428,27 @@
                                 <div class="prdefbody">
                                     <ul>
                                         <li>
-                                            <p>Integrated a user-friendly frontend with the chatbot, enabling menu
-                                                exploration,
+                                            <p>Integrated a user-friendly frontend with the chatbot, enabling menu exploration,
                                                 ordering, and order tracking within one interface.</p>
                                         </li>
                                         <li>
-                                            <p>Proactively addressed challenges, ensured adaptability, and committed to
-                                                ongoing
-                                                project enhancements despite limitations, delivering a user-centric
-                                                experience.</p>
+                                            <p>Proactively addressed challenges, ensured adaptability, and committed to ongoing
+                                                project enhancements despite limitations, delivering a user-centric experience.</p>
                                         </li>
                                     </ul>
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn4"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject(`PR_CHTBT`)" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon4"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_CHTBT')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewarticlen4"
-                                        title="View article on Medium.com">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('ART_CHTBT')" title="View article on Medium.com">
                                         <i class="fab fa-medium"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewavideon4"
-                                        title="View demonstration video">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('MP4_CHTBT')" title="View demonstration video">
                                         <i class="fas fa-file-video"></i>
                                     </div>
                                 </div>
@@ -502,12 +495,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn3"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_ROADDASH')" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon3"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_ROADDASH')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -554,8 +545,7 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn2"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_EASYCHAT')" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
                                 </div>
@@ -596,12 +586,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn1"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow"  onclick="viewproject('PR_PORTFOLIO')" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon1"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_PORTFOLIO')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -643,8 +631,7 @@
                                     <!-- <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewprojectn0" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div> -->
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepon0"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow"  onclick="viewproject('REPO_PLAYSTORE')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -683,7 +670,7 @@
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="facebookdiv" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo1"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_FACEBOOK')" 
                                         title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
@@ -723,12 +710,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject2"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_MUSICPLAYER')" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo2"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_MUSICPLAYER')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -764,11 +749,11 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject3"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow"  onclick="viewproject('PR_CORONAUPDT')" 
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo3"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_CORONAUPDT')" 
                                         title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
@@ -808,11 +793,11 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject4"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_MEALSWEB')" 
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo4"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_MEALSWEB')" 
                                         title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
@@ -852,11 +837,11 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject5"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_TODO')" 
                                         title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo5"
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_TODO')" 
                                         title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
@@ -898,7 +883,7 @@
                                     <div class="prdeffooterdiv inthemeb darkmodeshadow" id="emppydiv" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo6" title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_EMS')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -937,12 +922,10 @@
                                 </div>
                                 <hr>
                                 <div class="prdeffooter">
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewproject7"
-                                        title="View project">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('PR_ITWEB')" title="View project">
                                         <i class="fas fa-external-link-alt"></i>
                                     </div>
-                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" id="viewrepo7"
-                                        title="View GitHub repository">
+                                    <div class="prdeffooterdiv inthemeb darkmodeshadow" onclick="viewproject('REPO_ITWEB')" title="View GitHub repository">
                                         <i class="fab fa-github"></i>
                                     </div>
                                 </div>
@@ -1119,12 +1102,10 @@
                         <div class="expercards darkmodeshadow">
                             <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
-                                    <div class="expercardlogo"
-                                        onclick="pageOpen('shadowfax')">
+                                    <div class="expercardlogo" onclick="pageOpen('shadowfax')">
                                         <img src="img/sfx.png" alt="Shadowfax" style="width: 120px;">
                                     </div>
-                                    <div class="expercardtitle inthemef"
-                                        onclick="pageOpen('shadowfax')">
+                                    <div class="expercardtitle inthemef" onclick="pageOpen('shadowfax')">
                                         <p> SHADOWFAX</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1159,12 +1140,10 @@
                         <div class="expercards darkmodeshadow">
                             <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
-                                    <div class="expercardlogo"
-                                        onclick="pageOpen('frugaltesting')">
+                                    <div class="expercardlogo" onclick="pageOpen('frugaltesting')">
                                         <img src="img/ft.png" alt="coursera">
                                     </div>
-                                    <div class="expercardtitle inthemef"
-                                        onclick="pageOpen('frugaltesting')">
+                                    <div class="expercardtitle inthemef" onclick="pageOpen('frugaltesting')">
                                         <p> FRUGAL TESTING</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1205,18 +1184,16 @@
                             </div>
                             <hr>
                             <div class="expercardfooter darkmodebg darkmodefont">
-                                <p>June'22 - May'23 | On-site</p>
+                                <p>June'22 - June'23 | On-site</p>
                             </div>
                         </div>
                         <div class="expercards darkmodeshadow">
                             <div class="expercardheadbody darkmodebg darkmodefont">
                                 <div class="expercardhead">
-                                    <div class="expercardlogo"
-                                        onclick="pageOpen('coursera')">
+                                    <div class="expercardlogo" onclick="pageOpen('coursera')">
                                         <img src="img/coursera.png" alt="coursera">
                                     </div>
-                                    <div class="expercardtitle inthemef"
-                                        onclick="pageOpen('coursera')">
+                                    <div class="expercardtitle inthemef" onclick="pageOpen('coursera')">
                                         <p> COURSERA</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1255,8 +1232,7 @@
                                     <div class="expercardlogo" onclick="pageOpen('lpu')">
                                         <img src="img/lpu.png" alt="LPU">
                                     </div>
-                                    <div class="expercardtitle inthemef"
-                                        onclick="pageOpen('lpu')">
+                                    <div class="expercardtitle inthemef" onclick="pageOpen('lpu')">
                                         <p> LOVELY PROFESSIONAL UNIVERSITY</p>
                                     </div>
                                     <div class="expercardrole">
@@ -1519,8 +1495,7 @@
                             </div>
                         </div>
                         <div class="contactbodydiv">
-                            <div class="contactoptdet inthemef"
-                                onclick="pageOpen('mail')">
+                            <div class="contactoptdet inthemef" onclick="pageOpen('mail')">
                                 <p>shashankmankala.5@gmail.com</p>
                             </div>
                             <p>Hyderabad, Telangana, India</p>
@@ -1547,7 +1522,78 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sharelinkdiv">
+                    <div class="hiremeshashank flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/hiremefront.png" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="darkmodebg hiremecontainer">
+                                    <h4 class="darkmodefont hiremeheading">
+                                        Hire Shashank
+                                    </h4>
+                                    <hr style="width: 100%; margin-top: 10px; opacity: 50%;">
+                                    <div class="darkmodebg hireopts" title="Send Email" onclick="sendemail('fulltime')">
+                                        <div class="hireopticon">
+                                            <img src="img/full-time.png" alt="">
+                                        </div>
+                                        <div class="darkmodefont hireopttype">
+                                            Full Time Job
+                                        </div>
+                                        <div class="hireoptarrow">
+                                            <i class="fas fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="darkmodebg hireopts" title="Send Email" onclick="sendemail('parttime')">
+                                        <div class="hireopticon">
+                                            <img src="img/part-time.png" alt="">
+                                        </div>
+                                        <div class="darkmodefont hireopttype">
+                                            Freelance/Project
+                                        </div>
+                                        <div class="hireoptarrow">
+                                            <i class="fas fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="darkmodebg hiremecontainer">
+                            <h4 class="darkmodefont hiremeheading"> 
+                                Hire Shashank
+                            </h4> 
+                            <hr style="width: 100%; margin-top: 10px; opacity: 50%;">
+                            <div class="darkmodebg hireopts">
+                                <div class="hireopticon">
+                                    <img src="img/full-time.png" alt="">
+                                </div>
+                                <div class="darkmodefont hireopttype">
+                                    Full Time Job
+                                </div>
+                                <div class="hireoptarrow">
+                                    <i class="fas fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                            <div class="darkmodebg hireopts">
+                                <div class="hireopticon">
+                                    <img src="img/part-time.png" alt="">
+                                </div>
+                                <div class="darkmodefont hireopttype">
+                                    Freelance/Project
+                                </div>
+                                <div class="hireoptarrow">
+                                    <i class="fas fa-solid fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+
+
+                    <!-- <div class="sharelinkdiv">
                         <img src="img/qrcode.png" alt="qrcode" id="qrcodeimg" style="display: none;">
                         <img src="img/send.png" alt="" class="sharebtn" id="sharebtn">
                         <div class="shareask darkmodebg darkmodefont" id="shareask">
@@ -1597,9 +1643,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+
+
                     <div class="contactfooter">
-                        <p>&copy; 2022-2023 | All rights reserved with Copyright & Trademarks | Made with &hearts; by Shashank</p>
+                        <p>&copy; 2022-2023 | All rights reserved with Copyright & Trademarks | Made by Shashank</p>
                     </div>
                 </div>
             </section>

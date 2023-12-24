@@ -1452,7 +1452,8 @@ input:checked~.darkmodeslider::before {
 .awardcardhead {
     /* height: 99px; */
     margin-bottom: 7px;
-    padding-top: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
     line-height: 1.4;
     font-weight: 600;
 }
@@ -1474,7 +1475,7 @@ input:checked~.darkmodeslider::before {
 
 .awardcardbody {
     height: 126px;
-    padding-left: 17px;
+    margin-left: 24px;
     padding-right: 20px;
     font-size: 20px;
     line-height: 1.5;
@@ -1600,6 +1601,130 @@ input:checked~.darkmodeslider::before {
     border-radius: 10px;
     display: none;
 }
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 20px 3px rgb(158 158 158 / 29%)
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #ededed;
+    color: white;
+    transform: rotateY(-180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.b{
+    border: 1px solid red;
+}
+
+.hiremeshashank{
+    height: 270px;
+    width: 270px;
+    margin-right: 9rem;
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+.hiremeheading{
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 175%;
+    margin-top: 15px;
+    color: black;
+}
+
+.hiremecontainer{
+    width: 90%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hireopts{
+    margin: 7px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fbfbfb;
+    padding: 3px;
+}
+
+.hireopts:hover{
+    background-color: #d8d8d8 !important;
+    cursor: pointer;
+}
+
+
+.hireopticon{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+.hireopticon img{
+    width: 100%;
+}
+
+.hireopttype{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 1%;
+    color: black;
+}
+
+.hireoptarrow{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
 
 .sharelinkdiv {
     height: 270px;

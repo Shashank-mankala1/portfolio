@@ -206,9 +206,10 @@ function closecolorpanel() {
 }
 
 
-
-
 // theme color panel END
+
+
+
 
 // rightsidediv START 
 
@@ -289,6 +290,10 @@ leftwincontact.addEventListener('click', () => {
 })
 
 //left pole END
+
+
+
+
 var leftabt = document.getElementById("labout");
 var leftproj = document.getElementById("lproject");
 var leftskil = document.getElementById("lskills");
@@ -541,15 +546,16 @@ function repgif7() {
 function repimg7() {
     prgifgif7.src = "./img/i1.webp";
 }
-var sharebtn = document.getElementById("sharebtn");
-sharebtn.addEventListener("mouseover", repgifcon);
-sharebtn.addEventListener("mouseout", repimgcon);
-function repgifcon() {
-    sharebtn.src = "./img/send.gif";
-}
-function repimgcon() {
-    sharebtn.src = "./img/send.png";
-}
+
+// var sharebtn = document.getElementById("sharebtn");
+// sharebtn.addEventListener("mouseover", repgifcon);
+// sharebtn.addEventListener("mouseout", repimgcon);
+// function repgifcon() {
+//     sharebtn.src = "./img/send.gif";
+// }
+// function repimgcon() {
+//     sharebtn.src = "./img/send.png";
+// }
 
 
 // n4
@@ -575,26 +581,7 @@ function myFunctionrn4() {
     unhiddenn4.style.display = 'block';
 }
 
-var viewprojn4 = document.getElementById("viewprojectn4");
-viewprojn4.addEventListener('click', viewpn4);
-function viewpn4() {
-    window.open('https://shashank-mankala1.github.io/chatbot/', '_blank');
-}
-var viewrepn4 = document.getElementById("viewrepon4");
-viewrepn4.addEventListener('click', viewrn4);
-function viewrn4() {
-    window.open('https://github.com/Shashank-mankala1/chatbot', '_blank');
-}
-var viewarticlen4 = document.getElementById("viewarticlen4");
-viewarticlen4.addEventListener('click', viewan4);
-function viewan4() {
-    window.open('https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79', '_blank');
-}
-var viewavideon4 = document.getElementById("viewavideon4");
-viewavideon4.addEventListener('click', viewvn4);
-function viewvn4() {
-    window.open('https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing', '_blank');
-}
+
 //---
 
 
@@ -621,16 +608,7 @@ function myFunctionrn3() {
     unhiddenn3.style.display = 'block';
 }
 
-var viewprojn3 = document.getElementById("viewprojectn3");
-viewprojn3.addEventListener('click', viewpn3);
-function viewpn3() {
-    window.open('https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes', '_blank');
-}
-var viewrepn3 = document.getElementById("viewrepon3");
-viewrepn3.addEventListener('click', viewrn3);
-function viewrn3() {
-    window.open('https://github.com/Shashank-mankala1/Road-Accidents-Dashboard', '_blank');
-}
+
 //---
 
 
@@ -657,14 +635,8 @@ function myFunctionrn2() {
     unhiddenn2.style.display = 'block';
 }
 
-var viewprojn2 = document.getElementById("viewprojectn2");
-viewprojn2.addEventListener('click', viewpn2);
-function viewpn2() {
-    window.open('http://easychat.lovestoblog.com/', '_blank');
-}
+
 //---
-
-
 
 // n1
 var titlen1 = document.getElementById("prpn1");
@@ -689,16 +661,7 @@ function myFunctionrn1() {
     unhiddenn1.style.display = 'block';
 }
 
-var viewprojn1 = document.getElementById("viewprojectn1");
-viewprojn1.addEventListener('click', viewpn1);
-function viewpn1() {
-    window.open('https://shashank-mankala1.github.io/portfolio/', '_blank');
-}
-var viewrepn1 = document.getElementById("viewrepon1");
-viewrepn1.addEventListener('click', viewrn1);
-function viewrn1() {
-    window.open('https://github.com/Shashank-mankala1/portfolio', '_blank');
-}
+
 //---
 // n0
 var titlen0 = document.getElementById("prpn0");
@@ -723,16 +686,7 @@ function myFunctionrn0() {
     unhiddenn0.style.display = 'block';
 }
 
-// var viewprojn0 = document.getElementById("viewprojectn0");
-// viewprojn0.addEventListener('click', viewpn0);
-// function viewpn0() {
-//     window.open('https://shashank-mankala1.github.io/portfolio/', '_blank');
-// }
-var viewrepn0 = document.getElementById("viewrepon0");
-viewrepn0.addEventListener('click', viewrn0);
-function viewrn0() {
-    window.open('https://github.com/Shashank-mankala1/Google-Play-Store-Analysis', '_blank');
-}
+
 //---
 // 1
 var title1 = document.getElementById("prp1");
@@ -758,16 +712,7 @@ function myFunctionr1() {
     unhidden1.style.display = 'block';
 }
 
-// var viewproj1 = document.getElementById("viewproject1");
-// viewproj1.addEventListener('click', viewp1);
-// function viewp1() {
-//     window.open('fbreason.html', '_blank');
-// }
-var viewrep1 = document.getElementById("viewrepo1");
-viewrep1.addEventListener('click', viewr1);
-function viewr1() {
-    window.open('https://github.com/Shashank-mankala1/facebookselfchallenge', '_blank');
-}
+
 // ---
 // 2
 var title2 = document.getElementById("prp2");
@@ -792,16 +737,7 @@ function myFunctionr2() {
     unhidden2.style.display = 'block';
 }
 
-var viewproj2 = document.getElementById("viewproject2");
-viewproj2.addEventListener('click', viewp2);
-function viewp2() {
-    window.open('https://shashank-mankala1.github.io/musicplayer/', '_blank');
-}
-var viewrep2 = document.getElementById("viewrepo2");
-viewrep2.addEventListener('click', viewr2);
-function viewr2() {
-    window.open('https://github.com/Shashank-mankala1/musicplayer', '_blank');
-}
+
 // ---
 // 3
 var title3 = document.getElementById("prp3");
@@ -826,16 +762,7 @@ function myFunctionr3() {
     unhidden3.style.display = 'block';
 }
 
-var viewproj3 = document.getElementById("viewproject3");
-viewproj3.addEventListener('click', viewp3);
-function viewp3() {
-    window.open('https://shashank-mankala1.github.io/coronaliveupdate/', '_blank');
-}
-var viewrep3 = document.getElementById("viewrepo3");
-viewrep3.addEventListener('click', viewr3);
-function viewr3() {
-    window.open('https://github.com/Shashank-mankala1/coronaliveupdate', '_blank');
-}
+
 // ---
 // 4
 var title4 = document.getElementById("prp4");
@@ -860,16 +787,7 @@ function myFunctionr4() {
     unhidden4.style.display = 'block';
 }
 
-var viewproj4 = document.getElementById("viewproject4");
-viewproj4.addEventListener('click', viewp4);
-function viewp4() {
-    window.open('https://shashank-mankala1.github.io/ShashankMeals/', '_blank');
-}
-var viewrep4 = document.getElementById("viewrepo4");
-viewrep4.addEventListener('click', viewr4);
-function viewr4() {
-    window.open('https://github.com/Shashank-mankala1/ShashankMeals', '_blank');
-}
+
 // ---
 // 5
 var title5 = document.getElementById("prp5");
@@ -894,16 +812,7 @@ function myFunctionr5() {
     unhidden5.style.display = 'block';
 }
 
-var viewproj5 = document.getElementById("viewproject5");
-viewproj5.addEventListener('click', viewp5);
-function viewp5() {
-    window.open('https://shashank-mankala1.github.io/taskschecklist/', '_blank');
-}
-var viewrep5 = document.getElementById("viewrepo5");
-viewrep5.addEventListener('click', viewr5);
-function viewr5() {
-    window.open('https://github.com/Shashank-mankala1/taskschecklist', '_blank');
-}
+
 // ---
 // 6
 var title6 = document.getElementById("prp6");
@@ -928,16 +837,7 @@ function myFunctionr6() {
     unhidden6.style.display = 'block';
 }
 
-// var viewproj6 = document.getElementById("viewproject6");
-// viewproj6.addEventListener('click', viewp6);
-// function viewp6() {
-//     window.open('ERSpythonreason.html', '_blank');
-// }
-var viewrep6 = document.getElementById("viewrepo6");
-viewrep6.addEventListener('click', viewr6);
-function viewr6() {
-    window.open('https://github.com/Shashank-mankala1/Employee-Recruitment-System-Python', '_blank');
-}
+
 // ---
 // 7
 var title7 = document.getElementById("prp7");
@@ -962,32 +862,71 @@ function myFunctionr7() {
     unhidden7.style.display = 'block';
 }
 
-var viewproj7 = document.getElementById("viewproject7");
-viewproj7.addEventListener('click', viewp7);
-function viewp7() {
-    window.open('https://shashank-mankala1.github.io/Income_tax/', '_blank');
+// -- Project
+
+
+function viewproject(name) {
+    var projectdict = {
+        PR_CHTBT: "https://shashank-mankala1.github.io/chatbot/",
+        REPO_CHTBT: 'https://github.com/Shashank-mankala1/chatbot',
+        ART_CHTBT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
+        MP4_CHTBT: 'https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing',
+    
+        PR_ROADDASH: 'https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes',
+        REPO_ROADDASH: 'https://github.com/Shashank-mankala1/Road-Accidents-Dashboard',
+    
+        PR_EASYCHAT: 'http://easychat.lovestoblog.com/',
+    
+        PR_PORTFOLIO: 'https://shashank-mankala1.github.io/portfolio/',
+        REPO_PORTFOLIO: 'https://github.com/Shashank-mankala1/portfolio',
+    
+        REPO_PLAYSTORE: 'https://github.com/Shashank-mankala1/Google-Play-Store-Analysis',
+    
+        REPO_FACEBOOK: 'https://github.com/Shashank-mankala1/facebookselfchallenge',
+    
+        PR_MUSICPLAYER: 'https://shashank-mankala1.github.io/musicplayer/',
+        REPO_MUSICPLAYER: 'https://github.com/Shashank-mankala1/musicplayer',
+    
+        PR_CORONAUPDT: 'https://shashank-mankala1.github.io/coronaliveupdate/',
+        REPO_CORONAUPDT: 'https://github.com/Shashank-mankala1/coronaliveupdate',
+    
+        PR_MUSICPLAYER: 'https://shashank-mankala1.github.io/musicplayer/',
+        REPO_MUSICPLAYER: 'https://github.com/Shashank-mankala1/musicplayer',
+    
+        PR_MEALSWEB: 'https://shashank-mankala1.github.io/ShashankMeals/',
+        REPO_MEALSWEB: 'https://github.com/Shashank-mankala1/ShashankMeals',
+    
+        PR_TODO: 'https://shashank-mankala1.github.io/taskschecklist/',
+        REPO_TODO: 'https://github.com/Shashank-mankala1/taskschecklist',
+    
+        REPO_EMS: 'https://github.com/Shashank-mankala1/Employee-Recruitment-System-Python',
+    
+        PR_ITWEB: 'https://shashank-mankala1.github.io/Income_tax/',
+        REPO_ITWEB: 'https://github.com/Shashank-mankala1/Income_tax'
+
+    }
+
+    window.open(projectdict[name], '_blank');
 }
-var viewrep7 = document.getElementById("viewrepo7");
-viewrep7.addEventListener('click', viewr7);
-function viewr7() {
-    window.open('https://github.com/Shashank-mankala1/Income_tax', '_blank');
-}
+
+
+
 
 // ---
 
-var pageopendict={
-    'mail':'mailto:shashankmankala.5@gmail.com',
-    'linkedin':'https://www.linkedin.com/in/shashankmankala/',
-    'github':'https://github.com/Shashank-mankala1',
-    'medium':'https://medium.com/@shashankmankala',
-    'frugaltesting':'https://frugaltesting.com/',
-    'coursera':'https://www.coursera.org/',
-    'lpu':'https://www.lpu.in/',
-    'shadowfax':'https://www.shadowfax.in/'
+var pageopendict = {
+    'mail': 'mailto:shashankmankala.5@gmail.com',
+    'linkedin': 'https://www.linkedin.com/in/shashankmankala/',
+    'github': 'https://github.com/Shashank-mankala1',
+    'medium': 'https://medium.com/@shashankmankala',
+    'frugaltesting': 'https://frugaltesting.com/',
+    'coursera': 'https://www.coursera.org/',
+    'lpu': 'https://www.lpu.in/',
+    'shadowfax': 'https://www.shadowfax.in/'
 }
 
 
-function pageOpen(page){
+function pageOpen(page) {
     window.open(pageopendict[page], '_blank');
 }
 
@@ -1000,20 +939,20 @@ var certificateiframe = document.getElementById("certificateiframe");
 var certificatemodal = document.getElementById("certificatemodal");
 var closecertificateframe = document.getElementById("closecertificateframe");
 
-var certificatedict= {
-    'DAECISCO':'https://drive.google.com/file/d/1IPkdkrLc15L15uEDEvgz2zwdvj6MH9XR/preview',
-    'DAMLL':'https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview',
-    'SQLL':'./img/Top_SQL_50.gif',
-    'ASQLH':'https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview',
-    'MONGODB':'https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/preview',
-    'GFGDSA':'https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/preview',
-    'CCHEFSNACK':'https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/preview',
-    'JUMPSTART':'https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/preview',
-    'MBDASQL':'https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview',
-    'CRASHCPY':'https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview',
-    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PSCH':'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PYSQLDS':'https://drive.google.com/file/d/1og-RLSY4aZmHJ8VtJ88tGLSNIxkOo8X0/preview'
+var certificatedict = {
+    'DAECISCO': 'https://drive.google.com/file/d/1IPkdkrLc15L15uEDEvgz2zwdvj6MH9XR/preview',
+    'DAMLL': 'https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview',
+    'SQLL': './img/Top_SQL_50.gif',
+    'ASQLH': 'https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview',
+    'MONGODB': 'https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/preview',
+    'GFGDSA': 'https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/preview',
+    'CCHEFSNACK': 'https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/preview',
+    'JUMPSTART': 'https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/preview',
+    'MBDASQL': 'https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview',
+    'CRASHCPY': 'https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview',
+    'PSCH': 'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
+    'PSCH': 'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
+    'PYSQLDS': 'https://drive.google.com/file/d/1og-RLSY4aZmHJ8VtJ88tGLSNIxkOo8X0/preview'
 
 }
 
@@ -1034,155 +973,169 @@ closecertificateframe.onclick = function () {
 
 
 //share
+// var sharebtn = document.getElementById("sharebtn");
+// sharebtn.addEventListener("mouseover", repgifcon);
+// sharebtn.addEventListener("mouseout", repimgcon);
+// function repgifcon() {
+//     sharebtn.src = "./img/send.gif";
+// }
+// function repimgcon() {
+//     sharebtn.src = "./img/send.png";
+// }
 
-var sharebtn = document.getElementById("sharebtn");
-var shareask = document.getElementById("shareask");
-var shareclosei = document.getElementById("shareclosei");
-var shareoptqr = document.getElementById("shareoptqr");
-var shareoptlink = document.getElementById("shareoptlink");
-var sharelinkcontainer = document.getElementById("sharelinkcontainer");
-var sharelinkcontainer2 = document.getElementById("sharelinkcontainer2");
-var sharelinkcontainer3 = document.getElementById("sharelinkcontainer3");
+// var sharebtn = document.getElementById("sharebtn");
+// var shareask = document.getElementById("shareask");
+// var shareclosei = document.getElementById("shareclosei");
+// var shareoptqr = document.getElementById("shareoptqr");
+// var shareoptlink = document.getElementById("shareoptlink");
+// var sharelinkcontainer = document.getElementById("sharelinkcontainer");
+// var sharelinkcontainer2 = document.getElementById("sharelinkcontainer2");
+// var sharelinkcontainer3 = document.getElementById("sharelinkcontainer3");
 
-sharebtn.addEventListener('click', openshareopts);
-shareclosei.addEventListener('click', closeshareopts);
+// sharebtn.addEventListener('click', openshareopts);
+// shareclosei.addEventListener('click', closeshareopts);
 
-function openshareopts() {
-    setSharelinks();
-    shareask.style.display = "block";
-    sharebtn.style.display = "none";
-    sharelinkcontainer.style.display = "flex";
-    sharelinkcontainer2.style.display = "none";
-    sharelinkcontainer3.style.display = "none";
+// function openshareopts() {
+//     setSharelinks();
+//     shareask.style.display = "block";
+//     sharebtn.style.display = "none";
+//     sharelinkcontainer.style.display = "flex";
+//     sharelinkcontainer2.style.display = "none";
+//     sharelinkcontainer3.style.display = "none";
+// }
+// function closeshareopts() {
+//     shareask.style.display = "none";
+//     sharebtn.style.display = "block";
+//     sharelinkcontainer2.style.display = "none";
+//     sharelinkcontainer3.style.display = "none";
+// }
+
+// shareoptqr.addEventListener('click', () => {
+//     sharelinkcontainer.style.display = "none";
+//     sharelinkcontainer2.style.display = "flex";
+//     sharelinkcontainer3.style.display = "none";
+// })
+// shareoptlink.addEventListener('click', () => {
+//     sharelinkcontainer.style.display = "none";
+//     sharelinkcontainer2.style.display = "none";
+//     sharelinkcontainer3.style.display = "flex";
+// })
+
+// var socialwhtqr = document.getElementById("socialwhtqr");
+// var socialfbqr = document.getElementById("socialfbqr");
+// var socialmaiqr = document.getElementById("socialmaiqr");
+// var sociallinqr = document.getElementById("sociallinqr");
+// var socialwhtlink = document.getElementById("socialwhtlink");
+// var socialfblink = document.getElementById("socialfblink");
+// var socialmailink = document.getElementById("socialmailink");
+// var sociallinlink = document.getElementById("sociallinlink");
+// var qrcodeimg = document.getElementById("qrcodeimg");
+
+// function socialwindowscreen(url) {
+//     var left = (screen.width - 570) / 2;
+//     var top = (screen.height - 570) / 2;
+//     var params = "menubar=yes,toolbar=yes,status=yes,width=570,height=570,top=" + top + ",left=" + left;
+//     window.open(url, "NewWindow", params);
+// }
+// function setSharelinks() {
+//     var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+//     // var tweet = encodeURIComponent($("meta[property=]"))
+
+//     var imgURL = encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
+
+//     socialwhtqr.addEventListener('click', () => {
+//         url = 'https://wa.me/?text=' + imgURL;
+//         socialwindowscreen(url);
+//     })
+//     socialfbqr.addEventListener('click', () => {
+//         url = "https://www.facebook.com/sharer.php?u=" + imgURL;
+//         socialwindowscreen(url);
+//     })
+//     socialmaiqr.addEventListener('click', () => {
+//         url = "mailto:?subject=Portfolio_QRCode&body=Scan QR code from here " + imgURL;
+//         socialwindowscreen(url);
+//     })
+//     sociallinqr.addEventListener('click', () => {
+//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + imgURL;
+//         socialwindowscreen(url);
+//     })
+
+
+
+//     socialwhtlink.addEventListener('click', () => {
+//         url = "https://wa.me/?text=" + pageURL;
+//         socialwindowscreen(url);
+//     })
+//     socialfblink.addEventListener('click', () => {
+//         url = "https://www.facebook.com/sharer.php?u=" + pageURL;
+//         socialwindowscreen(url);
+//     })
+//     socialmailink.addEventListener('click', () => {
+//         url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
+//         socialwindowscreen(url);
+//     })
+//     sociallinlink.addEventListener('click', () => {
+//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
+//         socialwindowscreen(url);
+//     })
+
+
+// }
+
+
+// //small-start
+// var sshareimg = document.getElementById("sshareimg");
+// var sshareimgin = document.getElementById("sshareimgin");
+// var sshareoptsdiv = document.getElementById("sshareoptsdiv");
+// var sshareoptwht = document.getElementById("sshareoptwht");
+// var sshareoptmail = document.getElementById("sshareoptmail");
+// var sshareoptlink = document.getElementById("sshareoptlink");
+// var sshareoptfb = document.getElementById("sshareoptfb");
+// //small-end
+
+// sshareimg.addEventListener('click', () => {
+//     setSharelinkssmall();
+//     sshareoptsdiv.style.display = "flex";
+//     sshareimg.style.display = "none";
+// })
+// sshareimgin.addEventListener('click', () => {
+//     sshareoptsdiv.style.display = "none";
+//     sshareimg.style.display = "block";
+// })
+
+// function socialwindowscreensmall(url) {
+//     var left = (screen.width - 70) / 2;
+//     var top = (screen.height - 70) / 2;
+//     var width = (screen.width) * 0.75;
+//     var height = (screen.height) * 0.5;
+//     var params = `menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
+//     window.open(url, "NewWindow", params);
+// }
+// function setSharelinkssmall() {
+//     var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
+//     sshareoptwht.addEventListener('click', () => {
+//         url = "https://wa.me/?text=" + pageURL;
+//         socialwindowscreensmall(url);
+//     })
+//     sshareoptfb.addEventListener('click', () => {
+//         url = "https://www.facebook.com/sharer.php?u=" + pageURL;
+//         socialwindowscreensmall(url);
+//     })
+//     sshareoptmail.addEventListener('click', () => {
+//         url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
+//         socialwindowscreensmall(url);
+//     })
+//     sshareoptlink.addEventListener('click', () => {
+//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
+//         socialwindowscreensmall(url);
+//     })
+// }
+
+function sendemail(type) {
+    url = "https://docs.google.com/forms/d/e/1FAIpQLSfC0GnPHz7Mb1jwL3Ya8oDbolsgJmOFVAYtUiUcEPM4O7v30g/viewform?usp=sf_link"
+    window.open(url)
+    // socialwindowscreensmall(url);
 }
-function closeshareopts() {
-    shareask.style.display = "none";
-    sharebtn.style.display = "block";
-    sharelinkcontainer2.style.display = "none";
-    sharelinkcontainer3.style.display = "none";
-}
-
-shareoptqr.addEventListener('click', () => {
-    sharelinkcontainer.style.display = "none";
-    sharelinkcontainer2.style.display = "flex";
-    sharelinkcontainer3.style.display = "none";
-})
-shareoptlink.addEventListener('click', () => {
-    sharelinkcontainer.style.display = "none";
-    sharelinkcontainer2.style.display = "none";
-    sharelinkcontainer3.style.display = "flex";
-})
-
-var socialwhtqr = document.getElementById("socialwhtqr");
-var socialfbqr = document.getElementById("socialfbqr");
-var socialmaiqr = document.getElementById("socialmaiqr");
-var sociallinqr = document.getElementById("sociallinqr");
-var socialwhtlink = document.getElementById("socialwhtlink");
-var socialfblink = document.getElementById("socialfblink");
-var socialmailink = document.getElementById("socialmailink");
-var sociallinlink = document.getElementById("sociallinlink");
-var qrcodeimg = document.getElementById("qrcodeimg");
-
-function socialwindowscreen(url) {
-    var left = (screen.width - 570) / 2;
-    var top = (screen.height - 570) / 2;
-    var params = "menubar=yes,toolbar=yes,status=yes,width=570,height=570,top=" + top + ",left=" + left;
-    window.open(url, "NewWindow", params);
-}
-function setSharelinks() {
-    var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
-    // var tweet = encodeURIComponent($("meta[property=]"))
-
-    var imgURL = encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
-
-    socialwhtqr.addEventListener('click', () => {
-        url = 'https://wa.me/?text=' + imgURL;
-        socialwindowscreen(url);
-    })
-    socialfbqr.addEventListener('click', () => {
-        url = "https://www.facebook.com/sharer.php?u=" + imgURL;
-        socialwindowscreen(url);
-    })
-    socialmaiqr.addEventListener('click', () => {
-        url = "mailto:?subject=Portfolio_QRCode&body=Scan QR code from here " + imgURL;
-        socialwindowscreen(url);
-    })
-    sociallinqr.addEventListener('click', () => {
-        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + imgURL;
-        socialwindowscreen(url);
-    })
-
-
-
-    socialwhtlink.addEventListener('click', () => {
-        url = "https://wa.me/?text=" + pageURL;
-        socialwindowscreen(url);
-    })
-    socialfblink.addEventListener('click', () => {
-        url = "https://www.facebook.com/sharer.php?u=" + pageURL;
-        socialwindowscreen(url);
-    })
-    socialmailink.addEventListener('click', () => {
-        url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
-        socialwindowscreen(url);
-    })
-    sociallinlink.addEventListener('click', () => {
-        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
-        socialwindowscreen(url);
-    })
-
-
-}
-
-
-//small-start
-var sshareimg = document.getElementById("sshareimg");
-var sshareimgin = document.getElementById("sshareimgin");
-var sshareoptsdiv = document.getElementById("sshareoptsdiv");
-var sshareoptwht = document.getElementById("sshareoptwht");
-var sshareoptmail = document.getElementById("sshareoptmail");
-var sshareoptlink = document.getElementById("sshareoptlink");
-var sshareoptfb = document.getElementById("sshareoptfb");
-//small-end
-
-sshareimg.addEventListener('click', () => {
-    setSharelinkssmall();
-    sshareoptsdiv.style.display = "flex";
-    sshareimg.style.display = "none";
-})
-sshareimgin.addEventListener('click', () => {
-    sshareoptsdiv.style.display = "none";
-    sshareimg.style.display = "block";
-})
-
-function socialwindowscreensmall(url) {
-    var left = (screen.width - 70) / 2;
-    var top = (screen.height - 70) / 2;
-    var width = (screen.width) * 0.75;
-    var height = (screen.height) * 0.5;
-    var params = `menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
-    window.open(url, "NewWindow", params);
-}
-function setSharelinkssmall() {
-    var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
-    sshareoptwht.addEventListener('click', () => {
-        url = "https://wa.me/?text=" + pageURL;
-        socialwindowscreensmall(url);
-    })
-    sshareoptfb.addEventListener('click', () => {
-        url = "https://www.facebook.com/sharer.php?u=" + pageURL;
-        socialwindowscreensmall(url);
-    })
-    sshareoptmail.addEventListener('click', () => {
-        url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
-        socialwindowscreensmall(url);
-    })
-    sshareoptlink.addEventListener('click', () => {
-        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
-        socialwindowscreensmall(url);
-    })
-}
-
 
 //very small screen display off
 var fullpage = document.querySelector(".fullpage");
@@ -1262,7 +1215,7 @@ var facebookmodal = document.getElementById("facebookmodal");
 var facebookdiv = document.getElementById("facebookdiv");
 var closefacebookframe = document.getElementById("closefacebookframe");
 
-facebookdiv.onclick = function (){
+facebookdiv.onclick = function () {
     facebookmodal.style.display = "flex";
 }
 
@@ -1275,7 +1228,7 @@ var emppymodal = document.getElementById("emppymodal");
 var emppydiv = document.getElementById("emppydiv");
 var closeemppyframe = document.getElementById("closeemppyframe");
 
-emppydiv.onclick = function (){
+emppydiv.onclick = function () {
     emppymodal.style.display = "flex";
 }
 
@@ -1301,7 +1254,7 @@ window.onclick = function (event) {
     }
 }
 
-window.onmouseover = function(event){
+window.onmouseover = function (event) {
     if (event.target == emppymodal) {
         document.body.style.cursor = 'url(./img/cursor1.png)';
     }
