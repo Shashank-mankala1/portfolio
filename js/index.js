@@ -922,7 +922,8 @@ var pageopendict = {
     'frugaltesting': 'https://frugaltesting.com/',
     'coursera': 'https://www.coursera.org/',
     'lpu': 'https://www.lpu.in/',
-    'shadowfax': 'https://www.shadowfax.in/'
+    'shadowfax': 'https://www.shadowfax.in/',
+    'UB':'https://www.buffalo.edu/'
 }
 
 
