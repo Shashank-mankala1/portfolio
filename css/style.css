@@ -1321,8 +1321,8 @@ input:checked~.darkmodeslider::before {
 }
 
 #phpimg {
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
 }
 
 .skillnamename {
@@ -1630,7 +1630,8 @@ input:checked~.darkmodeslider::before {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 1px 1px 20px 3px rgb(158 158 158 / 29%)
+    box-shadow: 1px 1px 20px 3px rgb(158 158 158 / 29%);
+    border-radius: 10px;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -1686,6 +1687,7 @@ input:checked~.darkmodeslider::before {
 
 .hiremecontainer{
     width: 90%;
+    height: 90%;
     background: white;
     border-radius: 10px;
     display: flex;
@@ -2038,6 +2040,10 @@ input:checked~.darkmodeslider::before {
         margin-bottom: 1rem;
         margin-right: 4rem;
     }
+    .hiremeshashank{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media only screen and (max-width: 1063px) {
@@ -2064,6 +2070,14 @@ input:checked~.darkmodeslider::before {
 
     .sharelinkdiv {
         margin-right: 0px;
+    }
+    .hiremeshashank {
+        width: 150px;
+        height: 150px;
+        margin-top: 0;
+    }
+    .hiremeheading{
+        font-size: 100%;
     }
 }
 
@@ -2245,7 +2259,7 @@ input:checked~.darkmodeslider::before {
     }
 
     #mongoimg {
-        height: 125px;
+        height: 100%;
     }
 
     #phpimg {
@@ -2307,6 +2321,13 @@ input:checked~.darkmodeslider::before {
         height: 40px;
         font-size: 20px;
     }
+
+    .hiremeshashank {
+        width: 150px;
+        height: 150px;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -2338,6 +2359,9 @@ input:checked~.darkmodeslider::before {
     .skillname {
         width: calc(43%);
     }
+    .skillname img {
+        width: 40px;
+    }
 
     .prs {
         margin-top: 45px;
@@ -2364,10 +2388,21 @@ input:checked~.darkmodeslider::before {
         display: none;
     }
 
+    .hiremeheading{
+        font-size: 100%;
+    }
+
+    .hireopts{
+        margin: 1px;
+    }
+    .hireopttype{
+        font-size: 0.7rem;
+    }
+
     .contactsubcontainer {
         height: fit-content;
         margin-top: 0px;
-        margin-bottom: 300px;
+        margin-bottom: 100px;
     }
 
     .sshareoptsdiv {
@@ -2420,6 +2455,17 @@ input:checked~.darkmodeslider::before {
 
     .awardcardbody {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .skillname {
+        width: 40%;
+    }
+
+    .secheading {
+        height: 70px;
+        font-size: 19px;
     }
 }
 

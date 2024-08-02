@@ -1133,15 +1133,14 @@ closecertificateframe.onclick = function () {
 // }
 
 function sendemail(type) {
-    url = "https://docs.google.com/forms/d/e/1FAIpQLSfC0GnPHz7Mb1jwL3Ya8oDbolsgJmOFVAYtUiUcEPM4O7v30g/viewform?usp=sf_link"
+    url = "https://docs.google.com/forms/d/e/1FAIpQLScAe9LbVKVCSP6kfI_3ChMkPDD2CN9QlD_XJ_sBlQaTemNLcA/viewform?usp=sf_link"
     window.open(url)
-    // socialwindowscreensmall(url);
 }
 
 //very small screen display off
 var fullpage = document.querySelector(".fullpage");
 window.onload = function checkscreenwidth() {
-    if (screen.width < 368) {
+    if (screen.width < 360) {
         fullpage.style.display = "none";
         setTimeout(() => { alert("Please open this site on another device as your screen size is very small to display"); }, 500);
     }
