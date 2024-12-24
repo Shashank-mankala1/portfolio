@@ -558,6 +558,50 @@ function repimg7() {
 // }
 
 
+// n6
+var titlen6 = document.getElementById("prpn6");
+var gifn6 = document.getElementById("prgifn6");
+var optionn6 = document.getElementById("proptionn6");
+var hiddenn6 = document.getElementById("prshidonoffn6");
+var unhiddenn6 = document.getElementById("prsonoffn6");
+var closen6 = document.getElementById("closeoptn6");
+
+titlen6.addEventListener('click', myFunctionn6);
+gifn6.addEventListener('click', myFunctionn6);
+optionn6.addEventListener('click', myFunctionn6);
+
+function myFunctionn6() {
+    hiddenn6.style.display = 'block';
+    unhiddenn6.style.display = 'none';
+}
+
+closen6.addEventListener('click', myFunctionrn6);
+function myFunctionrn6() {
+    hiddenn6.style.display = 'none';
+    unhiddenn6.style.display = 'block';
+}
+// n5
+var titlen5 = document.getElementById("prpn5");
+var gifn5 = document.getElementById("prgifn5");
+var optionn5 = document.getElementById("proptionn5");
+var hiddenn5 = document.getElementById("prshidonoffn5");
+var unhiddenn5 = document.getElementById("prsonoffn5");
+var closen5 = document.getElementById("closeoptn5");
+
+titlen5.addEventListener('click', myFunctionn5);
+gifn5.addEventListener('click', myFunctionn5);
+optionn5.addEventListener('click', myFunctionn5);
+
+function myFunctionn5() {
+    hiddenn5.style.display = 'block';
+    unhiddenn5.style.display = 'none';
+}
+
+closen5.addEventListener('click', myFunctionrn5);
+function myFunctionrn5() {
+    hiddenn5.style.display = 'none';
+    unhiddenn5.style.display = 'block';
+}
 // n4
 var titlen4 = document.getElementById("prpn4");
 var gifn4 = document.getElementById("prgifn4");
@@ -867,6 +911,15 @@ function myFunctionr7() {
 
 function viewproject(name) {
     var projectdict = {
+        
+        PR_HRTPDT: "https://shashank-mankala1.github.io/Heart-Attack-Prediction/",
+        REPO_HRTPDT: 'https://github.com/Shashank-mankala1/Heart-Attack-Prediction',
+        ART_HRTPDT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
+        MP4_HRTPDT: 'https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing',
+    
+        REPO_DIAB: 'https://github.com/Shashank-mankala1/diabetes-prediction-project',
+        ART_DIAB: 'https://medium.com/@shashankmankala/building-a-diabetes-prediction-system-a-step-by-step-guide-a293e4b9a9fd',
+        
         PR_CHTBT: "https://shashank-mankala1.github.io/chatbot/",
         REPO_CHTBT: 'https://github.com/Shashank-mankala1/chatbot',
         ART_CHTBT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
@@ -1158,13 +1211,12 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (e) {
             this.blur();
             this.style.outline = "none"
-            e.preventDefault(); // Prevent the default behavior of the anchor tag
-            const targetId = this.getAttribute("href").substring(1); // Get the target section ID
-            const customname = this.getAttribute("data-target"); // Get the target section ID
-            const targetSection = document.getElementById(targetId); // Get the target section
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const customname = this.getAttribute("data-target");
+            const targetSection = document.getElementById(targetId);
 
             if (targetSection) {
-                // Scroll to the target section
                 targetSection.scrollIntoView({ behavior: "smooth" });
 
             }
