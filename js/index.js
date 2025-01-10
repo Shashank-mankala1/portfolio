@@ -450,10 +450,10 @@ function actcontout() {
 var prs1 = document.getElementById("prs1");
 var prs2 = document.getElementById("prs2");
 var prs3 = document.getElementById("prs3");
-var prs4 = document.getElementById("prs4");
+// var prs4 = document.getElementById("prs4");
 var prs5 = document.getElementById("prs5");
 var prs6 = document.getElementById("prs6");
-var prs7 = document.getElementById("prs7");
+// var prs7 = document.getElementById("prs7");
 var prsn1 = document.getElementById("prsn1");
 var prsn2 = document.getElementById("prsn2");
 var prsn3 = document.getElementById("prsn3");
@@ -461,10 +461,10 @@ var prsn3 = document.getElementById("prsn3");
 var prgifgif1 = document.getElementById("prgifgif1");
 var prgifgif2 = document.getElementById("prgifgif2");
 var prgifgif3 = document.getElementById("prgifgif3");
-var prgifgif4 = document.getElementById("prgifgif4");
+// var prgifgif4 = document.getElementById("prgifgif4");
 var prgifgif5 = document.getElementById("prgifgif5");
 // var prgifgif6=document.getElementById("prgifgif6");
-var prgifgif7 = document.getElementById("prgifgif7");
+// var prgifgif7 = document.getElementById("prgifgif7");
 var prgifgifn0 = document.getElementById("prgifgifn0");
 var prgifgifn1 = document.getElementById("prgifgifn1");
 var prgifgifn2 = document.getElementById("prgifgifn2");
@@ -522,14 +522,14 @@ function repgif3() {
 function repimg3() {
     prgifgif3.src = "./img/c1.png";
 }
-prs4.addEventListener("mouseover", repgif4);
-prs4.addEventListener("mouseout", repimg4);
-function repgif4() {
-    prgifgif4.src = "./img/meals.gif";
-}
-function repimg4() {
-    prgifgif4.src = "./img/m1.webp";
-}
+// prs4.addEventListener("mouseover", repgif4);
+// prs4.addEventListener("mouseout", repimg4);
+// function repgif4() {
+//     prgifgif4.src = "./img/meals.gif";
+// }
+// function repimg4() {
+//     prgifgif4.src = "./img/m1.webp";
+// }
 prs5.addEventListener("mouseover", repgif5);
 prs5.addEventListener("mouseout", repimg5);
 function repgif5() {
@@ -538,14 +538,14 @@ function repgif5() {
 function repimg5() {
     prgifgif5.src = "./img/t1.webp";
 }
-prs7.addEventListener("mouseover", repgif7);
-prs7.addEventListener("mouseout", repimg7);
-function repgif7() {
-    prgifgif7.src = "./img/incometax.gif";
-}
-function repimg7() {
-    prgifgif7.src = "./img/i1.webp";
-}
+// prs7.addEventListener("mouseover", repgif7);
+// prs7.addEventListener("mouseout", repimg7);
+// function repgif7() {
+//     prgifgif7.src = "./img/incometax.gif";
+// }
+// function repimg7() {
+//     prgifgif7.src = "./img/i1.webp";
+// }
 
 // var sharebtn = document.getElementById("sharebtn");
 // sharebtn.addEventListener("mouseover", repgifcon);
@@ -809,27 +809,27 @@ function myFunctionr3() {
 
 // ---
 // 4
-var title4 = document.getElementById("prp4");
-var gif4 = document.getElementById("prgif4");
-var option4 = document.getElementById("proption4");
-var hidden4 = document.getElementById("prshidonoff4");
-var unhidden4 = document.getElementById("prsonoff4");
-var close4 = document.getElementById("closeopt4");
+// var title4 = document.getElementById("prp4");
+// var gif4 = document.getElementById("prgif4");
+// var option4 = document.getElementById("proption4");
+// var hidden4 = document.getElementById("prshidonoff4");
+// var unhidden4 = document.getElementById("prsonoff4");
+// var close4 = document.getElementById("closeopt4");
 
-title4.addEventListener('click', myFunction4);
-gif4.addEventListener('click', myFunction4);
-option4.addEventListener('click', myFunction4);
+// title4.addEventListener('click', myFunction4);
+// gif4.addEventListener('click', myFunction4);
+// option4.addEventListener('click', myFunction4);
 
-function myFunction4() {
-    hidden4.style.display = 'block';
-    unhidden4.style.display = 'none';
-}
+// function myFunction4() {
+//     hidden4.style.display = 'block';
+//     unhidden4.style.display = 'none';
+// }
 
-close4.addEventListener('click', myFunctionr4);
-function myFunctionr4() {
-    hidden4.style.display = 'none';
-    unhidden4.style.display = 'block';
-}
+// close4.addEventListener('click', myFunctionr4);
+// function myFunctionr4() {
+//     hidden4.style.display = 'none';
+//     unhidden4.style.display = 'block';
+// }
 
 
 // ---
@@ -884,27 +884,27 @@ function myFunctionr6() {
 
 // ---
 // 7
-var title7 = document.getElementById("prp7");
-var gif7 = document.getElementById("prgif7");
-var option7 = document.getElementById("proption7");
-var hidden7 = document.getElementById("prshidonoff7");
-var unhidden7 = document.getElementById("prsonoff7");
-var close7 = document.getElementById("closeopt7");
+// var title7 = document.getElementById("prp7");
+// var gif7 = document.getElementById("prgif7");
+// var option7 = document.getElementById("proption7");
+// var hidden7 = document.getElementById("prshidonoff7");
+// var unhidden7 = document.getElementById("prsonoff7");
+// var close7 = document.getElementById("closeopt7");
 
-title7.addEventListener('click', myFunction7);
-gif7.addEventListener('click', myFunction7);
-option7.addEventListener('click', myFunction7);
+// title7.addEventListener('click', myFunction7);
+// gif7.addEventListener('click', myFunction7);
+// option7.addEventListener('click', myFunction7);
 
-function myFunction7() {
-    hidden7.style.display = 'block';
-    unhidden7.style.display = 'none';
-}
+// function myFunction7() {
+//     hidden7.style.display = 'block';
+//     unhidden7.style.display = 'none';
+// }
 
-close7.addEventListener('click', myFunctionr7);
-function myFunctionr7() {
-    hidden7.style.display = 'none';
-    unhidden7.style.display = 'block';
-}
+// close7.addEventListener('click', myFunctionr7);
+// function myFunctionr7() {
+//     hidden7.style.display = 'none';
+//     unhidden7.style.display = 'block';
+// }
 
 // -- Project
 
@@ -994,19 +994,19 @@ var certificatemodal = document.getElementById("certificatemodal");
 var closecertificateframe = document.getElementById("closecertificateframe");
 
 var certificatedict = {
-    'DAECISCO': 'https://drive.google.com/file/d/1IPkdkrLc15L15uEDEvgz2zwdvj6MH9XR/preview',
-    'DAMLL': 'https://drive.google.com/file/d/1aVLrxgY3tWsWoDRguyGYdCzodlVhT2xB/preview',
+    'DAECISCO': 'https://drive.google.com/file/d/1jlTWyV5hJHmOykudwNf6EPpOECWvDpkU/preview',
+    'DAMLL': 'https://www.linkedin.com/learning/certificates/d5ab9a320e07346a0c37a7b222319c069f216efd2dd3dc52630a6b134f746d44?trk=share_certificate',
     'SQLL': './img/Top_SQL_50.gif',
-    'ASQLH': 'https://drive.google.com/file/d/1-rVzff0koq_dlMpteJs6gIu8hm6aAoEp/preview',
-    'MONGODB': 'https://drive.google.com/file/d/1wn9kKFqMDsFP6dg7bRUU9x-FhNdrATN-/preview',
-    'GFGDSA': 'https://drive.google.com/file/d/1ekCK86dcg00hYUSau5H2xyLbDseozH6Z/preview',
-    'CCHEFSNACK': 'https://drive.google.com/file/d/1ag9XE4Rc2Ob47I7PstDIZb_ynI4Hl_Fp/preview',
-    'JUMPSTART': 'https://drive.google.com/file/d/1XuHZXW10OXnKD5v8psMz8CD2RiFf4nCN/preview',
-    'MBDASQL': 'https://drive.google.com/file/d/1yOh00RgIk7a5_83aBusAq7A7YKlZDJ-l/preview',
-    'CRASHCPY': 'https://drive.google.com/file/d/1CXRi0UTb0iYy9zjcIYfxJE12RDMokA1j/preview',
+    'ASQLH': 'https://drive.google.com/file/d/11GryK21HUoLx2oiigdnkpNYXWn_fIRH5/preview',
+    'MONGODB': 'https://drive.google.com/file/d/11H1KG8y9fnCoD5uC1bsSP0kVIlbgOhTS/preview',
+    'GFGDSA': 'https://drive.google.com/file/d/1zRfJbidOOwi65Yl4p_Dkt8LtNeqRioIV/preview',
+    'CCHEFSNACK': 'https://drive.google.com/file/d/1tws82HCe6O6cH_4SNV_G-m49WTNSljAy/preview',
+    'JUMPSTART': 'https://drive.google.com/file/d/1gbZHn8DSwDykiCGp_4n6s0NSDy2O5dZ6/preview',
+    'MBDASQL': 'https://drive.google.com/file/d/1XbJfGgd3bmYQLh40yb0D5-xBqzBcg0Qk/preview',
+    'CRASHCPY': 'https://drive.google.com/file/d/1zyxaIvYkQNFRx2ibGIl_gNG4QFejwQAt/preview',
     'PSCH': 'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PSCH': 'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PYSQLDS': 'https://drive.google.com/file/d/1og-RLSY4aZmHJ8VtJ88tGLSNIxkOo8X0/preview'
+    'PSCH': 'https://drive.google.com/file/d/1T6btmjKz9dchBAK8_1B9Cbge3u-Xn_73/preview',
+    'PYSQLDS': 'https://drive.google.com/file/d/1QjPi0N7z2iUWSQ8oe2VAac1YljM5N3Ow/preview'
 
 }
 

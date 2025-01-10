@@ -1154,7 +1154,7 @@ input:checked~.darkmodeslider::before {
 }
 
 .prtitle p {
-    font-size: 22px;
+    font-size: 1.3rem;
 }
 
 .prtitle p:hover {
@@ -1181,7 +1181,7 @@ input:checked~.darkmodeslider::before {
 }
 
 .prdisc p {
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 .prshidonoff {
@@ -1228,7 +1228,8 @@ input:checked~.darkmodeslider::before {
     height: 189px;
     padding-left: 30px;
     padding-top: 8px;
-    font-size: 18px;
+    font-size: 0.9rem;
+    padding-right: 0.5rem;
 }
 
 .prdeffooter {
@@ -1312,12 +1313,18 @@ input:checked~.darkmodeslider::before {
     width: 155px;
     height: fit-content;
     margin-top: 28px;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 .skillimg {
     display: flex;
     justify-content: center;
+    height: 3.3rem;
+    width: 10rem;
+}
+.skillimg img{
+    width: 40%;
+    object-fit: fill;
 }
 
 #phpimg {
