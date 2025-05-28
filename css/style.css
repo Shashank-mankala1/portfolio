@@ -1070,7 +1070,7 @@ input:checked~.darkmodeslider::before {
 }
 
 .aboutcontent {
-    height: 460px;
+    /* height: 460px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1081,6 +1081,8 @@ input:checked~.darkmodeslider::before {
     width: 90%;
     font-size: 21px;
     line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .abouttxt p {
@@ -1306,7 +1308,7 @@ input:checked~.darkmodeslider::before {
     flex-wrap: wrap;
 }
 
-.skillname {
+/* .skillname {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1314,7 +1316,27 @@ input:checked~.darkmodeslider::before {
     height: fit-content;
     margin-top: 28px;
     margin-left: 10px;
+} */
+ 
+.skillname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    margin: 20px;
 }
+
+.skillname:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    cursor:pointer;
+
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
 
 .skillimg {
     display: flex;
@@ -1322,10 +1344,18 @@ input:checked~.darkmodeslider::before {
     height: 3.3rem;
     width: 10rem;
 }
-.skillimg img{
+/* .skillimg img{
     width: 40%;
     object-fit: fill;
+} */
+
+.skillimg img {
+    width: auto;
+    height: 40px;
+    object-fit: contain;
 }
+
+
 
 #phpimg {
     width: 100%;
@@ -1445,13 +1475,53 @@ input:checked~.darkmodeslider::before {
     font-weight: bold;
 }
 
+.course-tags span {
+  background: #e7f0ff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin: 4px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: bold;
+}
+.expercards {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.expercardheadbody {
+  padding: 15px 20px;
+}
+
+.expercardtitle {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.expercardrole {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+}
+
+.expercardfooter {
+  font-size: 15px;
+  background-color: #f1f1f1;
+}
+.expercards:hover {
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+
 /* Awards */
 .awardscontainer {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
-.awardscontent {
+/* .awardscontent {
     width: 90%;
     margin-top: 60px;
     margin-left: 25px;
@@ -1468,26 +1538,52 @@ input:checked~.darkmodeslider::before {
     padding: 14px;
     box-shadow: 0px 3px 5px 1px #aab4be;
     background: white;
+} */
+
+.awardcard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  /* height: 220px; or 250px if needed */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.awardcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.awardscontent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin-top: 60px;
+}
+
+
+
+
+
 
 .awardcardhead {
     /* height: 99px; */
-    margin-bottom: 7px;
+    /* margin-bottom: 7px;
     margin-top: 5px;
     margin-left: 5px;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 600; */
+    margin-bottom: 12px;
 }
 
-.awardtitle {
+/* .awardtitle {
     font-size: 25px;
     width: fit-content;
-}
-
-.awardtitle:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 4px;
 }
 
 .awardtype {
@@ -1500,7 +1596,41 @@ input:checked~.darkmodeslider::before {
     padding-right: 20px;
     font-size: 20px;
     line-height: 1.5;
+} */
+
+
+.awardtitle {
+    font-size: 18px;
+  font-weight: 600;
+  color: #007BFF;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
+.awardtitle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.awardtype {
+    font-size: 14px;
+    color: #777;
+}
+.awardcardbody {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-left: 12px;
+}
+.awardcardbody ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.awardcardbody ul.smalltext li {
+  font-size: 13px;
+  color: #555;
+}
+
 
 .smalltext {
     font-size: 80%;
