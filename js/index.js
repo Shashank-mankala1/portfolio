@@ -558,6 +558,29 @@ function repimg5() {
 // }
 
 
+// n7
+var titlen7 = document.getElementById("prpn7");
+var gifn7 = document.getElementById("prgifn7");
+var optionn7 = document.getElementById("proptionn7");
+var hiddenn7 = document.getElementById("prshidonoffn7");
+var unhiddenn7 = document.getElementById("prsonoffn7");
+var closen7 = document.getElementById("closeoptn7");
+
+titlen7.addEventListener('click', myFunctionn7);
+gifn7.addEventListener('click', myFunctionn7);
+optionn7.addEventListener('click', myFunctionn7);
+
+function myFunctionn7() {
+    hiddenn7.style.display = 'block';
+    unhiddenn7.style.display = 'none';
+}
+
+closen7.addEventListener('click', myFunctionrn7);
+function myFunctionrn7() {
+    hiddenn7.style.display = 'none';
+    unhiddenn7.style.display = 'block';
+}
+
 // n6
 var titlen6 = document.getElementById("prpn6");
 var gifn6 = document.getElementById("prgifn6");
@@ -565,7 +588,6 @@ var optionn6 = document.getElementById("proptionn6");
 var hiddenn6 = document.getElementById("prshidonoffn6");
 var unhiddenn6 = document.getElementById("prsonoffn6");
 var closen6 = document.getElementById("closeoptn6");
-var pryearn6 = document.getElementById("pryearn6");
 
 titlen6.addEventListener('click', myFunctionn6);
 gifn6.addEventListener('click', myFunctionn6);
@@ -574,16 +596,12 @@ optionn6.addEventListener('click', myFunctionn6);
 function myFunctionn6() {
     hiddenn6.style.display = 'block';
     unhiddenn6.style.display = 'none';
-    pryearn6.style.display = 'block';
-    pryearn6.style.display = 'none';
 }
 
 closen6.addEventListener('click', myFunctionrn6);
 function myFunctionrn6() {
     hiddenn6.style.display = 'none';
     unhiddenn6.style.display = 'block';
-    pryearn6.style.display = 'none';
-    pryearn6.style.display = 'block';
 }
 // n5
 var titlen5 = document.getElementById("prpn5");
@@ -592,7 +610,6 @@ var optionn5 = document.getElementById("proptionn5");
 var hiddenn5 = document.getElementById("prshidonoffn5");
 var unhiddenn5 = document.getElementById("prsonoffn5");
 var closen5 = document.getElementById("closeoptn5");
-var pryearn5 = document.getElementById("pryearn5");
 
 titlen5.addEventListener('click', myFunctionn5);
 gifn5.addEventListener('click', myFunctionn5);
@@ -601,16 +618,12 @@ optionn5.addEventListener('click', myFunctionn5);
 function myFunctionn5() {
     hiddenn5.style.display = 'block';
     unhiddenn5.style.display = 'none';
-    pryearn5.style.display = 'block';
-    pryearn5.style.display = 'none';
 }
 
 closen5.addEventListener('click', myFunctionrn5);
 function myFunctionrn5() {
     hiddenn5.style.display = 'none';
     unhiddenn5.style.display = 'block';
-    pryearn5.style.display = 'none';
-    pryearn5.style.display = 'block';
 }
 // n4
 var titlen4 = document.getElementById("prpn4");
@@ -619,7 +632,6 @@ var optionn4 = document.getElementById("proptionn4");
 var hiddenn4 = document.getElementById("prshidonoffn4");
 var unhiddenn4 = document.getElementById("prsonoffn4");
 var closen4 = document.getElementById("closeoptn4");
-var pryearn4 = document.getElementById("pryearn4");
 
 titlen4.addEventListener('click', myFunctionn4);
 gifn4.addEventListener('click', myFunctionn4);
@@ -628,16 +640,12 @@ optionn4.addEventListener('click', myFunctionn4);
 function myFunctionn4() {
     hiddenn4.style.display = 'block';
     unhiddenn4.style.display = 'none';
-    pryearn4.style.display = 'block';
-    pryearn4.style.display = 'none';
 }
 
 closen4.addEventListener('click', myFunctionrn4);
 function myFunctionrn4() {
     hiddenn4.style.display = 'none';
     unhiddenn4.style.display = 'block';
-    pryearn4.style.display = 'none';
-    pryearn4.style.display = 'block';
 }
 
 
@@ -651,7 +659,6 @@ var optionn3 = document.getElementById("proptionn3");
 var hiddenn3 = document.getElementById("prshidonoffn3");
 var unhiddenn3 = document.getElementById("prsonoffn3");
 var closen3 = document.getElementById("closeoptn3");
-var pryearn3 = document.getElementById("pryearn3");
 
 titlen3.addEventListener('click', myFunctionn3);
 gifn3.addEventListener('click', myFunctionn3);
@@ -660,16 +667,12 @@ optionn3.addEventListener('click', myFunctionn3);
 function myFunctionn3() {
     hiddenn3.style.display = 'block';
     unhiddenn3.style.display = 'none';
-    pryearn3.style.display = 'block';
-    pryearn3.style.display = 'none';
 }
 
 closen3.addEventListener('click', myFunctionrn3);
 function myFunctionrn3() {
     hiddenn3.style.display = 'none';
     unhiddenn3.style.display = 'block';
-    pryearn3.style.display = 'none';
-    pryearn3.style.display = 'block';
 }
 
 
@@ -683,7 +686,6 @@ var optionn2 = document.getElementById("proptionn2");
 var hiddenn2 = document.getElementById("prshidonoffn2");
 var unhiddenn2 = document.getElementById("prsonoffn2");
 var closen2 = document.getElementById("closeoptn2");
-var pryearn2 = document.getElementById("pryearn2");
 
 titlen2.addEventListener('click', myFunctionn2);
 gifn2.addEventListener('click', myFunctionn2);
@@ -692,16 +694,12 @@ optionn2.addEventListener('click', myFunctionn2);
 function myFunctionn2() {
     hiddenn2.style.display = 'block';
     unhiddenn2.style.display = 'none';
-    pryearn2.style.display = 'block';
-    pryearn2.style.display = 'none';
 }
 
 closen2.addEventListener('click', myFunctionrn2);
 function myFunctionrn2() {
     hiddenn2.style.display = 'none';
     unhiddenn2.style.display = 'block';
-    pryearn2.style.display = 'none';
-    pryearn2.style.display = 'block';
 }
 
 
@@ -714,7 +712,6 @@ var optionn1 = document.getElementById("proptionn1");
 var hiddenn1 = document.getElementById("prshidonoffn1");
 var unhiddenn1 = document.getElementById("prsonoffn1");
 var closen1 = document.getElementById("closeoptn1");
-var pryearn1 = document.getElementById("pryearn1");
 
 titlen1.addEventListener('click', myFunctionn1);
 gifn1.addEventListener('click', myFunctionn1);
@@ -723,16 +720,12 @@ optionn1.addEventListener('click', myFunctionn1);
 function myFunctionn1() {
     hiddenn1.style.display = 'block';
     unhiddenn1.style.display = 'none';
-    pryearn1.style.display = 'block';
-    pryearn1.style.display = 'none';
 }
 
 closen1.addEventListener('click', myFunctionrn1);
 function myFunctionrn1() {
     hiddenn1.style.display = 'none';
     unhiddenn1.style.display = 'block';
-    pryearn1.style.display = 'none';
-    pryearn1.style.display = 'block';
 }
 
 
@@ -744,7 +737,6 @@ var optionn0 = document.getElementById("proptionn0");
 var hiddenn0 = document.getElementById("prshidonoffn0");
 var unhiddenn0 = document.getElementById("prsonoffn0");
 var closen0 = document.getElementById("closeoptn0");
-var pryearn0 = document.getElementById("pryearn0");
 
 titlen0.addEventListener('click', myFunctionn0);
 gifn0.addEventListener('click', myFunctionn0);
@@ -753,16 +745,12 @@ optionn0.addEventListener('click', myFunctionn0);
 function myFunctionn0() {
     hiddenn0.style.display = 'block';
     unhiddenn0.style.display = 'none';
-    pryearn0.style.display = 'block';
-    pryearn0.style.display = 'none';
 }
 
 closen0.addEventListener('click', myFunctionrn0);
 function myFunctionrn0() {
     hiddenn0.style.display = 'none';
     unhiddenn0.style.display = 'block';
-    pryearn0.style.display = 'none';
-    pryearn0.style.display = 'block';
 }
 
 
@@ -774,7 +762,6 @@ var option1 = document.getElementById("proption1");
 var hidden1 = document.getElementById("prshidonoff1");
 var unhidden1 = document.getElementById("prsonoff1");
 var close1 = document.getElementById("closeopt1");
-var pryear1 = document.getElementById("pryear1");
 
 title1.addEventListener('click', myFunction1);
 gif1.addEventListener('click', myFunction1);
@@ -783,16 +770,13 @@ option1.addEventListener('click', myFunction1);
 function myFunction1() {
     hidden1.style.display = 'block';
     unhidden1.style.display = 'none';
-    pryear1.style.display = 'block';
-    pryear1.style.display = 'none';
+    // hidden1.style.height='100%';
 }
 
 close1.addEventListener('click', myFunctionr1);
 function myFunctionr1() {
     hidden1.style.display = 'none';
     unhidden1.style.display = 'block';
-    pryear1.style.display = 'none';
-    pryear1.style.display = 'block';
 }
 
 
@@ -804,7 +788,6 @@ var option2 = document.getElementById("proption2");
 var hidden2 = document.getElementById("prshidonoff2");
 var unhidden2 = document.getElementById("prsonoff2");
 var close2 = document.getElementById("closeopt2");
-var pryear2 = document.getElementById("pryear2");
 
 title2.addEventListener('click', myFunction2);
 gif2.addEventListener('click', myFunction2);
@@ -813,16 +796,12 @@ option2.addEventListener('click', myFunction2);
 function myFunction2() {
     hidden2.style.display = 'block';
     unhidden2.style.display = 'none';
-    pryear2.style.display = 'block';
-    pryear2.style.display = 'none';
 }
 
 close2.addEventListener('click', myFunctionr2);
 function myFunctionr2() {
     hidden2.style.display = 'none';
     unhidden2.style.display = 'block';
-    pryear2.style.display = 'none';
-    pryear2.style.display = 'block';
 }
 
 
@@ -834,7 +813,6 @@ var option3 = document.getElementById("proption3");
 var hidden3 = document.getElementById("prshidonoff3");
 var unhidden3 = document.getElementById("prsonoff3");
 var close3 = document.getElementById("closeopt3");
-var pryear3 = document.getElementById("pryear3");
 
 title3.addEventListener('click', myFunction3);
 gif3.addEventListener('click', myFunction3);
@@ -843,16 +821,12 @@ option3.addEventListener('click', myFunction3);
 function myFunction3() {
     hidden3.style.display = 'block';
     unhidden3.style.display = 'none';
-    pryear3.style.display = 'block';
-    pryear3.style.display = 'none';
 }
 
 close3.addEventListener('click', myFunctionr3);
 function myFunctionr3() {
     hidden3.style.display = 'none';
     unhidden3.style.display = 'block';
-    pryear3.style.display = 'none';
-    pryear3.style.display = 'block';
 }
 
 
@@ -889,7 +863,6 @@ var option5 = document.getElementById("proption5");
 var hidden5 = document.getElementById("prshidonoff5");
 var unhidden5 = document.getElementById("prsonoff5");
 var close5 = document.getElementById("closeopt5");
-var pryear5 = document.getElementById("pryear5");
 
 title5.addEventListener('click', myFunction5);
 gif5.addEventListener('click', myFunction5);
@@ -898,16 +871,12 @@ option5.addEventListener('click', myFunction5);
 function myFunction5() {
     hidden5.style.display = 'block';
     unhidden5.style.display = 'none';
-    pryear5.style.display = 'block';
-    pryear5.style.display = 'none';
 }
 
 close5.addEventListener('click', myFunctionr5);
 function myFunctionr5() {
     hidden5.style.display = 'none';
     unhidden5.style.display = 'block';
-    pryear5.style.display = 'none';
-    pryear5.style.display = 'block';
 }
 
 
@@ -919,7 +888,6 @@ var option6 = document.getElementById("proption6");
 var hidden6 = document.getElementById("prshidonoff6");
 var unhidden6 = document.getElementById("prsonoff6");
 var close6 = document.getElementById("closeopt6");
-var pryear6 = document.getElementById("pryear6");
 
 title6.addEventListener('click', myFunction6);
 gif6.addEventListener('click', myFunction6);
@@ -928,16 +896,12 @@ option6.addEventListener('click', myFunction6);
 function myFunction6() {
     hidden6.style.display = 'block';
     unhidden6.style.display = 'none';
-    pryear6.style.display = 'block';
-    pryear6.style.display = 'none';
 }
 
 close6.addEventListener('click', myFunctionr6);
 function myFunctionr6() {
     hidden6.style.display = 'none';
     unhidden6.style.display = 'block';
-    pryear6.style.display = 'none';
-    pryear6.style.display = 'block';
 }
 
 
@@ -975,6 +939,10 @@ function viewproject(name) {
         REPO_HRTPDT: 'https://github.com/Shashank-mankala1/Heart-Attack-Prediction',
         ART_HRTPDT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
         MP4_HRTPDT: 'https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing',
+    
+        REPO_CRYP: 'https://github.com/Shashank-mankala1/realtimecryptotradingdashboard',
+        ART_CRYP: 'https://medium.com/@shashankmankala/building-a-real-time-crypto-trading-pipeline-with-docker-and-python-8b49cd526269',
+        
     
         REPO_DIAB: 'https://github.com/Shashank-mankala1/diabetes-prediction-project',
         ART_DIAB: 'https://medium.com/@shashankmankala/building-a-diabetes-prediction-system-a-step-by-step-guide-a293e4b9a9fd',
