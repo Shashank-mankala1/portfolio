@@ -1094,10 +1094,24 @@ input:checked~.darkmodeslider::before {
 }
 
 /* projects */
+.pryear{
+    position: absolute;
+    z-index: 10;
+    border-top-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 4px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .prcontainer {
     display: flex;
     justify-content: center;
-
+    background: white;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    position: relative;
 }
 
 .prcontent {
