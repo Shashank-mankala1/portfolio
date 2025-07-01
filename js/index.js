@@ -557,6 +557,32 @@ function repimg5() {
 //     sharebtn.src = "./img/send.png";
 // }
 
+// n8
+var titlen8 = document.getElementById("prpn8");
+var gifn8 = document.getElementById("prgifn8");
+var optionn8 = document.getElementById("proptionn8");
+var hiddenn8 = document.getElementById("prshidonoffn8");
+var unhiddenn8 = document.getElementById("prsonoffn8");
+var closen8 = document.getElementById("closeoptn8");
+
+titlen8.addEventListener('click', myFunctionn8);
+gifn8.addEventListener('click', myFunctionn8);
+optionn8.addEventListener('click', myFunctionn8);
+
+function myFunctionn8() {
+    hiddenn8.style.display = 'block';
+    unhiddenn8.style.display = 'none';
+    pryearn8.style.display = 'block';
+    pryearn8.style.display = 'none';
+}
+
+closen8.addEventListener('click', myFunctionrn8);
+function myFunctionrn8() {
+    hiddenn8.style.display = 'none';
+    unhiddenn8.style.display = 'block';
+    pryearn8.style.display = 'none';
+    pryearn8.style.display = 'block';
+}
 
 // n7
 var titlen7 = document.getElementById("prpn7");
@@ -997,6 +1023,8 @@ function myFunctionr6() {
 
 function viewproject(name) {
     var projectdict = {
+        REPO_TUTOR:"https://github.com/Shashank-mankala1/tutormind",
+        PR_TUTOR: "https://tutormindai.streamlit.app/",
         
         PR_HRTPDT: "https://shashank-mankala1.github.io/Heart-Attack-Prediction/",
         REPO_HRTPDT: 'https://github.com/Shashank-mankala1/Heart-Attack-Prediction',
@@ -1085,7 +1113,7 @@ var closecertificateframe = document.getElementById("closecertificateframe");
 
 var certificatedict = {
     'DAECISCO': 'https://drive.google.com/file/d/1jlTWyV5hJHmOykudwNf6EPpOECWvDpkU/preview',
-    'DAMLL': 'https://www.linkedin.com/learning/certificates/d5ab9a320e07346a0c37a7b222319c069f216efd2dd3dc52630a6b134f746d44?trk=share_certificate',
+    'DAMLL': 'https://drive.google.com/file/d/10JzTrjJusUgaHkSpgLi86YcKf05Q3SIG/preview',
     'SQLL': './img/Top_SQL_50.gif',
     'ASQLH': 'https://drive.google.com/file/d/11GryK21HUoLx2oiigdnkpNYXWn_fIRH5/preview',
     'MONGODB': 'https://drive.google.com/file/d/11H1KG8y9fnCoD5uC1bsSP0kVIlbgOhTS/preview',

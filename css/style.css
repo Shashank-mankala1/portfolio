@@ -1358,18 +1358,12 @@ input:checked~.darkmodeslider::before {
     height: 3.3rem;
     width: 10rem;
 }
-/* .skillimg img{
-    width: 40%;
-    object-fit: fill;
-} */
 
 .skillimg img {
     width: auto;
     height: 40px;
     object-fit: contain;
 }
-
-
 
 #phpimg {
     width: 100%;
@@ -1380,7 +1374,31 @@ input:checked~.darkmodeslider::before {
     display: flex;
     justify-content: center;
     margin-top: 6px;
+    flex-direction: column;
 }
+.skillnamename h2 {
+    text-align: center;
+}
+
+.skilldots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e0e0e0; 
+  transition: background-color 0.3s ease;
+}
+
+.dot.filled {
+  background-color: #2ecc71;
+}
+
 
 .expercontainer {
     display: flex;
