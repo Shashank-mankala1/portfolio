@@ -9,70 +9,140 @@
     <link rel="stylesheet" href="css/feedback.css">
     <title>Feedback Form</title>
     <link rel="icon" type="image/png" href="img/feedbacklogo.png">
+    <style>
+        body {
+            background: linear-gradient(135deg, #83c5ff 0%, #f3f3f3 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        .feedbackformdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .formdiv1 {
+            background: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            max-width: 400px;
+            width: 100%;
+        }
+        .formdiv label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        .inpf, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid #b3d1ff;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .inpf:focus, textarea:focus {
+            border-color: #83c5ff;
+            outline: none;
+        }
+        .ratingdiv {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .ratingnum {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+        }
+        #rating {
+            flex: 1;
+            accent-color: #83c5ff;
+        }
+        .submitdiv {
+            display: flex;
+            justify-content: center;
+        }
+        #submitbtn {
+            width: 60%;
+            height: 40px;
+            border-radius: 8px;
+            background: #83c5ff;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #submitbtn:hover {
+            background: #539ddb;
+        }
+        @media (max-width: 500px) {
+            .formdiv1 {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){if(check){alert(`Feedback Successfully submitted!!! \nThanks for your Valuable Feedback 😃`); window.location='index.html';}}"></iframe>
+        onload="if(submitted){if(check){alert('Feedback Successfully submitted!\\nThanks for your valuable feedback 😃'); window.location='index.html';}}"></iframe>
     <div class="feedbackformdiv">
         <div class="formdiv1">
             <form class="formdiv" target="hidden_iframe" onsubmit="submitted=true; check=funcheck();"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSet0VSzz6DGFFazhWdPn7iPMFggiLbprqU8b47orBbk_dAoDA/formResponse"
-                method="POST" target="_self">
-                <label for="name" class="feedbacklabels"><b>Name</b></label>
+                method="POST">
+                <label for="name"><b>Name</b></label>
                 <input class="inpf" type="text" id="name" placeholder="Enter your name" name="entry.1893403539"
                     autocomplete="off" required />
 
-                <label for="mailid" class="feedbacklabels"><b>Email Id</b></label>
+                <label for="mailid"><b>Email Id</b></label>
                 <input class="inpf" type="email" id="mailid" placeholder="Enter your email" name="entry.487542671"
                     autocomplete="off" required />
 
-                <label for="rating" class="feedbacklabels"><b> How much you would rate my website ? </b></label>
+                <label for="rating"><b>How would you rate my website?</b></label>
                 <div class="ratingdiv">
-                    <p class="ratingnum">0</p><input type="range" name="entry.1318793904" id="rating" min="0" max="5"
-                        step="1" value="5" onclick="viewrating();" required />
-                    <p class="ratingnum">5</p>
+                    <span class="ratingnum">0</span>
+                    <input type="range" name="entry.1318793904" id="rating" min="0" max="5"
+                        step="1" value="5" oninput="viewrating()" required />
+                    <span class="ratingnum">5</span>
+                    <span id="ratingValue" style="margin-left:8px; font-weight:600; color:#539ddb;"></span>
                 </div>
 
-                <label for="feedback" class="feedbacklabels"><b>Feedback or Suggestion:</b></label>
-                <textarea name="entry.522154431" id="feedback" cols="30" rows="10" placeholder="Write here :)"
+                <label for="feedback"><b>Feedback or Suggestion:</b></label>
+                <textarea name="entry.522154431" id="feedback" cols="30" rows="5" placeholder="Write here :)"
                     required></textarea>
 
                 <div class="submitdiv">
-                    <!-- <button type="submit" id="feedbacksubmitbtn">Submit</button> -->
-                    <input id="submitbtn" type="submit"
-                        style="width: 50%; height: 30px; border-radius: 5px; background: #83c5ff;"
-                        onmouseover=cursoron();>
+                    <input id="submitbtn" type="submit" value="Submit Feedback">
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        var submitted = false;
+        var check = false;
+
+        function funcheck() {
+            var fname = document.getElementById("name").value.trim();
+            var fmail = document.getElementById("mailid").value.trim();
+            var ffeedback = document.getElementById("feedback").value.trim();
+            return !(fname === "" || fmail === "" || ffeedback === "");
+        }
+
+        function viewrating() {
+            var rating = document.getElementById("rating").value;
+            document.getElementById("ratingValue").title = rating;
+            document.getElementById("rating").title = rating;
+        }
+        document.getElementById("rating").addEventListener("input", viewrating);
+    </script>
 </body>
-<script>
-    var submitted = false;
-    var check = false;
-    var feedbacksubmitbtn = document.getElementById("feedbacksubmitbtn");
-
-    var fname = document.getElementById("name").value;
-    var fmail = document.getElementById("mailid").value;
-    var ffeedback = document.getElementById("feedback").value;
-
-    feedbacksubmitbtn.addEventListener('click', submitfeedback);
-    function funcheck() {
-        if (!(fname == "" || fmail == "" || ffeedback == "")) {
-            return false;
-        }
-        else {
-            return true;
-        }
-    }
-    function cursoron() {
-        document.getElementById("rating").style.cursor = "pointer";
-        document.getElementById("submitbtn").style.cursor = "pointer";
-    }
-    function viewrating() {
-        document.getElementById("rating").title = document.getElementById("rating").value;
-    }
-</script>
 
 </html>

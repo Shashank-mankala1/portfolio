@@ -1,1431 +1,669 @@
 var bdcolor = "#2196f3";
-var leftnavhover = 'rgb(243, 242, 242)';
-
+var leftnavhover = "rgb(243, 242, 242)";
 
 var typed = new Typed(".txtbg", {
-    strings: ["Wow is the one"],
-    typeSpeed: 50,
-    loop: false,
-    onComplete: function (self) {
-        self.cursor.remove();
-    }
+  strings: ["Wow is the one"],
+  typeSpeed: 50,
+  loop: false,
+  onComplete: function (self) {
+    self.cursor.remove();
+  },
 });
 setTimeout(() => {
-    var typed = new Typed(".typing", {
-        strings: ["I aim for."],
-        typeSpeed: 50,
-        loop: false
-    });
+  var typed = new Typed(".typing", {
+    strings: ["I aim for."],
+    typeSpeed: 50,
+    loop: false,
+  });
 }, 1450);
-var coloronbtn = document.getElementById('panelbtncolor');
-var panelcolor0 = document.getElementById('colorradio0');
-var panelcolor1 = document.getElementById('colorradio1');
-var panelcolor2 = document.getElementById('colorradio2');
-var panelcolor3 = document.getElementById('colorradio3');
-var panelcolor4 = document.getElementById('colorradio4');
-var panelcolor5 = document.getElementById('colorradio5');
-var sitethemebg = document.getElementsByClassName('inthemeb');
-var sitethemef = document.getElementsByClassName('inthemef');
-var prtitle = document.getElementsByClassName('prtitle');
-var expercardtitle = document.getElementsByClassName('expercardtitle');
-var undlinecolor = document.querySelector('.txtbg');
 
+// Theme color panel optimization
 
+const coloronbtn = document.getElementById("panelbtncolor");
+const panelcolors = [
+    document.getElementById("colorradio0"),
+    document.getElementById("colorradio1"),
+    document.getElementById("colorradio2"),
+    document.getElementById("colorradio3"),
+    document.getElementById("colorradio4"),
+    document.getElementById("colorradio5"),
+];
+const sitethemebg = document.getElementsByClassName("inthemeb");
+const sitethemef = document.getElementsByClassName("inthemef");
+const prtitle = document.getElementsByClassName("prtitle");
+const expercardtitle = document.getElementsByClassName("expercardtitle");
+const undlinecolor = document.querySelector(".txtbg");
 
 function setcolor() {
-    if (panelcolor0.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor0.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor0.value;
-            sitethemebg[i].style.color = "white";
+    panelcolors.forEach((panel, idx) => {
+        if (panel.checked) {
+            coloronbtn.style.backgroundColor = panel.value;
+            for (let i = 0; i < sitethemebg.length; i++) {
+                sitethemebg[i].style.backgroundColor = panel.value;
+                sitethemebg[i].style.color = (idx === 1 || idx === 3 || idx === 4) ? "black" : "white";
+            }
+            for (let i = 0; i < sitethemef.length; i++) {
+                sitethemef[i].style.color = panel.value;
+            }
+            if (idx === 1) {
+                for (let i = 0; i < prtitle.length; i++) {
+                    prtitle[i].style.textShadow = "0 0 black";
+                }
+            }
+            if (idx === 3) {
+                for (let i = 0; i < expercardtitle.length; i++) {
+                    expercardtitle[i].style.textShadow = "0.5px 0px 0px #7a7a7a";
+                }
+            }
+            undlinecolor.style.textDecorationColor = panel.value;
+            bdcolor = panel.value;
         }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor0.value;
-        }
-        undlinecolor.style.textDecorationColor = panelcolor0.value;
-        bdcolor = panelcolor0.value;
-    }
-    if (panelcolor1.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor1.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor1.value;
-            sitethemebg[i].style.color = "black";
-            // sitethemebg[i].style.textShadow="0 0 black";
-        }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor1.value;
-        }
-        for (var i = 0; i < prtitle.length; i++) {
-            prtitle[i].style.textShadow = "0 0 black";
-        }
-        undlinecolor.style.textDecorationColor = panelcolor1.value;
-        bdcolor = panelcolor1.value;
-    }
-    if (panelcolor2.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor2.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor2.value;
-            sitethemebg[i].style.color = "white";
-        }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor2.value;
-        }
-        undlinecolor.style.textDecorationColor = panelcolor2.value;
-        bdcolor = panelcolor2.value;
-    }
-    if (panelcolor3.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor3.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor3.value;
-            sitethemebg[i].style.color = "black";
-        }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor3.value;
-        }
-        for (var i = 0; i < expercardtitle.length; i++) {
-            expercardtitle[i].style.textShadow = "0.5px 0px 0px #7a7a7a";
-        }
-        undlinecolor.style.textDecorationColor = panelcolor3.value;
-        bdcolor = panelcolor3.value;
-    }
-    if (panelcolor4.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor4.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor4.value;
-            sitethemebg[i].style.color = "black";
-        }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor4.value;
-        }
-        undlinecolor.style.textDecorationColor = panelcolor4.value;
-        bdcolor = panelcolor4.value;
-    }
-    if (panelcolor5.checked == true) {
-        coloronbtn.style.backgroundColor = panelcolor5.value;
-        for (var i = 0; i < sitethemebg.length; i++) {
-            sitethemebg[i].style.backgroundColor = panelcolor5.value;
-            sitethemebg[i].style.color = "white";
-        }
-        for (var i = 0; i < sitethemef.length; i++) {
-            sitethemef[i].style.color = panelcolor5.value;
-        }
-        undlinecolor.style.textDecorationColor = panelcolor5.value;
-        bdcolor = panelcolor5.value;
-    }
+    });
 }
 
-var panelbtn = document.getElementById('panelbtn');
-var panelcolor = document.getElementById('panelcolorsdiv');
-var isopened = false;
-panelbtn.addEventListener('click', openclosecolors);
-function openclosecolors() {
-    if (isopened == false) {
-        panelcolor.style.display = 'flex';
-        isopened = true;
-    }
-    else {
-        panelcolor.style.display = "none";
-        isopened = false;
-    }
-}
-
+const panelbtn = document.getElementById("panelbtn");
+const panelcolor = document.getElementById("panelcolorsdiv");
+let isopened = false;
+panelbtn.addEventListener("click", () => {
+    panelcolor.style.display = isopened ? "none" : "flex";
+    isopened = !isopened;
+});
 
 // Dark mode
 
-var darkmodebg = document.getElementsByClassName('darkmodebg');
-var darkmodefont = document.getElementsByClassName('darkmodefont');
-var darkmodeshadow = document.getElementsByClassName('darkmodeshadow');
-var darkmodebgcolorpanel = document.getElementsByClassName('darkmodebgcolorpanel');
-var darkmodecheckbox = document.getElementById('darkmodecheckbox');
-var righttab = document.getElementsByClassName('righttab');
+const darkmodebg = document.getElementsByClassName("darkmodebg");
+const darkmodefont = document.getElementsByClassName("darkmodefont");
+const darkmodeshadow = document.getElementsByClassName("darkmodeshadow");
+const darkmodebgcolorpanel = document.getElementsByClassName("darkmodebgcolorpanel");
+const darkmodecheckbox = document.getElementById("darkmodecheckbox");
+const righttabElem = document.getElementsByClassName("righttab")[0];
+const ss = document.styleSheets[0];
 
-var ss = document.styleSheets[0];
+darkmodecheckbox.addEventListener("click", () => {
+    const isDark = darkmodecheckbox.checked;
+    const bgColor = isDark ? "black" : "white";
+    const panelBgColor = isDark ? "black" : "#d2cecd";
+    const fontColor = isDark ? "white" : "black";
+    const shadowColor = isDark ? "0px 3px 5px 1px #363535" : "0px 3px 5px 1px #aab4be";
+    const rightTabBg = isDark ? "url(./img/renderimgdark.png) repeat" : "url(./img/renderimg.png) repeat";
+    leftnavhover = isDark ? "rgb(92 89 89)" : "rgb(243, 242, 242)";
 
-darkmodecheckbox.addEventListener('click', activateDarkMode);
+    Array.from(darkmodebg).forEach(el => el.style.backgroundColor = bgColor);
+    Array.from(darkmodebgcolorpanel).forEach(el => el.style.backgroundColor = panelBgColor);
+    Array.from(darkmodefont).forEach(el => el.style.color = fontColor);
+    Array.from(darkmodeshadow).forEach(el => el.style.boxShadow = shadowColor);
 
+    if (righttabElem) righttabElem.style.background = rightTabBg;
 
-
-function activateDarkMode() {
-    if (darkmodecheckbox.checked) {
-        for (var i = 0; i < darkmodebg.length; i++) {
-            darkmodebg[i].style.backgroundColor = "black";
-        }
-        for (var i = 0; i < darkmodebgcolorpanel.length; i++) {
-            darkmodebgcolorpanel[i].style.backgroundColor = "black";
-        }
-        for (var i = 0; i < darkmodefont.length; i++) {
-            darkmodefont[i].style.color = "white";
-        }
-        for (var i = 0; i < darkmodeshadow.length; i++) {
-            darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #363535";
-        }
-        righttab.style.background = "url(./img/renderimgdark.png) repeat";
-        leftnavhover = 'rgb(92 89 89)';
-
-        ss.insertRule('*::selection { color: black !important; background: white !important; }', 1);
-    }
-    else {
-        for (var i = 0; i < darkmodebg.length; i++) {
-            darkmodebg[i].style.backgroundColor = "white";
-        }
-        for (var i = 0; i < darkmodebgcolorpanel.length; i++) {
-            darkmodebgcolorpanel[i].style.backgroundColor = "#d2cecd";
-        }
-        for (var i = 0; i < darkmodefont.length; i++) {
-            darkmodefont[i].style.color = "black";
-        }
-        for (var i = 0; i < darkmodeshadow.length; i++) {
-            darkmodeshadow[i].style.boxShadow = "0px 3px 5px 1px #aab4be";
-        }
-        righttab.style.background = "url(./img/renderimg.png) repeat";
-        leftnavhover = 'rgb(243, 242, 242)';
-
+    if (isDark) {
+        ss.insertRule("*::selection { color: black !important; background: white !important; }", 1);
+    } else {
         ss.deleteRule(1);
     }
-}
+});
 
-
-
-
-var sections = document.getElementsByTagName('section');
-for (var i = 0; i < sections.length; i++) {
-    sections[i].addEventListener('click', closecolorpanel);
-}
-
-var classes = document.getElementsByClassName('leftbar');
-for (var i = 0; i < classes.length; i++) {
-    classes[i].addEventListener('click', closecolorpanel);
-}
-
-
-function closecolorpanel() {
-    if (isopened == true) {
-        panelcolor.style.display = "none";
-        isopened = false;
-    }
-}
-
+[...document.getElementsByTagName("section"), ...document.getElementsByClassName("leftbar")].forEach(el => {
+    el.addEventListener("click", () => {
+        if (isopened) {
+            panelcolor.style.display = "none";
+            isopened = false;
+        }
+    });
+});
 
 // theme color panel END
 
 
+const righttab = document.getElementById("righttab");
+const leftwindow = document.getElementById("leftwindow");
+const ham = document.getElementById("hamburger");
+const closeleftwindow = document.getElementById("closeleftwindow");
 
+righttab.addEventListener("click", () => leftwindow.style.display = "none");
+ham.addEventListener("click", () => leftwindow.style.display = "block");
+closeleftwindow.addEventListener("click", () => leftwindow.style.display = "none");
 
-// rightsidediv START 
+const leftWinLinks = [
+    { id: "leftwinabout", target: "#aboutt" },
+    { id: "leftwinprojects", target: "#projects" },
+    { id: "leftwinskills", target: "#skillss" },
+    { id: "leftwinexper", target: "#exper" },
+    { id: "leftwinaward", target: "#awardss" },
+    { id: "leftwincontact", target: "#contactt" }
+];
 
-// const api = `https://codeforces.com/api/user.info?handles=${Shashankmankala}`;
-
-// fetch(api)
-//         .then(response =>{
-//             return response.json();
-//         })
-//         .then(data =>{
-//             name.innerText = `Hello, ${data.result[0].handle}`;
-//             currRating.innerText = `current rating : ${data.result[0].rating}`;
-//             currRank.innerText = `current rank : ${data.result[0].rank}`;
-//             maxRating.innerText = `max rating : ${data.result[0].maxRating}`;
-//             maxRank.innerText = `max rank : ${data.result[0].maxRank}`;
-//             if(!data.result[0].maxRating){
-//                 currRating.innerText = `current rating : Unrated`;
-//                 currRank.innerText = `current rank : 0`;
-//                 maxRating.innerText = `max rating : Unrated`;
-//                 maxRank.innerText = `max rank : 0`;
-//             }
-//         })
-
-//  rightsidediv END 
-
-
-
-
-
-var righttab = document.getElementById("righttab");
-righttab.addEventListener('click', closeanyopen);
-function closeanyopen() {
-    leftwindow.style.display = "none";
-}
-var leftwindow = document.getElementById("leftwindow");
-var ham = document.getElementById("hamburger");
-ham.addEventListener('click', openleftwindow);
-function openleftwindow() {
-    leftwindow.style.display = "block";
-}
-
-var closeleftwindow = document.getElementById("closeleftwindow");
-closeleftwindow.addEventListener('click', closeleftwindowfun);
-function closeleftwindowfun() {
-    leftwindow.style.display = "none";
-}
-leftwinabout = document.getElementById("leftwinabout");
-leftwinprojects = document.getElementById("leftwinprojects");
-leftwinskills = document.getElementById("leftwinskills");
-leftwinexper = document.getElementById("leftwinexper");
-leftwinaward = document.getElementById("leftwinaward");
-leftwincontact = document.getElementById("leftwincontact");
-
-
-leftwinabout.addEventListener('click', () => {
-    document.location.href = "#aboutt";
-    leftwindow.style.display = "none";
-})
-leftwinprojects.addEventListener('click', () => {
-    document.location.href = "#projects";
-    leftwindow.style.display = "none";
-})
-leftwinskills.addEventListener('click', () => {
-    document.location.href = "#skillss";
-    leftwindow.style.display = "none";
-})
-leftwinexper.addEventListener('click', () => {
-    document.location.href = "#exper";
-    leftwindow.style.display = "none";
-})
-leftwinaward.addEventListener('click', () => {
-    document.location.href = "#awardss";
-    leftwindow.style.display = "none";
-})
-leftwincontact.addEventListener('click', () => {
-    document.location.href = "#contactt";
-    leftwindow.style.display = "none";
-})
+leftWinLinks.forEach(link => {
+    const elem = document.getElementById(link.id);
+    if (elem) {
+        elem.addEventListener("click", () => {
+            document.location.href = link.target;
+            leftwindow.style.display = "none";
+        });
+    }
+});
 
 //left pole END
 
-
-
-
-var leftabt = document.getElementById("labout");
-var leftproj = document.getElementById("lproject");
-var leftskil = document.getElementById("lskills");
-var leftexp = document.getElementById("lexper");
-var leftawa = document.getElementById("lawards");
-var leftcont = document.getElementById("lcontact");
-var leftresume = document.getElementById("lresume");
-
-leftabt.addEventListener('mouseover', lactabtover, false);
-leftabt.addEventListener('mouseout', lactabtout, false);
-function lactabtover() {
-    leftabt.setAttribute("style", `background-color: ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactabtout() {
-    leftabt.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-leftproj.addEventListener('mouseover', lactprojover, false);
-leftproj.addEventListener('mouseout', lactprojout, false);
-function lactprojover() {
-    leftproj.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactprojout() {
-    leftproj.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-leftskil.addEventListener('mouseover', lactskilover, false);
-leftskil.addEventListener('mouseout', lactskilout, false);
-function lactskilover() {
-    leftskil.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactskilout() {
-    leftskil.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-leftexp.addEventListener('mouseover', lactexpover, false);
-leftexp.addEventListener('mouseout', lactexpout, false);
-function lactexpover() {
-    leftexp.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactexpout() {
-    leftexp.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-leftawa.addEventListener('mouseover', lactawaover, false);
-leftawa.addEventListener('mouseout', lactawaout, false);
-function lactawaover() {
-    leftawa.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactawaout() {
-    leftawa.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-leftcont.addEventListener('mouseover', lactcontover, false);
-leftcont.addEventListener('mouseout', lactcontout, false);
-function lactcontover() {
-    leftcont.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactcontout() {
-    leftcont.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-leftresume.addEventListener('mouseover', lactresumeover, false);
-leftresume.addEventListener('mouseout', lactresumeout, false);
-function lactresumeover() {
-    leftresume.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function lactresumeout() {
-    leftresume.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-var secabt = document.getElementById("aboutt");
-var secproj = document.getElementById("projects");
-var secskil = document.getElementById("skillss");
-var secexper = document.getElementById("exper");
-var secaward = document.getElementById("awardss");
-var seccont = document.getElementById("contactt");
-
-secabt.addEventListener('mouseover', actabtover, false);
-secabt.addEventListener('mouseout', actabtout, false);
-function actabtover() {
-    leftabt.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actabtout() {
-    leftabt.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-secproj.addEventListener('mouseover', actprojover, false);
-secproj.addEventListener('mouseout', actprojout, false);
-function actprojover() {
-    leftproj.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actprojout() {
-    leftproj.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-secskil.addEventListener('mouseover', actskilover, false);
-secskil.addEventListener('mouseout', actskilout, false);
-function actskilover() {
-    leftskil.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actskilout() {
-    leftskil.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-secexper.addEventListener('mouseover', actexpover, false);
-secexper.addEventListener('mouseout', actexpout, false);
-function actexpover() {
-    leftexp.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actexpout() {
-    leftexp.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-secaward.addEventListener('mouseover', actawaover, false);
-secaward.addEventListener('mouseout', actawaout, false);
-function actawaover() {
-    leftawa.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actawaout() {
-    leftawa.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-seccont.addEventListener('mouseover', actcontover, false);
-seccont.addEventListener('mouseout', actcontout, false);
-function actcontover() {
-    leftcont.setAttribute("style", `background-color:  ${leftnavhover};border-left: 3px solid ${bdcolor};`)
-}
-function actcontout() {
-    leftcont.setAttribute("style", "background-color:transparent;border-left:none;")
-}
-
-// Right drawer for programming profiles
-// var overlayfull=document.getElementById("overlayfull");
-// var rightdivbtn=document.getElementById("rightdivbtn");
-// var rightsidediv=document.getElementById("rightsidediv");
-// rightdivbtn.addEventListener('click',openrightdraw);
-// var isrightdrawopen=false;
-// function openrightdraw(){
-//     if(isrightdrawopen){
-//         overlayfull.style.display="block";
-//         rightsidediv.setAttribute("style", "transform: translateX(0); z-index: 6");
-//         isrightdrawopen=false;
-//     }
-//     else{
-//         overlayfull.style.display="none";
-//         rightsidediv.setAttribute("style", "transform: translateX(93%);");
-//         isrightdrawopen=true;
-//     }
-// }
-
-
-
-
-// Projects prs 
-var prs1 = document.getElementById("prs1");
-var prs2 = document.getElementById("prs2");
-var prs3 = document.getElementById("prs3");
-// var prs4 = document.getElementById("prs4");
-var prs5 = document.getElementById("prs5");
-var prs6 = document.getElementById("prs6");
-// var prs7 = document.getElementById("prs7");
-var prsn1 = document.getElementById("prsn1");
-var prsn2 = document.getElementById("prsn2");
-var prsn3 = document.getElementById("prsn3");
-
-var prgifgif1 = document.getElementById("prgifgif1");
-var prgifgif2 = document.getElementById("prgifgif2");
-var prgifgif3 = document.getElementById("prgifgif3");
-// var prgifgif4 = document.getElementById("prgifgif4");
-var prgifgif5 = document.getElementById("prgifgif5");
-// var prgifgif6=document.getElementById("prgifgif6");
-// var prgifgif7 = document.getElementById("prgifgif7");
-var prgifgifn0 = document.getElementById("prgifgifn0");
-var prgifgifn1 = document.getElementById("prgifgifn1");
-var prgifgifn2 = document.getElementById("prgifgifn2");
-var prgifgifn3 = document.getElementById("prgifgifn3");
-
-
-prsn2.addEventListener("mouseover", repgifn2);
-prsn2.addEventListener("mouseout", repimgn2);
-function repgifn2() {
-    prgifgifn2.src = "./img/easychat.gif";
-}
-function repimgn2() {
-    prgifgifn2.src = "./img/easychat.webp";
-}
-
-prsn1.addEventListener("mouseover", repgifn1);
-prsn1.addEventListener("mouseout", repimgn1);
-function repgifn1() {
-    prgifgifn1.src = "./img/portfolio.gif";
-}
-function repimgn1() {
-    prgifgifn1.src = "./img/p1.webp";
-}
-
-prsn0.addEventListener("mouseover", repgifn0);
-prsn0.addEventListener("mouseout", repimgn0);
-function repgifn0() {
-    prgifgifn0.src = "./img/playstore.gif";
-}
-function repimgn0() {
-    prgifgifn0.src = "./img/ps1.webp";
-}
-
-prs1.addEventListener("mouseover", repgif1);
-prs1.addEventListener("mouseout", repimg1);
-function repgif1() {
-    prgifgif1.src = "./img/fb.gif";
-}
-function repimg1() {
-    prgifgif1.src = "./img/f1.png";
-}
-prs2.addEventListener("mouseover", repgif2);
-prs2.addEventListener("mouseout", repimg2);
-function repgif2() {
-    prgifgif2.src = "./img/mp.gif";
-}
-function repimg2() {
-    prgifgif2.src = "./img/mp1.webp";
-}
-prs3.addEventListener("mouseover", repgif3);
-prs3.addEventListener("mouseout", repimg3);
-function repgif3() {
-    prgifgif3.src = "./img/coup.gif";
-}
-function repimg3() {
-    prgifgif3.src = "./img/c1.png";
-}
-// prs4.addEventListener("mouseover", repgif4);
-// prs4.addEventListener("mouseout", repimg4);
-// function repgif4() {
-//     prgifgif4.src = "./img/meals.gif";
-// }
-// function repimg4() {
-//     prgifgif4.src = "./img/m1.webp";
-// }
-prs5.addEventListener("mouseover", repgif5);
-prs5.addEventListener("mouseout", repimg5);
-function repgif5() {
-    prgifgif5.src = "./img/todo.gif";
-}
-function repimg5() {
-    prgifgif5.src = "./img/t1.webp";
-}
-// prs7.addEventListener("mouseover", repgif7);
-// prs7.addEventListener("mouseout", repimg7);
-// function repgif7() {
-//     prgifgif7.src = "./img/incometax.gif";
-// }
-// function repimg7() {
-//     prgifgif7.src = "./img/i1.webp";
-// }
-
-// var sharebtn = document.getElementById("sharebtn");
-// sharebtn.addEventListener("mouseover", repgifcon);
-// sharebtn.addEventListener("mouseout", repimgcon);
-// function repgifcon() {
-//     sharebtn.src = "./img/send.gif";
-// }
-// function repimgcon() {
-//     sharebtn.src = "./img/send.png";
-// }
-
-// n8
-var titlen8 = document.getElementById("prpn8");
-var gifn8 = document.getElementById("prgifn8");
-var optionn8 = document.getElementById("proptionn8");
-var hiddenn8 = document.getElementById("prshidonoffn8");
-var unhiddenn8 = document.getElementById("prsonoffn8");
-var closen8 = document.getElementById("closeoptn8");
-
-titlen8.addEventListener('click', myFunctionn8);
-gifn8.addEventListener('click', myFunctionn8);
-optionn8.addEventListener('click', myFunctionn8);
-
-function myFunctionn8() {
-    hiddenn8.style.display = 'block';
-    unhiddenn8.style.display = 'none';
-    pryearn8.style.display = 'block';
-    pryearn8.style.display = 'none';
-}
-
-closen8.addEventListener('click', myFunctionrn8);
-function myFunctionrn8() {
-    hiddenn8.style.display = 'none';
-    unhiddenn8.style.display = 'block';
-    pryearn8.style.display = 'none';
-    pryearn8.style.display = 'block';
-}
-
-// n7
-var titlen7 = document.getElementById("prpn7");
-var gifn7 = document.getElementById("prgifn7");
-var optionn7 = document.getElementById("proptionn7");
-var hiddenn7 = document.getElementById("prshidonoffn7");
-var unhiddenn7 = document.getElementById("prsonoffn7");
-var closen7 = document.getElementById("closeoptn7");
-
-titlen7.addEventListener('click', myFunctionn7);
-gifn7.addEventListener('click', myFunctionn7);
-optionn7.addEventListener('click', myFunctionn7);
-
-function myFunctionn7() {
-    hiddenn7.style.display = 'block';
-    unhiddenn7.style.display = 'none';
-    pryearn7.style.display = 'block';
-    pryearn7.style.display = 'none';
-}
-
-closen7.addEventListener('click', myFunctionrn7);
-function myFunctionrn7() {
-    hiddenn7.style.display = 'none';
-    unhiddenn7.style.display = 'block';
-    pryearn7.style.display = 'none';
-    pryearn7.style.display = 'block';
-}
-
-// n6
-var titlen6 = document.getElementById("prpn6");
-var gifn6 = document.getElementById("prgifn6");
-var optionn6 = document.getElementById("proptionn6");
-var hiddenn6 = document.getElementById("prshidonoffn6");
-var unhiddenn6 = document.getElementById("prsonoffn6");
-var closen6 = document.getElementById("closeoptn6");
-var pryearn6 = document.getElementById("pryearn6");
-
-titlen6.addEventListener('click', myFunctionn6);
-gifn6.addEventListener('click', myFunctionn6);
-optionn6.addEventListener('click', myFunctionn6);
-
-function myFunctionn6() {
-    hiddenn6.style.display = 'block';
-    unhiddenn6.style.display = 'none';
-    pryearn6.style.display = 'block';
-    pryearn6.style.display = 'none';
-}
-
-closen6.addEventListener('click', myFunctionrn6);
-function myFunctionrn6() {
-    hiddenn6.style.display = 'none';
-    unhiddenn6.style.display = 'block';
-    pryearn6.style.display = 'none';
-    pryearn6.style.display = 'block';
-}
-// n5
-var titlen5 = document.getElementById("prpn5");
-var gifn5 = document.getElementById("prgifn5");
-var optionn5 = document.getElementById("proptionn5");
-var hiddenn5 = document.getElementById("prshidonoffn5");
-var unhiddenn5 = document.getElementById("prsonoffn5");
-var closen5 = document.getElementById("closeoptn5");
-var pryearn5 = document.getElementById("pryearn5");
-
-titlen5.addEventListener('click', myFunctionn5);
-gifn5.addEventListener('click', myFunctionn5);
-optionn5.addEventListener('click', myFunctionn5);
-
-function myFunctionn5() {
-    hiddenn5.style.display = 'block';
-    unhiddenn5.style.display = 'none';
-    pryearn5.style.display = 'block';
-    pryearn5.style.display = 'none';
-}
-
-closen5.addEventListener('click', myFunctionrn5);
-function myFunctionrn5() {
-    hiddenn5.style.display = 'none';
-    unhiddenn5.style.display = 'block';
-    pryearn5.style.display = 'none';
-    pryearn5.style.display = 'block';
-}
-// n4
-var titlen4 = document.getElementById("prpn4");
-var gifn4 = document.getElementById("prgifn4");
-var optionn4 = document.getElementById("proptionn4");
-var hiddenn4 = document.getElementById("prshidonoffn4");
-var unhiddenn4 = document.getElementById("prsonoffn4");
-var closen4 = document.getElementById("closeoptn4");
-var pryearn4 = document.getElementById("pryearn4");
-
-titlen4.addEventListener('click', myFunctionn4);
-gifn4.addEventListener('click', myFunctionn4);
-optionn4.addEventListener('click', myFunctionn4);
-
-function myFunctionn4() {
-    hiddenn4.style.display = 'block';
-    unhiddenn4.style.display = 'none';
-    pryearn4.style.display = 'block';
-    pryearn4.style.display = 'none';
-}
-
-closen4.addEventListener('click', myFunctionrn4);
-function myFunctionrn4() {
-    hiddenn4.style.display = 'none';
-    unhiddenn4.style.display = 'block';
-    pryearn4.style.display = 'none';
-    pryearn4.style.display = 'block';
-}
-
-
-//---
-
-
-// n3
-var titlen3 = document.getElementById("prpn3");
-var gifn3 = document.getElementById("prgifn3");
-var optionn3 = document.getElementById("proptionn3");
-var hiddenn3 = document.getElementById("prshidonoffn3");
-var unhiddenn3 = document.getElementById("prsonoffn3");
-var closen3 = document.getElementById("closeoptn3");
-var pryearn3 = document.getElementById("pryearn3");
-
-titlen3.addEventListener('click', myFunctionn3);
-gifn3.addEventListener('click', myFunctionn3);
-optionn3.addEventListener('click', myFunctionn3);
-
-function myFunctionn3() {
-    hiddenn3.style.display = 'block';
-    unhiddenn3.style.display = 'none';
-    pryearn3.style.display = 'block';
-    pryearn3.style.display = 'none';
-}
-
-closen3.addEventListener('click', myFunctionrn3);
-function myFunctionrn3() {
-    hiddenn3.style.display = 'none';
-    unhiddenn3.style.display = 'block';
-    pryearn3.style.display = 'none';
-    pryearn3.style.display = 'block';
-}
-
-
-//---
-
-
-// n2
-var titlen2 = document.getElementById("prpn2");
-var gifn2 = document.getElementById("prgifn2");
-var optionn2 = document.getElementById("proptionn2");
-var hiddenn2 = document.getElementById("prshidonoffn2");
-var unhiddenn2 = document.getElementById("prsonoffn2");
-var closen2 = document.getElementById("closeoptn2");
-var pryearn2 = document.getElementById("pryearn2");
-
-titlen2.addEventListener('click', myFunctionn2);
-gifn2.addEventListener('click', myFunctionn2);
-optionn2.addEventListener('click', myFunctionn2);
-
-function myFunctionn2() {
-    hiddenn2.style.display = 'block';
-    unhiddenn2.style.display = 'none';
-    pryearn2.style.display = 'block';
-    pryearn2.style.display = 'none';
-}
-
-closen2.addEventListener('click', myFunctionrn2);
-function myFunctionrn2() {
-    hiddenn2.style.display = 'none';
-    unhiddenn2.style.display = 'block';
-    pryearn2.style.display = 'none';
-    pryearn2.style.display = 'block';
-}
-
-
-//---
-
-// n1
-var titlen1 = document.getElementById("prpn1");
-var gifn1 = document.getElementById("prgifn1");
-var optionn1 = document.getElementById("proptionn1");
-var hiddenn1 = document.getElementById("prshidonoffn1");
-var unhiddenn1 = document.getElementById("prsonoffn1");
-var closen1 = document.getElementById("closeoptn1");
-var pryearn1 = document.getElementById("pryearn1");
-
-titlen1.addEventListener('click', myFunctionn1);
-gifn1.addEventListener('click', myFunctionn1);
-optionn1.addEventListener('click', myFunctionn1);
-
-function myFunctionn1() {
-    hiddenn1.style.display = 'block';
-    unhiddenn1.style.display = 'none';
-    pryearn1.style.display = 'block';
-    pryearn1.style.display = 'none';
-}
-
-closen1.addEventListener('click', myFunctionrn1);
-function myFunctionrn1() {
-    hiddenn1.style.display = 'none';
-    unhiddenn1.style.display = 'block';
-    pryearn1.style.display = 'none';
-    pryearn1.style.display = 'block';
-}
-
-
-//---
-// n0
-var titlen0 = document.getElementById("prpn0");
-var gifn0 = document.getElementById("prgifn0");
-var optionn0 = document.getElementById("proptionn0");
-var hiddenn0 = document.getElementById("prshidonoffn0");
-var unhiddenn0 = document.getElementById("prsonoffn0");
-var closen0 = document.getElementById("closeoptn0");
-var pryearn0 = document.getElementById("pryearn0");
-
-titlen0.addEventListener('click', myFunctionn0);
-gifn0.addEventListener('click', myFunctionn0);
-optionn0.addEventListener('click', myFunctionn0);
-
-function myFunctionn0() {
-    hiddenn0.style.display = 'block';
-    unhiddenn0.style.display = 'none';
-    pryearn0.style.display = 'block';
-    pryearn0.style.display = 'none';
-}
-
-closen0.addEventListener('click', myFunctionrn0);
-function myFunctionrn0() {
-    hiddenn0.style.display = 'none';
-    unhiddenn0.style.display = 'block';
-    pryearn0.style.display = 'none';
-    pryearn0.style.display = 'block';
-}
-
-
-//---
-// 1
-var title1 = document.getElementById("prp1");
-var gif1 = document.getElementById("prgif1");
-var option1 = document.getElementById("proption1");
-var hidden1 = document.getElementById("prshidonoff1");
-var unhidden1 = document.getElementById("prsonoff1");
-var close1 = document.getElementById("closeopt1");
-var pryear1 = document.getElementById("pryear1");
-
-title1.addEventListener('click', myFunction1);
-gif1.addEventListener('click', myFunction1);
-option1.addEventListener('click', myFunction1);
-
-function myFunction1() {
-    hidden1.style.display = 'block';
-    unhidden1.style.display = 'none';
-    pryear1.style.display = 'block';
-    pryear1.style.display = 'none';
-}
-
-close1.addEventListener('click', myFunctionr1);
-function myFunctionr1() {
-    hidden1.style.display = 'none';
-    unhidden1.style.display = 'block';
-    pryearn6.style.display = 'none';
-    pryearn6.style.display = 'block';
-}
-
-
-// ---
-// 2
-var title2 = document.getElementById("prp2");
-var gif2 = document.getElementById("prgif2");
-var option2 = document.getElementById("proption2");
-var hidden2 = document.getElementById("prshidonoff2");
-var unhidden2 = document.getElementById("prsonoff2");
-var close2 = document.getElementById("closeopt2");
-var pryear2 = document.getElementById("pryearn2");
-
-title2.addEventListener('click', myFunction2);
-gif2.addEventListener('click', myFunction2);
-option2.addEventListener('click', myFunction2);
-
-function myFunction2() {
-    hidden2.style.display = 'block';
-    unhidden2.style.display = 'none';
-    pryear2.style.display = 'block';
-    pryear2.style.display = 'none';
-}
-
-close2.addEventListener('click', myFunctionr2);
-function myFunctionr2() {
-    hidden2.style.display = 'none';
-    unhidden2.style.display = 'block';
-    pryear2.style.display = 'none';
-    pryear2.style.display = 'block';
-}
-
-
-// ---
-// 3
-var title3 = document.getElementById("prp3");
-var gif3 = document.getElementById("prgif3");
-var option3 = document.getElementById("proption3");
-var hidden3 = document.getElementById("prshidonoff3");
-var unhidden3 = document.getElementById("prsonoff3");
-var close3 = document.getElementById("closeopt3");
-var pryear3 = document.getElementById("pryear3");
-
-title3.addEventListener('click', myFunction3);
-gif3.addEventListener('click', myFunction3);
-option3.addEventListener('click', myFunction3);
-
-function myFunction3() {
-    hidden3.style.display = 'block';
-    unhidden3.style.display = 'none';
-    pryear3.style.display = 'block';
-    pryear3.style.display = 'none';
-}
-
-close3.addEventListener('click', myFunctionr3);
-function myFunctionr3() {
-    hidden3.style.display = 'none';
-    unhidden3.style.display = 'block';
-    pryear3.style.display = 'none';
-    pryear3.style.display = 'block';
-}
-
-
-// ---
-// 4
-// var title4 = document.getElementById("prp4");
-// var gif4 = document.getElementById("prgif4");
-// var option4 = document.getElementById("proption4");
-// var hidden4 = document.getElementById("prshidonoff4");
-// var unhidden4 = document.getElementById("prsonoff4");
-// var close4 = document.getElementById("closeopt4");
-
-// title4.addEventListener('click', myFunction4);
-// gif4.addEventListener('click', myFunction4);
-// option4.addEventListener('click', myFunction4);
-
-// function myFunction4() {
-//     hidden4.style.display = 'block';
-//     unhidden4.style.display = 'none';
-// }
-
-// close4.addEventListener('click', myFunctionr4);
-// function myFunctionr4() {
-//     hidden4.style.display = 'none';
-//     unhidden4.style.display = 'block';
-// }
-
-
-// ---
-// 5
-var title5 = document.getElementById("prp5");
-var gif5 = document.getElementById("prgif5");
-var option5 = document.getElementById("proption5");
-var hidden5 = document.getElementById("prshidonoff5");
-var unhidden5 = document.getElementById("prsonoff5");
-var close5 = document.getElementById("closeopt5");
-var pryear5 = document.getElementById("pryear5");
-
-title5.addEventListener('click', myFunction5);
-gif5.addEventListener('click', myFunction5);
-option5.addEventListener('click', myFunction5);
-
-function myFunction5() {
-    hidden5.style.display = 'block';
-    unhidden5.style.display = 'none';
-    pryear5.style.display = 'block';
-    pryear5.style.display = 'none';
-}
-
-close5.addEventListener('click', myFunctionr5);
-function myFunctionr5() {
-    hidden5.style.display = 'none';
-    unhidden5.style.display = 'block';
-    pryear5.style.display = 'none';
-    pryear5.style.display = 'block';
-}
-
-
-// ---
-// 6
-var title6 = document.getElementById("prp6");
-var gif6 = document.getElementById("prgif6");
-var option6 = document.getElementById("proption6");
-var hidden6 = document.getElementById("prshidonoff6");
-var unhidden6 = document.getElementById("prsonoff6");
-var close6 = document.getElementById("closeopt6");
-var pryear6 = document.getElementById("pryear6");
-
-title6.addEventListener('click', myFunction6);
-gif6.addEventListener('click', myFunction6);
-option6.addEventListener('click', myFunction6);
-
-function myFunction6() {
-    hidden6.style.display = 'block';
-    unhidden6.style.display = 'none';
-    pryear6.style.display = 'block';
-    pryear6.style.display = 'none';
-}
-
-close6.addEventListener('click', myFunctionr6);
-function myFunctionr6() {
-    hidden6.style.display = 'none';
-    unhidden6.style.display = 'block';
-    pryear6.style.display = 'none';
-    pryear6.style.display = 'block';
-}
-
-
-// ---
-// 7
-// var title7 = document.getElementById("prp7");
-// var gif7 = document.getElementById("prgif7");
-// var option7 = document.getElementById("proption7");
-// var hidden7 = document.getElementById("prshidonoff7");
-// var unhidden7 = document.getElementById("prsonoff7");
-// var close7 = document.getElementById("closeopt7");
-
-// title7.addEventListener('click', myFunction7);
-// gif7.addEventListener('click', myFunction7);
-// option7.addEventListener('click', myFunction7);
-
-// function myFunction7() {
-//     hidden7.style.display = 'block';
-//     unhidden7.style.display = 'none';
-// }
-
-// close7.addEventListener('click', myFunctionr7);
-// function myFunctionr7() {
-//     hidden7.style.display = 'none';
-//     unhidden7.style.display = 'block';
-// }
-
-// -- Project
-
-
-function viewproject(name) {
-    var projectdict = {
-        REPO_TUTOR:"https://github.com/Shashank-mankala1/tutormind",
-        PR_TUTOR: "https://tutormindai.streamlit.app/",
-        
-        PR_HRTPDT: "https://shashank-mankala1.github.io/Heart-Attack-Prediction/",
-        REPO_HRTPDT: 'https://github.com/Shashank-mankala1/Heart-Attack-Prediction',
-        ART_HRTPDT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
-        MP4_HRTPDT: 'https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing',
-    
-        REPO_CRYP: 'https://github.com/Shashank-mankala1/realtimecryptotradingdashboard',
-        ART_CRYP: 'https://medium.com/@shashankmankala/building-a-real-time-crypto-trading-pipeline-with-docker-and-python-8b49cd526269',
-        
-    
-        REPO_DIAB: 'https://github.com/Shashank-mankala1/diabetes-prediction-project',
-        ART_DIAB: 'https://medium.com/@shashankmankala/building-a-diabetes-prediction-system-a-step-by-step-guide-a293e4b9a9fd',
-        
-        PR_CHTBT: "https://shashank-mankala1.github.io/chatbot/",
-        REPO_CHTBT: 'https://github.com/Shashank-mankala1/chatbot',
-        ART_CHTBT: 'https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79',
-        MP4_CHTBT: 'https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing',
-    
-        PR_ROADDASH: 'https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes',
-        REPO_ROADDASH: 'https://github.com/Shashank-mankala1/Road-Accidents-Dashboard',
-    
-        PR_EASYCHAT: 'http://easychat.lovestoblog.com/',
-    
-        PR_PORTFOLIO: 'https://shashank-mankala1.github.io/portfolio/',
-        REPO_PORTFOLIO: 'https://github.com/Shashank-mankala1/portfolio',
-    
-        REPO_PLAYSTORE: 'https://github.com/Shashank-mankala1/Google-Play-Store-Analysis',
-    
-        REPO_FACEBOOK: 'https://github.com/Shashank-mankala1/facebookselfchallenge',
-    
-        PR_MUSICPLAYER: 'https://shashank-mankala1.github.io/musicplayer/',
-        REPO_MUSICPLAYER: 'https://github.com/Shashank-mankala1/musicplayer',
-    
-        PR_CORONAUPDT: 'https://shashank-mankala1.github.io/coronaliveupdate/',
-        REPO_CORONAUPDT: 'https://github.com/Shashank-mankala1/coronaliveupdate',
-    
-        PR_MUSICPLAYER: 'https://shashank-mankala1.github.io/musicplayer/',
-        REPO_MUSICPLAYER: 'https://github.com/Shashank-mankala1/musicplayer',
-    
-        PR_MEALSWEB: 'https://shashank-mankala1.github.io/ShashankMeals/',
-        REPO_MEALSWEB: 'https://github.com/Shashank-mankala1/ShashankMeals',
-    
-        PR_TODO: 'https://shashank-mankala1.github.io/taskschecklist/',
-        REPO_TODO: 'https://github.com/Shashank-mankala1/taskschecklist',
-    
-        REPO_EMS: 'https://github.com/Shashank-mankala1/Employee-Recruitment-System-Python',
-    
-        PR_ITWEB: 'https://shashank-mankala1.github.io/Income_tax/',
-        REPO_ITWEB: 'https://github.com/Shashank-mankala1/Income_tax'
-
-    }
-
-    window.open(projectdict[name], '_blank');
-}
-
-
-
-
-// ---
-
-var pageopendict = {
-    'mail': 'mailto:shashankmankala.5@gmail.com',
-    'linkedin': 'https://www.linkedin.com/in/shashankmankala/',
-    'github': 'https://github.com/Shashank-mankala1',
-    'medium': 'https://medium.com/@shashankmankala',
-    'frugaltesting': 'https://frugaltesting.com/',
-    'coursera': 'https://www.coursera.org/',
-    'lpu': 'https://www.lpu.in/',
-    'shadowfax': 'https://www.shadowfax.in/',
-    'UB':'https://www.buffalo.edu/'
-}
-
-
-function pageOpen(page) {
-    window.open(pageopendict[page], '_blank');
-}
-
-
-
-//---
-
-
-var certificateiframe = document.getElementById("certificateiframe");
-var certificatemodal = document.getElementById("certificatemodal");
-var closecertificateframe = document.getElementById("closecertificateframe");
-
-var certificatedict = {
-    'DAECISCO': 'https://drive.google.com/file/d/1jlTWyV5hJHmOykudwNf6EPpOECWvDpkU/preview',
-    'DAMLL': 'https://drive.google.com/file/d/10JzTrjJusUgaHkSpgLi86YcKf05Q3SIG/preview',
-    'SQLL': './img/Top_SQL_50.gif',
-    'ASQLH': 'https://drive.google.com/file/d/11GryK21HUoLx2oiigdnkpNYXWn_fIRH5/preview',
-    'MONGODB': 'https://drive.google.com/file/d/11H1KG8y9fnCoD5uC1bsSP0kVIlbgOhTS/preview',
-    'GFGDSA': 'https://drive.google.com/file/d/1zRfJbidOOwi65Yl4p_Dkt8LtNeqRioIV/preview',
-    'CCHEFSNACK': 'https://drive.google.com/file/d/1tws82HCe6O6cH_4SNV_G-m49WTNSljAy/preview',
-    'JUMPSTART': 'https://drive.google.com/file/d/1gbZHn8DSwDykiCGp_4n6s0NSDy2O5dZ6/preview',
-    'MBDASQL': 'https://drive.google.com/file/d/1XbJfGgd3bmYQLh40yb0D5-xBqzBcg0Qk/preview',
-    'CRASHCPY': 'https://drive.google.com/file/d/1zyxaIvYkQNFRx2ibGIl_gNG4QFejwQAt/preview',
-    'PSCH': 'https://drive.google.com/file/d/13HrosKFwiY55yyFtKxmN3ECgqSgh8Nir/preview',
-    'PSCH': 'https://drive.google.com/file/d/1T6btmjKz9dchBAK8_1B9Cbge3u-Xn_73/preview',
-    'PYSQLDS': 'https://drive.google.com/file/d/1QjPi0N7z2iUWSQ8oe2VAac1YljM5N3Ow/preview'
-
-}
-
-
-function viewCertificate(certificatename) {
-    certificatemodal.style.display = "flex";
-    certificateiframe.src = certificatedict[certificatename];
-}
-
-closecertificateframe.onclick = function () {
-    certificatemodal.style.display = "none";
-    certificateiframe.src = "";
-}
-
-
-// ---
-
-
-
-//share
-// var sharebtn = document.getElementById("sharebtn");
-// sharebtn.addEventListener("mouseover", repgifcon);
-// sharebtn.addEventListener("mouseout", repimgcon);
-// function repgifcon() {
-//     sharebtn.src = "./img/send.gif";
-// }
-// function repimgcon() {
-//     sharebtn.src = "./img/send.png";
-// }
-
-// var sharebtn = document.getElementById("sharebtn");
-// var shareask = document.getElementById("shareask");
-// var shareclosei = document.getElementById("shareclosei");
-// var shareoptqr = document.getElementById("shareoptqr");
-// var shareoptlink = document.getElementById("shareoptlink");
-// var sharelinkcontainer = document.getElementById("sharelinkcontainer");
-// var sharelinkcontainer2 = document.getElementById("sharelinkcontainer2");
-// var sharelinkcontainer3 = document.getElementById("sharelinkcontainer3");
-
-// sharebtn.addEventListener('click', openshareopts);
-// shareclosei.addEventListener('click', closeshareopts);
-
-// function openshareopts() {
-//     setSharelinks();
-//     shareask.style.display = "block";
-//     sharebtn.style.display = "none";
-//     sharelinkcontainer.style.display = "flex";
-//     sharelinkcontainer2.style.display = "none";
-//     sharelinkcontainer3.style.display = "none";
-// }
-// function closeshareopts() {
-//     shareask.style.display = "none";
-//     sharebtn.style.display = "block";
-//     sharelinkcontainer2.style.display = "none";
-//     sharelinkcontainer3.style.display = "none";
-// }
-
-// shareoptqr.addEventListener('click', () => {
-//     sharelinkcontainer.style.display = "none";
-//     sharelinkcontainer2.style.display = "flex";
-//     sharelinkcontainer3.style.display = "none";
-// })
-// shareoptlink.addEventListener('click', () => {
-//     sharelinkcontainer.style.display = "none";
-//     sharelinkcontainer2.style.display = "none";
-//     sharelinkcontainer3.style.display = "flex";
-// })
-
-// var socialwhtqr = document.getElementById("socialwhtqr");
-// var socialfbqr = document.getElementById("socialfbqr");
-// var socialmaiqr = document.getElementById("socialmaiqr");
-// var sociallinqr = document.getElementById("sociallinqr");
-// var socialwhtlink = document.getElementById("socialwhtlink");
-// var socialfblink = document.getElementById("socialfblink");
-// var socialmailink = document.getElementById("socialmailink");
-// var sociallinlink = document.getElementById("sociallinlink");
-// var qrcodeimg = document.getElementById("qrcodeimg");
-
-// function socialwindowscreen(url) {
-//     var left = (screen.width - 570) / 2;
-//     var top = (screen.height - 570) / 2;
-//     var params = "menubar=yes,toolbar=yes,status=yes,width=570,height=570,top=" + top + ",left=" + left;
-//     window.open(url, "NewWindow", params);
-// }
-// function setSharelinks() {
-//     var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
-//     // var tweet = encodeURIComponent($("meta[property=]"))
-
-//     var imgURL = encodeURIComponent("https://drive.google.com/file/d/1BAB-UlHK7BsZkCo5Cx5pQX-ugf2bcAXr/view?usp=sharing");
-
-//     socialwhtqr.addEventListener('click', () => {
-//         url = 'https://wa.me/?text=' + imgURL;
-//         socialwindowscreen(url);
-//     })
-//     socialfbqr.addEventListener('click', () => {
-//         url = "https://www.facebook.com/sharer.php?u=" + imgURL;
-//         socialwindowscreen(url);
-//     })
-//     socialmaiqr.addEventListener('click', () => {
-//         url = "mailto:?subject=Portfolio_QRCode&body=Scan QR code from here " + imgURL;
-//         socialwindowscreen(url);
-//     })
-//     sociallinqr.addEventListener('click', () => {
-//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + imgURL;
-//         socialwindowscreen(url);
-//     })
-
-
-
-//     socialwhtlink.addEventListener('click', () => {
-//         url = "https://wa.me/?text=" + pageURL;
-//         socialwindowscreen(url);
-//     })
-//     socialfblink.addEventListener('click', () => {
-//         url = "https://www.facebook.com/sharer.php?u=" + pageURL;
-//         socialwindowscreen(url);
-//     })
-//     socialmailink.addEventListener('click', () => {
-//         url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
-//         socialwindowscreen(url);
-//     })
-//     sociallinlink.addEventListener('click', () => {
-//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
-//         socialwindowscreen(url);
-//     })
-
-
-// }
-
-
-// //small-start
-// var sshareimg = document.getElementById("sshareimg");
-// var sshareimgin = document.getElementById("sshareimgin");
-// var sshareoptsdiv = document.getElementById("sshareoptsdiv");
-// var sshareoptwht = document.getElementById("sshareoptwht");
-// var sshareoptmail = document.getElementById("sshareoptmail");
-// var sshareoptlink = document.getElementById("sshareoptlink");
-// var sshareoptfb = document.getElementById("sshareoptfb");
-// //small-end
-
-// sshareimg.addEventListener('click', () => {
-//     setSharelinkssmall();
-//     sshareoptsdiv.style.display = "flex";
-//     sshareimg.style.display = "none";
-// })
-// sshareimgin.addEventListener('click', () => {
-//     sshareoptsdiv.style.display = "none";
-//     sshareimg.style.display = "block";
-// })
-
-// function socialwindowscreensmall(url) {
-//     var left = (screen.width - 70) / 2;
-//     var top = (screen.height - 70) / 2;
-//     var width = (screen.width) * 0.75;
-//     var height = (screen.height) * 0.5;
-//     var params = `menubar=yes,toolbar=yes,status=yes,width=${width},height=${height},top=${top},left=${left}`;
-//     window.open(url, "NewWindow", params);
-// }
-// function setSharelinkssmall() {
-//     var pageURL = encodeURIComponent("https://shashank-mankala1.github.io/portfolio/");
-//     sshareoptwht.addEventListener('click', () => {
-//         url = "https://wa.me/?text=" + pageURL;
-//         socialwindowscreensmall(url);
-//     })
-//     sshareoptfb.addEventListener('click', () => {
-//         url = "https://www.facebook.com/sharer.php?u=" + pageURL;
-//         socialwindowscreensmall(url);
-//     })
-//     sshareoptmail.addEventListener('click', () => {
-//         url = "mailto:?subject=Portfolio_Link&body=Check out this site " + pageURL;
-//         socialwindowscreensmall(url);
-//     })
-//     sshareoptlink.addEventListener('click', () => {
-//         url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageURL;
-//         socialwindowscreensmall(url);
-//     })
-// }
-
-function sendemail(type) {
-    url = "https://docs.google.com/forms/d/e/1FAIpQLScAe9LbVKVCSP6kfI_3ChMkPDD2CN9QlD_XJ_sBlQaTemNLcA/viewform?usp=sf_link"
-    window.open(url)
-}
-
-//very small screen display off
-var fullpage = document.querySelector(".fullpage");
-window.onload = function checkscreenwidth() {
-    if (screen.width < 360) {
-        fullpage.style.display = "none";
-        setTimeout(() => { alert("Please open this site on another device as your screen size is very small to display"); }, 500);
-    }
-}
-
-// 2.0
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".navlink");
-
-    navLinks.forEach(function (link) {
-        link.style.textDecoration = "none";
-        link.style.outline = "none !important";
-        link.addEventListener("click", function (e) {
-            this.blur();
-            this.style.outline = "none"
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const customname = this.getAttribute("data-target");
-            const targetSection = document.getElementById(targetId);
-
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: "smooth" });
-
-            }
-        });
-    });
+const leftNavItems = [
+    { id: "labout" },
+    { id: "lproject" },
+    { id: "lskills" },
+    { id: "lexper" },
+    { id: "lawards" },
+    { id: "lcontact" },
+    { id: "lresume" }
+];
+
+leftNavItems.forEach(item => {
+    const elem = document.getElementById(item.id);
+    if (!elem) return;
+    elem.addEventListener("mouseover", () => {
+        elem.setAttribute(
+            "style",
+            `background-color: ${leftnavhover};border-left: 3px solid ${bdcolor};`
+        );
+    }, false);
+    elem.addEventListener("mouseout", () => {
+        elem.setAttribute(
+            "style",
+            "background-color:transparent;border-left:none;"
+        );
+    }, false);
+});
+
+const sectionToLeftNav = [
+    { sectionId: "aboutt", leftNavId: "labout" },
+    { sectionId: "projects", leftNavId: "lproject" },
+    { sectionId: "skillss", leftNavId: "lskills" },
+    { sectionId: "exper", leftNavId: "lexper" },
+    { sectionId: "awardss", leftNavId: "lawards" },
+    { sectionId: "contactt", leftNavId: "lcontact" }
+];
+
+sectionToLeftNav.forEach(({ sectionId, leftNavId }) => {
+    const sectionElem = document.getElementById(sectionId);
+    const leftNavElem = document.getElementById(leftNavId);
+    if (!sectionElem || !leftNavElem) return;
+
+    sectionElem.addEventListener("mouseover", () => {
+        leftNavElem.setAttribute(
+            "style",
+            `background-color: ${leftnavhover};border-left: 3px solid ${bdcolor};`
+        );
+    }, false);
+
+    sectionElem.addEventListener("mouseout", () => {
+        leftNavElem.setAttribute(
+            "style",
+            "background-color:transparent;border-left:none;"
+        );
+    }, false);
 });
 
 
-var resumemodal = document.getElementById("resumemodal");
-var resumebtn = document.getElementById("lresume");
-var resumebtn1 = document.getElementById("lresumewindow");
-var closeresumeframe = document.getElementById("closeresumeframe");
-var closeresumeframe1 = document.getElementById("frameclosebtn");
+// Projects prs
+const hoverMappings = [
+    // { elemId, imgId, gifSrc, imgSrc }
+    { elemId: "prs1", imgId: "prgifgif1", gifSrc: "./img/fb.gif", imgSrc: "./img/f1.png" },
+    { elemId: "prs2", imgId: "prgifgif2", gifSrc: "./img/mp.gif", imgSrc: "./img/mp1.webp" },
+    { elemId: "prs3", imgId: "prgifgif3", gifSrc: "./img/coup.gif", imgSrc: "./img/c1.png" },
+    { elemId: "prs5", imgId: "prgifgif5", gifSrc: "./img/todo.gif", imgSrc: "./img/t1.webp" },
+    { elemId: "prsn0", imgId: "prgifgifn0", gifSrc: "./img/playstore.gif", imgSrc: "./img/ps1.webp" },
+    { elemId: "prsn1", imgId: "prgifgifn1", gifSrc: "./img/portfolio.gif", imgSrc: "./img/p1.webp" },
+    { elemId: "prsn2", imgId: "prgifgifn2", gifSrc: "./img/easychat.gif", imgSrc: "./img/easychat.webp" }
+];
 
-resumebtn.onclick = function () {
-    resumemodal.style.display = "flex";
-}
-resumebtn1.onclick = function () {
-    resumemodal.style.display = "flex";
-}
-
-
-closeresumeframe.onclick = function () {
-    resumemodal.style.display = "none";
-}
-closeresumeframe1.onclick = function () {
-    resumemodal.style.display = "none";
-}
-
-
-
-
-
-
-var feedbackmodal = document.getElementById("feedbackmodal");
-var feedbackdiv = document.getElementById("feedbackdiv");
-var closefeedbackframe = document.getElementById("closefeedbackframe");
-
-feedbackdiv.onclick = function () {
-    feedbackmodal.style.display = "flex";
-}
-
-closefeedbackframe.onclick = function () {
-    feedbackmodal.style.display = "none";
-}
-
-var facebookmodal = document.getElementById("facebookmodal");
-var facebookdiv = document.getElementById("facebookdiv");
-var closefacebookframe = document.getElementById("closefacebookframe");
-
-facebookdiv.onclick = function () {
-    facebookmodal.style.display = "flex";
-}
-
-closefacebookframe.onclick = function () {
-    facebookmodal.style.display = "none";
-}
-
-
-var emppymodal = document.getElementById("emppymodal");
-var emppydiv = document.getElementById("emppydiv");
-var closeemppyframe = document.getElementById("closeemppyframe");
-
-emppydiv.onclick = function () {
-    emppymodal.style.display = "flex";
-}
-
-closeemppyframe.onclick = function () {
-    emppymodal.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target == emppymodal) {
-        emppymodal.style.display = "none";
+hoverMappings.forEach(({ elemId, imgId, gifSrc, imgSrc }) => {
+    const elem = document.getElementById(elemId);
+    const img = document.getElementById(imgId);
+    if (elem && img) {
+        elem.addEventListener("mouseover", () => { img.src = gifSrc; });
+        elem.addEventListener("mouseout", () => { img.src = imgSrc; });
     }
-    if (event.target == facebookmodal) {
-        facebookmodal.style.display = "none";
-    }
-    if (event.target == feedbackmodal) {
-        feedbackmodal.style.display = "none";
-    }
-    if (event.target == certificatemodal) {
-        certificatemodal.style.display = "none";
-    }
-    if (event.target == resumemodal) {
-        resumemodal.style.display = "none";
+});
+
+// Optimized project show/hide logic
+
+const projectConfigs = [
+    { prefix: "n8" }, { prefix: "n7" }, { prefix: "n6" }, { prefix: "n5" }, { prefix: "n4" },
+    { prefix: "n3" }, { prefix: "n2" }, { prefix: "n1" }, { prefix: "n0" },
+    { prefix: "1" }, { prefix: "2" }, { prefix: "3" }, { prefix: "5" }, { prefix: "6" }
+];
+
+projectConfigs.forEach(cfg => {
+    const p = cfg.prefix;
+    // Elements
+    const title = document.getElementById(`prp${p}`) || document.getElementById(`prpn${p}`);
+    const gif = document.getElementById(`prgif${p}`) || document.getElementById(`prgifn${p}`);
+    const option = document.getElementById(`proption${p}`) || document.getElementById(`proptionn${p}`);
+    const hidden = document.getElementById(`prshidonoff${p}`) || document.getElementById(`prshidonoffn${p}`);
+    const unhidden = document.getElementById(`prsonoff${p}`) || document.getElementById(`prsonoffn${p}`);
+    const close = document.getElementById(`closeopt${p}`) || document.getElementById(`closeoptn${p}`);
+    const pryear = document.getElementById(`pryear${p}`) || document.getElementById(`pryearn${p}`);
+
+    // Only bind if all required elements exist
+    if (title && gif && option && hidden && unhidden && close && pryear) {
+        const showFn = () => {
+            hidden.style.display = "block";
+            unhidden.style.display = "none";
+            pryear.style.display = "block";
+            pryear.style.display = "none";
+        };
+        const hideFn = () => {
+            hidden.style.display = "none";
+            unhidden.style.display = "block";
+            pryear.style.display = "none";
+            pryear.style.display = "block";
+        };
+        title.addEventListener("click", showFn);
+        gif.addEventListener("click", showFn);
+        option.addEventListener("click", showFn);
+        close.addEventListener("click", hideFn);
     }
 }
+);
+
+// Note: If you need to add more projects, just add their prefix to projectConfigs.
+// If you want to handle projects with missing pryear elements, adjust the checks above.
+
+// -- Project
+
+function viewproject(name) {
+  var projectdict = {
+    REPO_TUTOR: "https://github.com/Shashank-mankala1/tutormind",
+    PR_TUTOR: "https://tutormindai.streamlit.app/",
+
+    PR_HRTPDT: "https://shashank-mankala1.github.io/Heart-Attack-Prediction/",
+    REPO_HRTPDT: "https://github.com/Shashank-mankala1/Heart-Attack-Prediction",
+    ART_HRTPDT: "https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79",
+    MP4_HRTPDT: "https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing",
+
+    REPO_CRYP: "https://github.com/Shashank-mankala1/realtimecryptotradingdashboard",
+    ART_CRYP: "https://medium.com/@shashankmankala/building-a-real-time-crypto-trading-pipeline-with-docker-and-python-8b49cd526269",
+
+    REPO_DIAB: "https://github.com/Shashank-mankala1/diabetes-prediction-project",
+    ART_DIAB: "https://medium.com/@shashankmankala/building-a-diabetes-prediction-system-a-step-by-step-guide-a293e4b9a9fd",
+
+    PR_CHTBT: "https://shashank-mankala1.github.io/chatbot/",
+    REPO_CHTBT: "https://github.com/Shashank-mankala1/chatbot",
+    ART_CHTBT: "https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79",
+    MP4_CHTBT: "https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing",
+
+    PR_ROADDASH: "https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes",
+    REPO_ROADDASH: "https://github.com/Shashank-mankala1/Road-Accidents-Dashboard",
+
+    PR_EASYCHAT: "http://easychat.lovestoblog.com/",
+
+    PR_PORTFOLIO: "https://shashank-mankala1.github.io/portfolio/",
+    REPO_PORTFOLIO: "https://github.com/Shashank-mankala1/portfolio",
+
+    REPO_PLAYSTORE: "https://github.com/Shashank-mankala1/Google-Play-Store-Analysis",
+
+    REPO_FACEBOOK: "https://github.com/Shashank-mankala1/facebookselfchallenge",
+
+    PR_MUSICPLAYER: "https://shashank-mankala1.github.io/musicplayer/",
+    REPO_MUSICPLAYER: "https://github.com/Shashank-mankala1/musicplayer",
+
+    PR_CORONAUPDT: "https://shashank-mankala1.github.io/coronaliveupdate/",
+    REPO_CORONAUPDT: "https://github.com/Shashank-mankala1/coronaliveupdate",
+
+    PR_MUSICPLAYER: "https://shashank-mankala1.github.io/musicplayer/",
+    REPO_MUSICPLAYER: "https://github.com/Shashank-mankala1/musicplayer",
+
+    PR_MEALSWEB: "https://shashank-mankala1.github.io/ShashankMeals/",
+    REPO_MEALSWEB: "https://github.com/Shashank-mankala1/ShashankMeals",
+
+    PR_TODO: "https://shashank-mankala1.github.io/taskschecklist/",
+    REPO_TODO: "https://github.com/Shashank-mankala1/taskschecklist",
+
+    REPO_EMS: "https://github.com/Shashank-mankala1/Employee-Recruitment-System-Python",
+
+    PR_ITWEB: "https://shashank-mankala1.github.io/Income_tax/",
+    REPO_ITWEB: "https://github.com/Shashank-mankala1/Income_tax",
+  };
+  window.open(projectdict[name], "_blank");
+}
+
+// ---
+var pageopendict = {
+  mail: "mailto:shashankmankala.5@gmail.com",
+  linkedin: "https://www.linkedin.com/in/shashankmankala/",
+  github: "https://github.com/Shashank-mankala1",
+  medium: "https://medium.com/@shashankmankala",
+  frugaltesting: "https://frugaltesting.com/",
+  coursera: "https://www.coursera.org/",
+  lpu: "https://www.lpu.in/",
+  shadowfax: "https://www.shadowfax.in/",
+  UB: "https://www.buffalo.edu/",
+};
+
+function pageOpen(page) {
+  window.open(pageopendict[page], "_blank");
+}
+
+//---
+
+// Skill data
+const skillSections = [
+  {
+    heading: "Languages",
+    skills: [
+      { name: "Python", img: "img/python.png", dots: 5 },
+      { name: "C++", img: "img/c++.png", dots: 5 },
+      { name: "R programming", img: "img/Rlogo.png", dots: 5 },
+      { name: "HTML", img: "img/html.png", dots: 5 },
+      { name: "CSS", img: "img/css.png", dots: 5 },
+      { name: "JavaScript", img: "img/js.png", dots: 4 },
+      { name: "Matlab", img: "img/MATLAB.jpg", dots: 4 },
+      { name: "Java", img: "img/java.png", dots: 3 }
+    ]
+  },
+  {
+    heading: "Backend",
+    skills: [
+      { name: "MySQL", img: "img/mysql.png", dots: 5 },
+      { name: "Google Firebase", img: "img/firebase.png", dots: 5 },
+      { name: "MongoDB", img: "img/mongodb.png", dots: 4 },
+      { name: "GraphDB", img: "img/graphdb.png", dots: 4 },
+      { name: "PHP", img: "img/php.png", dots: 4 },
+      { name: "Node Js", img: "img/nodejs.png", dots: 3 }
+    ]
+  },
+  {
+    heading: "Tools",
+    skills: [
+      { name: "LangChain", img: "img/langchain.png", dots: 0 },
+      { name: "Hugging Face", img: "img/huggingface.png", dots: 0 },
+      { name: "Streamlit", img: "img/streamlit.jpg", dots: 0 },
+      { name: "Docker", img: "img/docker.png", dots: 0 },
+      { name: "DagsHub", img: "img/dagshub.png", dots: 0 },
+      { name: "Apache Spark", img: "img/spark.png", dots: 0 },
+      { name: "Apache Kafka", img: "img/kafka.png", dots: 0 },
+      { name: "SPSS", img: "img/spss.png", dots: 0 },
+      { name: "Tableau", img: "img/Tableau.png", dots: 0 },
+      { name: "Power BI", img: "img/powerbi.png", dots: 0 }
+    ]
+  },
+  {
+    heading: "Cloud",
+    skills: [
+      { name: "Google Cloud", img: "img/gcp.png", dots: 4 },
+      { name: "AWS", img: "img/aws.png", dots: 4 },
+      { name: "Snowflake", img: "img/snowflake.png", dots: 3 },
+      { name: "Databricks", img: "img/databricks.png", dots: 3 }
+    ]
+  }
+];
+
+// Rendering Logic
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector('.skillscontent');
+
+  skillSections.forEach(section => {
+    const sectionTemplate = document.getElementById('skill-section-template').content.cloneNode(true);
+    sectionTemplate.querySelector('.typeheading p').textContent = section.heading;
+
+    const cardsDiv = sectionTemplate.querySelector('.skillcards');
+
+    section.skills.forEach(skill => {
+      const cardTemplate = document.getElementById('skill-card-template').content.cloneNode(true);
+      const imgTag = cardTemplate.querySelector('img');
+      imgTag.src = skill.img;
+      imgTag.alt = skill.name;
+
+      cardTemplate.querySelector('h2').textContent = skill.name;
+
+      const dotsDiv = cardTemplate.querySelector('.skilldots');
+      if (skill.dots > 0) {
+        for (let i = 0; i < 5; i++) {
+          const dot = document.createElement('span');
+          dot.className = 'dot' + (i < skill.dots ? ' filled' : '');
+          dotsDiv.appendChild(dot);
+        }
+      }
+
+      cardsDiv.appendChild(cardTemplate);
+    });
+
+    container.appendChild(sectionTemplate);
+  });
+});
+
+
+const awards = [
+  {
+    title: 'Data Analytics Essentials by Cisco',
+    type: 'Certificate of Completion | Oct 2023',
+    details: ['Completed with certification via Microsoft & LinkedIn Learning.'],
+    onclick: "viewCertificate('DAECISCO')"
+  },
+  {
+    title: 'Python and SQL for Data Science',
+    type: 'Certificate of Excellence | Sep 2023',
+    details: ['Earned certification in Python and SQL for Data Science through Scaler Academy.'],
+    onclick: "viewCertificate('PYSQLDS')"
+  },
+  {
+    title: 'Career Essentials in Data Analysis by Microsoft and LinkedIn Learning',
+    type: 'Certificate of Completion | June 2023',
+    details: ['Completed the data analysis track with certification from Microsoft and LinkedIn.'],
+    onclick: "viewCertificate('DAMLL')"
+  },
+  {
+    title: 'Top 50 SQL By Leetcode',
+    type: 'Earned SQL badge | June 2023',
+    details: ['Earned a badge for solving the top 50 SQL interview challenges on LeetCode.'],
+    onclick: "viewCertificate('SQLL')"
+  },
+  {
+    title: 'Advanced SQL Certificate by HackerRank',
+    type: 'Certificate of Appreciation | April 2023',
+    details: ['Cleared the Advanced SQL assessment and received HackerRank recognition.'],
+    onclick: "viewCertificate('ASQLH')"
+  },
+  {
+    title: 'MongoDB M001',
+    type: 'Certificate of Completion | April 2022',
+    details: ['Completed the M001 course and received certification from MongoDB University.'],
+    onclick: "viewCertificate('MONGODB')"
+  },
+  {
+    title: "GFG DSA self paced course",
+    type: "Certificate of Completion | December 2021",
+    details: ["Successfully completed and certified by GeeksforGeeks' for the DSA self-paced program."],
+    onclick: "viewCertificate('GFGDSA')"
+  },
+  {
+    title: "Codechef Snackdown 2021",
+    type: "Certificate of Appreciation | December 2021",
+    details: ["Qualified for the CodeChef SnackDown Round-1A in a global programming event."],
+    onclick: "viewCertificate('CCHEFSNACK')"
+  },
+  {
+    title: "JUMPSTART FINALE CONTESTANT",
+    type: "Certificate of Appreciation | August 2021",
+    details: ["Finalist among 150+ students in a national hackathon by Publicis Sapient."],
+    onclick: "viewCertificate('JUMPSTART')"
+  },
+  {
+    title: "MODERN BIG DATA ANALYSIS WITH SQL",
+    type: "Certificate of Appreciation | July 2021",
+    details: [
+      "Completed a 3-course specialization in Big Data SQL with hands-on projects.",
+      `<ul class="smalltext">
+          <li>Course 1: Foundations for Big Data Analysis with SQL</li>
+          <li>Course 2: Analyzing Big Data with SQL</li>
+          <li>Course 3: Managing Big Data in Clusters and Cloud Storage</li>
+      </ul>`
+    ],
+    onclick: "viewCertificate('MBDASQL')"
+  },
+  {
+    title: "CRASH COURSE ON PYTHON",
+    type: "Course Certificate by GOOGLE | May 2021",
+    details: ["Gained hands-on experience in Python programming via Google's interactive course."],
+    onclick: "viewCertificate('CRASHCPY')"
+  },
+  {
+    title: "BEST #TOP 63 WORLD RANK IN HACKEREARTH PROGRAMMING",
+    type: "Achievement | May 2021",
+    details: ["Ranked in the top 63 worldwide on HackerEarth after 3 months of consistent coding."],
+    onclick: ""
+  },
+  {
+    title: "PROBLEM SOLVING CERTIFICATE BY HACKERRANK",
+    type: "Certificate of Appreciation | October 2020",
+    details: ["Earned HackerRank’s certification by completing the problem-solving challenge."],
+    onclick: "viewCertificate('PSCH')"
+  }
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.awardscontent');
+  const template = document.getElementById('award-card-template');
+
+  awards.forEach(award => {
+    const clone = template.content.cloneNode(true);
+
+    const titleElem = clone.querySelector('.awardtitle');
+    titleElem.textContent = award.title;
+    if (award.onclick) {
+      titleElem.setAttribute('onclick', award.onclick);
+      titleElem.style.cursor = "pointer";
+    }
+
+    clone.querySelector('.awardtype').textContent = award.type;
+
+    const ul = clone.querySelector('ul');
+    award.details.forEach(detail => {
+      const li = document.createElement('li');
+      if (detail.startsWith('<ul')) {
+        li.innerHTML = detail;
+      } else {
+        li.textContent = detail;
+      }
+      ul.appendChild(li);
+    });
+
+    container.appendChild(clone);
+  });
+});
+
+// Optional placeholder for viewCertificate
+function viewCertificate(certId) {
+  alert(`Open certificate: ${certId}`);
+}
+
+
+
+//---
+const certificateiframe = document.getElementById("certificateiframe");
+const certificatemodal = document.getElementById("certificatemodal");
+const closecertificateframe = document.getElementById("closecertificateframe");
+
+const certificatedict = {
+    DAECISCO: "https://drive.google.com/file/d/1jlTWyV5hJHmOykudwNf6EPpOECWvDpkU/preview",
+    DAMLL: "https://drive.google.com/file/d/10JzTrjJusUgaHkSpgLi86YcKf05Q3SIG/preview",
+    SQLL: "./img/Top_SQL_50.gif",
+    ASQLH: "https://drive.google.com/file/d/11GryK21HUoLx2oiigdnkpNYXWn_fIRH5/preview",
+    MONGODB: "https://drive.google.com/file/d/11H1KG8y9fnCoD5uC1bsSP0kVIlbgOhTS/preview",
+    GFGDSA: "https://drive.google.com/file/d/1zRfJbidOOwi65Yl4p_Dkt8LtNeqRioIV/preview",
+    CCHEFSNACK: "https://drive.google.com/file/d/1tws82HCe6O6cH_4SNV_G-m49WTNSljAy/preview",
+    JUMPSTART: "https://drive.google.com/file/d/1gbZHn8DSwDykiCGp_4n6s0NSDy2O5dZ6/preview",
+    MBDASQL: "https://drive.google.com/file/d/1XbJfGgd3bmYQLh40yb0D5-xBqzBcg0Qk/preview",
+    CRASHCPY: "https://drive.google.com/file/d/1zyxaIvYkQNFRx2ibGIl_gNG4QFejwQAt/preview",
+    PSCH: "https://drive.google.com/file/d/1T6btmjKz9dchBAK8_1B9Cbge3u-Xn_73/preview",
+    PYSQLDS: "https://drive.google.com/file/d/1QjPi0N7z2iUWSQ8oe2VAac1YljM5N3Ow/preview",
+};
+
+function viewCertificate(certificatename) {
+    const src = certificatedict[certificatename];
+    if (src) {
+        certificatemodal.style.display = "flex";
+        certificateiframe.src = src;
+    }
+}
+
+closecertificateframe.onclick = () => {
+    certificatemodal.style.display = "none";
+    certificateiframe.src = "";
+};
+
+function sendemail(type) {
+  url = "https://docs.google.com/forms/d/e/1FAIpQLScAe9LbVKVCSP6kfI_3ChMkPDD2CN9QlD_XJ_sBlQaTemNLcA/viewform?usp=sf_link";
+  window.open(url);
+}
+
+// Hide site on very small screens and show a friendly message
+window.addEventListener("DOMContentLoaded", () => {
+    const fullpage = document.querySelector(".fullpage");
+    if (window.innerWidth < 360) {
+        if (fullpage) fullpage.style.display = "none";
+        setTimeout(() => {
+            alert("Your screen size is too small to display this site. Please use a larger device.");
+        }, 500);
+    }
+});
+
+// 2.0
+// Optimize modal and nav logic
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Nav link smooth scroll
+    document.querySelectorAll(".navlink").forEach(link => {
+        link.style.textDecoration = "none";
+        link.style.outline = "none";
+        link.addEventListener("click", function (e) {
+            this.blur();
+            this.style.outline = "none";
+            e.preventDefault();
+            const targetId = this.getAttribute("href")?.substring(1);
+            if (targetId) {
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+
+    // Modal config
+    const modals = [
+        { modal: "resumemodal", openers: ["lresume", "lresumewindow"], closers: ["closeresumeframe", "frameclosebtn"] },
+        { modal: "feedbackmodal", openers: ["feedbackdiv"], closers: ["closefeedbackframe"] },
+        { modal: "facebookmodal", openers: ["facebookdiv"], closers: ["closefacebookframe"] },
+        { modal: "emppymodal", openers: ["emppydiv"], closers: ["closeemppyframe"] }
+    ];
+
+    modals.forEach(({ modal, openers, closers }) => {
+        const modalElem = document.getElementById(modal);
+        if (!modalElem) return;
+        openers.forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) btn.onclick = () => { modalElem.style.display = "flex"; };
+        });
+        closers.forEach(id => {
+            const btn = document.getElementById(id);
+            if (btn) btn.onclick = () => { modalElem.style.display = "none"; };
+        });
+    });
+
+    // Modal close on outside click
+    window.onclick = function (event) {
+        modals.forEach(({ modal }) => {
+            const modalElem = document.getElementById(modal);
+            if (modalElem && event.target === modalElem) {
+                modalElem.style.display = "none";
+            }
+        });
+        // Also handle certificate modal
+        const certificatemodal = document.getElementById("certificatemodal");
+        if (certificatemodal && event.target === certificatemodal) {
+            certificatemodal.style.display = "none";
+        }
+    };
+});
 
 window.onmouseover = function (event) {
-    if (event.target == emppymodal) {
-        document.body.style.cursor = 'url(./img/cursor1.png)';
-    }
-}
+  if (event.target == emppymodal) {
+    document.body.style.cursor = "url(./img/cursor1.png)";
+  }
+};
