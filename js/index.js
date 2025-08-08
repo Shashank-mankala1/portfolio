@@ -144,15 +144,7 @@ leftWinLinks.forEach(link => {
 
 //left pole END
 
-const leftNavItems = [
-    { id: "labout" },
-    { id: "lproject" },
-    { id: "lskills" },
-    { id: "lexper" },
-    { id: "lawards" },
-    { id: "lcontact" },
-    { id: "lresume" }
-];
+const leftNavItems = [{ id: "labout" }, { id: "lproject" }, { id: "lskills" }, { id: "lexper" }, { id: "lawards" }, { id: "lcontact" }, { id: "lresume" }];
 
 leftNavItems.forEach(item => {
     const elem = document.getElementById(item.id);
@@ -203,7 +195,6 @@ sectionToLeftNav.forEach(({ sectionId, leftNavId }) => {
 
 // Projects prs
 const hoverMappings = [
-    // { elemId, imgId, gifSrc, imgSrc }
     { elemId: "prs1", imgId: "prgifgif1", gifSrc: "./img/fb.gif", imgSrc: "./img/f1.png" },
     { elemId: "prs2", imgId: "prgifgif2", gifSrc: "./img/mp.gif", imgSrc: "./img/mp1.webp" },
     { elemId: "prs3", imgId: "prgifgif3", gifSrc: "./img/coup.gif", imgSrc: "./img/c1.png" },
@@ -232,7 +223,7 @@ const projectConfigs = [
 
 projectConfigs.forEach(cfg => {
     const p = cfg.prefix;
-    // Elements
+    
     const title = document.getElementById(`prp${p}`) || document.getElementById(`prpn${p}`);
     const gif = document.getElementById(`prgif${p}`) || document.getElementById(`prgifn${p}`);
     const option = document.getElementById(`proption${p}`) || document.getElementById(`proptionn${p}`);
@@ -241,7 +232,6 @@ projectConfigs.forEach(cfg => {
     const close = document.getElementById(`closeopt${p}`) || document.getElementById(`closeoptn${p}`);
     const pryear = document.getElementById(`pryear${p}`) || document.getElementById(`pryearn${p}`);
 
-    // Only bind if all required elements exist
     if (title && gif && option && hidden && unhidden && close && pryear) {
         const showFn = () => {
             hidden.style.display = "block";
@@ -262,9 +252,6 @@ projectConfigs.forEach(cfg => {
     }
 }
 );
-
-// Note: If you need to add more projects, just add their prefix to projectConfigs.
-// If you want to handle projects with missing pryear elements, adjust the checks above.
 
 // -- Project
 
@@ -549,7 +536,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Optional placeholder for viewCertificate
 function viewCertificate(certId) {
   alert(`Open certificate: ${certId}`);
 }
@@ -609,7 +595,6 @@ window.addEventListener("DOMContentLoaded", () => {
 // Optimize modal and nav logic
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Nav link smooth scroll
     document.querySelectorAll(".navlink").forEach(link => {
         link.style.textDecoration = "none";
         link.style.outline = "none";

@@ -10,7 +10,6 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
-  /* cursor:url('../img/cursor.png'), auto; */
 }
 
 body {
@@ -525,7 +524,6 @@ input:checked ~ .darkmodeslider::before {
 .navdiv:hover {
   cursor: pointer;
   background-color: rgb(243, 242, 242);
-  /* border-left: 3px solid blue; */
 }
 
 .navdiv:active {
@@ -573,7 +571,6 @@ input:checked ~ .darkmodeslider::before {
   display: none;
   transform: scale(1);
   animation: fadeIn 0.1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
-  /* transition: all 1s ease-in-out; */
 }
 
 @keyframes fadeIn {
@@ -723,11 +720,9 @@ input:checked ~ .darkmodeslider::before {
   display: none;
   transform: scale(1);
   animation: fadeIn 0.1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
-  /* transition: all 1s ease-in-out; */
 }
 
 .certificateframediv {
-  /* background-color: black; */
   width: 80%;
   height: 90%;
   border-radius: 12px;
@@ -794,11 +789,9 @@ input:checked ~ .darkmodeslider::before {
   display: none;
   transform: scale(1);
   animation: fadeIn 0.1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
-  /* transition: all 1s ease-in-out; */
 }
 
 .feedbackframediv {
-  /* background-color: black; */
   width: 80%;
   height: 90%;
   border-radius: 12px;
@@ -842,7 +835,6 @@ input:checked ~ .darkmodeslider::before {
   display: none;
   transform: scale(1);
   animation: fadeIn 0.1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
-  /* transition: all 1s ease-in-out; */
 }
 
 .facebookframediv {
@@ -890,7 +882,6 @@ input:checked ~ .darkmodeslider::before {
   display: none;
   transform: scale(1);
   animation: fadeIn 0.1s cubic-bezier(0.3, 0.63, 0.01, 0.28) forwards;
-  /* transition: all 1s ease-in-out; */
 }
 
 .emppyframediv {
@@ -936,7 +927,6 @@ input:checked ~ .darkmodeslider::before {
 
 .rightsidediv {
   position: fixed;
-  /* border: 1px solid red; */
   z-index: 4;
   width: 90%;
   height: 90%;
@@ -973,7 +963,6 @@ input:checked ~ .darkmodeslider::before {
 }
 
 .rightdrawdiv {
-  /* display: none; */
   border: 1px solid red;
   background-color: antiquewhite;
   width: 100%;
@@ -994,12 +983,12 @@ input:checked ~ .darkmodeslider::before {
 
 .topp {
   height: 100vh;
-  background: url(../img/bg1.webp) no-repeat top center/cover;
+  background: url(../img/bg1.png) no-repeat top center/cover;
   position: relative;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   height: 100%;
   left: 0;
   position: absolute;
@@ -1041,7 +1030,6 @@ input:checked ~ .darkmodeslider::before {
 }
 
 .aboutcontent {
-  /* height: 460px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1290,22 +1278,13 @@ input:checked ~ .darkmodeslider::before {
   flex-wrap: wrap;
 }
 
-/* .skillname {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 155px;
-    height: fit-content;
-    margin-top: 28px;
-    margin-left: 10px;
-} */
 
 .skillname {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 140px;
-  margin: 20px;
+  width: fit-content;
+  margin: 5px;
 }
 
 .skillname:hover {
@@ -1459,7 +1438,6 @@ input:checked ~ .darkmodeslider::before {
 
 .expercardfooter {
   background-color: #e2e2e2;
-  /* height: 65px; */
   display: flex;
   align-items: center;
 }
@@ -1515,25 +1493,6 @@ input:checked ~ .darkmodeslider::before {
   padding-bottom: 50px;
 }
 
-/* .awardscontent {
-    width: 90%;
-    margin-top: 60px;
-    margin-left: 25px;
-    margin-right: 5px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.awardcard {
-    width: 44%;
-    height: 230px;
-    margin-right: 20px;
-    margin-bottom: 76px;
-    padding: 14px;
-    box-shadow: 0px 3px 5px 1px #aab4be;
-    background: white;
-} */
-
 .awardcard {
   background: white;
   border-radius: 12px;
@@ -1561,31 +1520,8 @@ input:checked ~ .darkmodeslider::before {
 }
 
 .awardcardhead {
-  /* height: 99px; */
-  /* margin-bottom: 7px;
-    margin-top: 5px;
-    margin-left: 5px;
-    line-height: 1.4;
-    font-weight: 600; */
   margin-bottom: 12px;
 }
-
-/* .awardtitle {
-    font-size: 25px;
-    width: fit-content;
-}
-
-.awardtype {
-    font-size: 16px;
-}
-
-.awardcardbody {
-    height: 126px;
-    margin-left: 24px;
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 1.5;
-} */
 
 .awardtitle {
   font-size: 18px;
