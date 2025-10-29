@@ -322,6 +322,7 @@ var pageopendict = {
   lpu: "https://www.lpu.in/",
   shadowfax: "https://www.shadowfax.in/",
   UB: "https://www.buffalo.edu/",
+  nec: "https://www.neweracap.com/",
 };
 
 function pageOpen(page) {
@@ -377,6 +378,7 @@ const skillSections = [
       { name: "Google Cloud", img: "img/gcp.png", dots: 4 },
       { name: "AWS", img: "img/aws.png", dots: 4 },
       { name: "Snowflake", img: "img/snowflake.png", dots: 3 },
+      { name: "Microsoft Azure", img: "img/azure.png", dots: 3 },
       { name: "Databricks", img: "img/databricks.png", dots: 3 }
     ]
   }

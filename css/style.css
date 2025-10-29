@@ -1276,6 +1276,7 @@ input:checked ~ .darkmodeslider::before {
   flex-direction: row;
   margin-bottom: 22px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 
@@ -1285,6 +1286,8 @@ input:checked ~ .darkmodeslider::before {
   align-items: center;
   width: fit-content;
   margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .skillname:hover {
@@ -1317,7 +1320,7 @@ input:checked ~ .darkmodeslider::before {
 .skillnamename {
   display: flex;
   justify-content: center;
-  margin-top: 6px;
+  /* margin-top: 6px; */
   flex-direction: column;
   width:max-content
 }
