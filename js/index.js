@@ -257,6 +257,8 @@ projectConfigs.forEach(cfg => {
 
 function viewproject(name) {
   var projectdict = {
+    REPO_LLM_INFERENCE_ENGINE: "https://github.com/Shashank-mankala1/High-Performance-LLM-Inference-Engine-with-Grammar-Constrained-Decoding",
+
     REPO_TUTOR: "https://github.com/Shashank-mankala1/tutormind",
     PR_TUTOR: "https://tutormindai.streamlit.app/",
 
@@ -595,6 +597,19 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // 2.0
 // Optimize modal and nav logic
+  window.addEventListener('load', () => {
+    const popup = document.getElementById('popup');
+    setTimeout(() => {
+      popup.classList.add('hide');
+      document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });
+    }, 3000);
+  });
+
+function redirectToCurrentSection(){
+    var el=document.querySelector('[class*=current]'); 
+    if(!el) el=document.getElementById('exper'); 
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'}); 
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".navlink").forEach(link => {
