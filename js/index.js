@@ -216,6 +216,7 @@ hoverMappings.forEach(({ elemId, imgId, gifSrc, imgSrc }) => {
 // Optimized project show/hide logic
 
 const projectConfigs = [
+  {prefix: "n9" },
     { prefix: "n8" }, { prefix: "n7" }, { prefix: "n6" }, { prefix: "n5" }, { prefix: "n4" },
     { prefix: "n3" }, { prefix: "n2" }, { prefix: "n1" }, { prefix: "n0" },
     { prefix: "1" }, { prefix: "2" }, { prefix: "3" }, { prefix: "5" }, { prefix: "6" }
@@ -224,14 +225,13 @@ const projectConfigs = [
 projectConfigs.forEach(cfg => {
     const p = cfg.prefix;
     
-    const title = document.getElementById(`prp${p}`) || document.getElementById(`prpn${p}`);
-    const gif = document.getElementById(`prgif${p}`) || document.getElementById(`prgifn${p}`);
-    const option = document.getElementById(`proption${p}`) || document.getElementById(`proptionn${p}`);
-    const hidden = document.getElementById(`prshidonoff${p}`) || document.getElementById(`prshidonoffn${p}`);
-    const unhidden = document.getElementById(`prsonoff${p}`) || document.getElementById(`prsonoffn${p}`);
-    const close = document.getElementById(`closeopt${p}`) || document.getElementById(`closeoptn${p}`);
-    const pryear = document.getElementById(`pryear${p}`) || document.getElementById(`pryearn${p}`);
-
+    const title = document.getElementById(`prp${p}`);
+    const gif = document.getElementById(`prgif${p}`) ;
+    const option = document.getElementById(`proption${p}`) ;
+    const hidden = document.getElementById(`prshidonoff${p}`) ;
+    const unhidden = document.getElementById(`prsonoff${p}`) ;
+    const close = document.getElementById(`closeopt${p}`) ;
+    const pryear = document.getElementById(`pryear${p}`) ;
     if (title && gif && option && hidden && unhidden && close && pryear) {
         const showFn = () => {
             hidden.style.display = "block";
