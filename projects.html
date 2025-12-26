@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>All Projects | Shashank Data Scientist</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="app-container" style="display: flex; flex-direction: column; min-height: 100vh; width: 100%;">
+        <header class="main-header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo-area">
+                        <a href="index.html" class="logo-area" style="color: inherit; text-decoration: none;">
+                            <div class="logo-icon">
+                                <span class="material-symbols-outlined" style="font-size: 20px;">dataset</span>
+                            </div>
+                            <h1 class="logo-text">Shashank | AI &amp; Data Science</h1>
+                        </a>
+                    </div>
+                    <div class="nav-menu">
+                        <nav class="nav-links">
+                            <a class="nav-link" href="index.html#about">About</a>
+                            <a class="nav-link" href="index.html#skills">Skills</a>
+                            <a class="nav-link" href="index.html#experience">Experience</a>
+                            <a class="nav-link active" href="projects.html">Projects</a>
+                            <a class="nav-link" href="index.html#education">Education</a>
+                            <a class="nav-link" href="index.html#achievements">Achievements</a>
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </nav>
+                        <a href="Resume.pdf" download="Shashank_Mankala_Resume.pdf">
+                            <button class="btn-primary desktop-only">
+                                Download Resume
+                            </button>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-btn">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main style="flex-grow: 1;">
+            <section class="hero-small">
+                <div class="container">
+                    <div style="max-width: 56rem;">
+                        <div class="status-badge">
+                            <span class="status-dot"></span>
+                            <span class="status-text">Portfolio Archive</span>
+                        </div>
+                        <h1 class="hero-title" style="margin-bottom: 1.5rem; font-size: 2.25rem;">
+                            All Projects
+                        </h1>
+                        <!-- Override color for dark mode via inline style or rely on CSS classes if I had specific ones. 
+                             Since hero-title is white by default in my CSS (oops, no, it's white in .hero-card context probably). 
+                             Actually .hero-title color is white in CSS. I need to override it for this page which has light bg.
+                         -->
+                        <!-- Wait, in the original projects.html: "text-slate-900 dark:text-white". 
+                              My .hero-title class sets color: white explicitly. 
+                              I should fix this in inline style or add a modifier class. Adding inline style for now to be safe. -->
+                        <script>
+                            // Small script to handle theme for this specific element if needed, 
+                            // but actually I can just use a specific class or inline style with var.
+                        </script>
+                        <style>
+                            .page-title {
+                                font-size: 2.25rem;
+                                font-weight: 700;
+                                color: var(--text-slate-900);
+                                margin-bottom: 1.5rem;
+                            }
+
+                            html.dark .page-title {
+                                color: var(--text-white);
+                            }
+
+                            @media(min-width: 768px) {
+                                .page-title {
+                                    font-size: 3rem;
+                                }
+                            }
+                        </style>
+                        <!-- I'll use the style block above or just rely on global classes if I can. 
+                             Actually, let's just use section-title which adapts? No section-title is smaller.
+                             I'll use a local style block for now to ensure correctness without editing global CSS again. -->
+
+                        <p style="font-size: 1.125rem; color: var(--text-slate-600); line-height: 1.6; max-width: 42rem;"
+                            class="page-desc">
+                            A comprehensive collection of my work in Artificial
+                            Intelligence, Machine Learning, and Data Science. From academic
+                            research and experimental models to full-scale production
+                            deployments.
+                        </p>
+                        <style>
+                            .page-desc {
+                                color: var(--text-slate-600);
+                            }
+
+                            html.dark .page-desc {
+                                color: var(--text-gray-400);
+                            }
+                        </style>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding projects-section" style="min-height: 100vh;">
+                <div class="container">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Computer screen displaying code and graphs" class="project-img-src"
+                                    data-alt="Code on a screen showing data visualization charts"
+                                    src="img/llminferenceengine.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">LLM Inference</span>
+                                    <span class="project-tag">vLLM</span>
+                                    <span class="project-tag">Python</span>
+                                </div>
+                                <h3 class="project-title">High-Performance LLM Inference Engine with Grammar-Constrained
+                                    Decoding</h3>
+                                <p class="project-desc">
+                                    Built a local LLM inference engine implementing and enabling deterministic and
+                                    grammar-constrained text generation through token masking and incremental parsing.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/High-Performance-LLM-Inference-Engine-with-Grammar-Constrained-Decoding">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Dashboard with financial data charts" class="project-img-src"
+                                    data-alt="Modern dashboard showing financial graphs and predictive lines"
+                                    src="img/tutormind.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">LLMs</span>
+                                    <span class="project-tag">RAG</span>
+                                    <span class="project-tag">LangChain</span>
+                                </div>
+                                <h3 class="project-title">TutorMind - Personalized AI</h3>
+                                <p class="project-desc">
+                                    AI-powered assistant that answers context-specific questions using
+                                    user-uploaded documents, LLMs, and vector-based retrieval.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link" href="https://tutormindai.streamlit.app/">Live</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/tutormind">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/cryptodashboard.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Docker</span>
+                                    <span class="project-tag">Streamlit</span>
+                                    <span class="project-tag">Python</span>
+                                </div>
+                                <h3 class="project-title">Real-Time Crypto Trading Dashboard</h3>
+                                <p class="project-desc">
+                                    Designed and deployed a real-time, Docker-based crypto trading dashboard with live
+                                    data ingestion, ML-driven predictions, and a Streamlit visualization interface.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/realtimecryptotradingdashboard">GitHub</a>
+                                    <a class="project-link"
+                                        href="https://medium.com/@shashankmankala/building-a-real-time-crypto-trading-pipeline-with-docker-and-python-8b49cd526269">Medium</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/diabpredict.jpg" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Scikit-learn</span>
+                                </div>
+                                <h3 class="project-title">Diabetes Prediction Using ML</h3>
+                                <p class="project-desc">
+                                    End-to-end machine learning pipeline to predict diabetes risk using medical
+                                    attributes
+                                    like BMI, HbA1c, glucose levels, and lifestyle indicators.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://python.plainenglish.io/building-a-diabetes-prediction-system-a-step-by-step-guide-a293e4b9a9fd?gi=5e49322834b6">Medium</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/diabetes-prediction-project">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/heartpredict.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">Machine Learning</span>
+                                    <span class="project-tag">Scikit-learn</span>
+                                </div>
+                                <h3 class="project-title">Heart Attack Prediction Using ML</h3>
+                                <p class="project-desc">
+                                    Predictive model to assess heart attack risk using demographic and clinical health
+                                    data, focusing on early risk detection.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://shashank-mankala1.github.io/Heart-Attack-Prediction/">Live</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/Heart-Attack-Prediction">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/chatbot.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Dialogflow</span>
+                                    <span class="project-tag">FastAPI</span>
+                                </div>
+                                <h3 class="project-title">Chatbot using Dialogflow</h3>
+                                <p class="project-desc">
+                                    Conversational chatbot for food ordering and tracking, built using Dialogflow and
+                                    integrated with backend services for real-time responses.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link" href="https://shashank-mankala1.github.io/chatbot/">Live</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/chatbot">GitHub</a>
+                                    <a class="project-link"
+                                        href="https://drive.google.com/file/d/1GeRRJuizv08VJ1toyAkvEPiw79ZzVRvZ/view?usp=sharing">Demo</a>
+                                    <a class="project-link"
+                                        href="https://python.plainenglish.io/building-a-chatbot-dialogflow-fastapi-and-github-in-action-33f663578f79">Medium</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/road-accidents-dashboard.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">Power BI</span>
+                                    <span class="project-tag">Data Visualization</span>
+                                    <span class="project-tag">SQL</span>
+                                </div>
+                                <h3 class="project-title">Road Accidents Dashboard</h3>
+                                <p class="project-desc">
+                                    Analytical dashboard to study road accident trends based on weather, road
+                                    conditions, vehicle types, locations, and casualty severity.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://public.tableau.com/app/profile/shashank.mankala/viz/RoadAccidents_16858089535950/Dashboard1?publish=yes">Live</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/Road-Accidents-Dashboard">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/easychat.png" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML | CSS | JS</span>
+                                    <span class="project-tag">Web Sockets</span>
+                                </div>
+                                <h3 class="project-title">EasyChat Website</h3>
+                                <p class="project-desc">
+                                    Web-based real-time chat application that allows users to create chat rooms and
+                                    communicate instantly through shareable links.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link" href="http://easychat.lovestoblog.com/">Live</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div
+                                    style="position: absolute; inset: 0; background-color: var(--primary-opacity-20); z-index: 10;">
+                                </div>
+                                <img alt="Factory automation arm" class="project-img-src"
+                                    data-alt="Industrial robotic arm in a manufacturing setting"
+                                    src="img/portfolio.jpg" />
+                            </div>
+                            <div class="project-content">
+                                <div class="project-tags">
+                                    <span class="project-tag">HTML | CSS | JS</span>
+                                </div>
+                                <h3 class="project-title">Personal Portfolio Website</h3>
+                                <p class="project-desc">
+                                    Personal portfolio website showcasing projects, skills, and professional growth with
+                                    a clean, responsive, and user-friendly design.
+                                </p>
+                                <div class="project-links">
+                                    <a class="project-link"
+                                        href="https://shashank-mankala1.github.io/portfolio/">Live</a>
+                                    <a class="project-link"
+                                        href="https://github.com/Shashank-mankala1/portfolio">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container" style="text-align: center;">
+                    <h2 class="section-title" style="font-size: 1.5rem; margin-bottom: 2rem;">
+                        Interested in collaborating on a future project?
+                    </h2>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a class="btn-primary" href="index.html#contact"
+                            style="height: 3rem; padding: 0 2rem; font-size: 1rem;">
+                            Contact Me
+                        </a>
+                        <a class="btn-secondary" href="https://github.com/Shashank-mankala1" target="_blank"
+                            style="height: 3rem; padding: 0 2rem; font-size: 1rem;">
+                            View GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container footer-content">
+                <div class="footer-text">
+                    © 2025 Shashank Mankala. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Shashank-mankala1" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 
+        0 5.303 3.438 9.8 8.205 11.385 
+        .6.113.82-.258.82-.577 
+        0-.285-.01-1.04-.015-2.04 
+        -3.338.724-4.042-1.61-4.042-1.61 
+        -.546-1.387-1.333-1.757-1.333-1.757 
+        -1.089-.745.084-.729.084-.729 
+        1.205.084 1.84 1.236 1.84 1.236 
+        1.07 1.835 2.809 1.305 3.495.998 
+        .108-.776.418-1.305.762-1.605 
+        -2.665-.3-5.466-1.332-5.466-5.93 
+        0-1.31.47-2.381 1.236-3.221 
+        -.124-.303-.535-1.523.117-3.176 
+        0 0 1.008-.322 3.301 1.23 
+        .957-.266 1.983-.399 3.003-.404 
+        1.02.005 2.047.138 3.006.404 
+        2.291-1.552 3.297-1.23 3.297-1.23 
+        .653 1.653.242 2.873.118 3.176 
+        .77.84 1.235 1.911 1.235 3.221 
+        0 4.61-2.807 5.625-5.479 5.92 
+        .43.37.823 1.096.823 2.21 
+        0 1.595-.014 2.88-.014 3.27 
+        0 .32.216.694.825.576 
+        C20.565 22.092 24 17.592 24 12.297 
+        c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/shashankmankala" target="_blank" class="social-icon">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                            <path
+                                d="M20.447 20.452H16.89v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.347V9h3.414v1.561h.046c.476-.9 1.637-1.85 3.37-1.85 3.6 0 4.268 2.37 4.268 5.455v6.286zM5.337 7.433a1.98 1.98 0 1 1 0-3.96 1.98 1.98 0 0 1 0 3.96zM6.89 20.452H3.784V9H6.89v11.452z" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="mailto:shashankmankala.5@gmail.com">
+                        <!-- <span class="sr-only">Email</span> -->
+                        <span class="material-symbols-outlined">mail</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Simple dark mode toggle logic if needed, but currently manual
+        // to match the original "class='dark'" on html tag.
+    </script>
+</body>
+
+</html>
