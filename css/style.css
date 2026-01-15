@@ -799,6 +799,7 @@ html.dark .edu-year {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
+    align-items: center;
 }
 
 .contact-info-list {
