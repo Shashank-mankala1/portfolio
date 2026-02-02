@@ -1,0 +1,39 @@
+<!-- Chatbot Widget -->
+<div class="chatbot-wrapper">
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <div class="status-dot-online"></div>
+                <span>Virtual Assistant</span>
+            </div>
+            <button class="chatbot-close" id="chatbot-close">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                Hello! I'm Shashank's virtual assistant. I can help you navigate his portfolio. What would you like to
+                know?
+            </div>
+            <!-- Chips will be injected here or statically placed -->
+            <div class="chat-chips-container">
+                <button class="chat-chip" data-action="skills">What are his skills?</button>
+                <button class="chat-chip" data-action="projects">Show me latest projects</button>
+                <button class="chat-chip" data-action="experience">Experience highlights</button>
+                <button class="chat-chip" data-action="contact">How to contact him?</button>
+            </div>
+        </div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ask a question..." autocomplete="off">
+            <button id="chatbot-send">
+                <span class="material-symbols-outlined">send</span>
+            </button>
+        </div>
+    </div>
+
+    <button class="chatbot-toggle" id="chatbot-toggle">
+        <span class="material-symbols-outlined">smart_toy</span>
+    </button>
+</div>
