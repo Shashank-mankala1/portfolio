@@ -321,9 +321,21 @@ html.dark .section-title {
     border: 1px solid rgba(255,255,255,0.4);
     box-shadow: var(--shadow-card);
     min-height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* Text wider than sphere */
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 968px) {
+    .hero-card {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+    #hero-sphere-container {
+        min-height: 300px;
+        order: -1; /* Sphere on top for mobile */
+    }
 }
 
 .hero-bg {
@@ -852,6 +864,10 @@ html.dark .edu-year {
 }
 
 /* Contact */
+.contact-section{
+    padding: 4rem 0;
+    padding-bottom: 2rem;
+}
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -939,7 +955,7 @@ html.dark .edu-year {
 .main-footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     background-color: var(--surface);
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
 
 .footer-content {
@@ -1319,6 +1335,14 @@ html.dark .btn-secondary:hover {
     color: var(--text-main);
     border-radius: 0.5rem;
     font-weight: 500;
+    border: 1px solid rgba(var(--primary-rgb));
+}
+
+.bucket-tag:hover {
+    background-color: rgba(var(--primary-rgb), 1);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Chatbot Widget */

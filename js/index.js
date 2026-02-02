@@ -212,4 +212,25 @@ document.addEventListener('DOMContentLoaded', () => {
     chatbotInput.addEventListener('keypress', (e) => {
         if(e.key === 'Enter') handleSend();
     });
+
+    // --- Avatar Interaction Events ---
+    // Name Hover
+    const nameLogo = document.querySelector('.logo-text');
+    if (nameLogo) {
+        nameLogo.addEventListener('mouseenter', () => window.updateAvatarState && window.updateAvatarState('nod'));
+    }
+
+    // Projects Hover
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        card.addEventListener('mouseenter', () => {
+             // Calculate relative position for the bot to "walk" to
+             // Simplification: We pass the index or just a generic 'project_hover' state with data
+             if(window.updateAvatarState) window.updateAvatarState('project_hover', { index: index });
+        });
+        
+        card.addEventListener('mouseleave', () => {
+             if(window.updateAvatarState) window.updateAvatarState('projects');
+        });
+    });
 });

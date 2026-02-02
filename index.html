@@ -116,7 +116,7 @@
             </div>
         </header>
         <main style="flex-grow: 1;">
-            <section class="hero-wrapper">
+            <section class="hero-wrapper" id="home">
                 <div class="container">
                     <div class="hero-card">
                         <div class="hero-bg">
@@ -135,7 +135,9 @@
                                 Turning raw data into <span class="text-gradient">actionable intelligence</span>.
                             </h1>
                             <p class="hero-description">
-                                Hi, I'm Shashank. I specialize in building large-scale data pipelines to
+                                Hi, I'm <span style="color: var(--primary); font-weight: bold;">Shashank</span>. I
+                                specialize in building
+                                large-scale data pipelines to
                                 AI-driven decision systems, I bridge data science, machine learning, and real-world
                                 impact.
                             </p>
@@ -150,6 +152,9 @@
                                 </a>
                             </div>
                         </div>
+
+                        <!-- Hero Sphere Container -->
+                        <div id="hero-sphere-container" style="width: 100%; height: 100%; min-height: 400px;"></div>
                     </div>
                 </div>
             </section>
@@ -350,7 +355,8 @@
                                     user-uploaded documents, LLMs, and vector-based retrieval.
                                 </p>
                                 <div class="project-links">
-                                    <a class="project-link" href="https://tutormindai.streamlit.app/">Live</a>
+                                    <a class="project-link" href="https://tutormindai.streamlit.app/"
+                                        target="_blank">Live</a>
                                     <a class="project-link" href="https://github.com/Shashank-mankala1/tutormind"
                                         target="_blank">GitHub</a>
                                 </div>
@@ -836,18 +842,19 @@
                 </div>
             </section>
 
-            <section class="section-padding" id="contact">
+            <section class="section-padding contact-section" id="contact">
                 <div class="container">
                     <div class="contact-grid">
                         <div>
                             <div class="about-badge"
                                 style="color: var(--primary); background-color: var(--primary-opacity-20); border-color: rgba(19, 91, 236, 0.3);">
                                 Get In Touch</div>
-                            <h2 class="section-title" style="font-size: 2.25rem;">Let's connect and build something
+                            <h2 class="section-title" style="font-size: 2.25rem; margin-bottom: 1rem;">Let's connect and
+                                build something
                                 impactful.
                             </h2>
                             <p
-                                style="font-size: 1.125rem; color: var(--text-slate-500); margin-bottom: 2rem; line-height: 1.6;">
+                                style="font-size: 1.125rem; color: var(--text-slate-500); margin-bottom: 1rem; line-height: 1.6;">
                                 I'm currently open to new opportunities in Data Science and AI/ML engineering. Whether
                                 you have a question or just want to say hi, I'll try my best to get back to you!
                                 <br>
@@ -1021,6 +1028,15 @@
         </button>
     </div>
 
+    <!-- 3D Avatar Container -->
+    <div id="avatar-container"
+        style="position: fixed; left: 2rem; bottom: 2rem; width: 200px; height: 300px; z-index: 999; pointer-events: none;">
+    </div>
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/hero-sphere.js"></script>
+    <script src="js/avatar.js"></script>
     <script src="js/index.js"></script>
     <script>
         const toggleBtn = document.querySelector('.theme-toggle-btn');
