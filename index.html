@@ -57,12 +57,14 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7YVFRYX6GS"></script>
     <script>
-        // Check for saved theme preference or system preference
+        // Check for saved theme preference only (Force Light Default)
         const savedTheme = localStorage.getItem('theme');
-        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
-        if (savedTheme === 'dark' || (!savedTheme && systemTheme === 'dark')) {
+        if (savedTheme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            // Default to light mode explicitly
+            document.documentElement.setAttribute('data-theme', 'light');
         }
 
         window.dataLayer = window.dataLayer || [];
