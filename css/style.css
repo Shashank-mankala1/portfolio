@@ -1560,3 +1560,168 @@ html.dark .btn-secondary:hover {
         height: 3rem;
     }
 }
+
+/* Resume Dropdown */
+.resume-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.resume-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--surface);
+    min-width: 160px;
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius-md);
+    z-index: 100;
+    border: 1px solid rgba(0,0,0,0.05);
+    overflow: hidden;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+.resume-dropdown:hover .resume-dropdown-content {
+    display: block;
+}
+
+.resume-dropdown-content a {
+    color: var(--text-main);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.resume-dropdown-content a:hover {
+    background-color: rgba(var(--primary-rgb), 0.08);
+    color: var(--primary);
+}
+
+.resume-dropdown-content .material-symbols-outlined {
+    font-size: 1.2rem;
+}
+
+/* Resume Modal */
+.resume-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s;
+}
+
+.resume-modal-content {
+    background-color: var(--surface);
+    margin: 1% auto;
+    padding: 0;
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 900px;
+    height: 95vh; /* Fixed height relative to viewport */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUp 0.3s;
+    overflow: hidden;
+}
+
+.resume-modal-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-modal-header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.close-modal {
+    color: var(--text-light);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: var(--text-main);
+}
+
+.resume-modal-body {
+    flex: 1;
+    padding: 0;
+    overflow: hidden;
+    background-color: #525659; /* Standard PDF viewer background */
+}
+
+.resume-modal-body iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.resume-modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--surface);
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: var(--text-main);
+    font-size: 0.925rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .resume-modal-content {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
