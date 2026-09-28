@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             chatbotToggle.innerHTML = '<span class="material-symbols-outlined">close</span>';
             setTimeout(() => chatbotInput.focus(), 300);
         } else {
-            chatbotToggle.innerHTML = '<span class="material-symbols-outlined">smart_toy</span><span class="chatbot-toggle-text">Chat</span>';
+            chatbotToggle.innerHTML = '<span class="material-symbols-outlined">chat_bubble</span>';
         }
     }
 

@@ -944,6 +944,12 @@ html.dark .edu-year {
     transform: translateY(-2px);
 }
 
+@media (max-width: 768px) {
+    .achievement-row {
+        width: 100%;
+    }
+}
+
 /* Contact */
 .contact-section {
     padding: 4rem 0;
