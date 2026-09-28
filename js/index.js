@@ -234,3 +234,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            
+            // Toggle menu icon between menu and close
+            const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.textContent = 'close';
+                } else {
+                    icon.textContent = 'menu';
+                }
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = 'menu';
+            }
+        });
+
+        // Close menu when a link is clicked
+        const navLinkElements = navLinks.querySelectorAll('.nav-link');
+        navLinkElements.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                if (icon) icon.textContent = 'menu';
+            });
+        });
+    }
+});
