@@ -312,6 +312,19 @@ section {
     color: var(--text-slate-900);
 }
 
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 2rem 0;
+    }
+    .skills-section {
+        padding: 2rem 0 !important;
+    }
+    
+    .section-title {
+        margin-bottom: 1.5rem;
+    }
+}
+
 html.dark .section-title {
     color: var(--text-white);
 }
@@ -1038,6 +1051,24 @@ html.dark .edu-year {
     background-color: var(--surface);
 }
 
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem 0 1rem 0;
+    }
+    .contact-grid {
+        gap: 1.5rem;
+    }
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+    .form-row{
+        gap:0
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
 .btn-full {
     width: 100%;
 }
@@ -1132,7 +1163,15 @@ html.dark .edu-year {
     }
 }
 
+.mobile-only {
+    display: none !important;
+}
+
 @media (max-width: 1024px) {
+
+    .mobile-only {
+        display: block !important;
+    }
 
     .desktop-only {
         display: none;

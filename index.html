@@ -93,12 +93,18 @@
                     <div class="nav-menu">
                         <nav class="nav-links">
                             <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#experience">Experience</a>
                             <a class="nav-link" href="#projects">Projects</a>
                             <a class="nav-link" href="#skills">Skills</a>
-                            <a class="nav-link" href="#experience">Experience</a>
                             <a class="nav-link" href="#education">Education</a>
                             <a class="nav-link" href="#achievements">Achievements</a>
                             <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link mobile-only view-resume-action" href="#" onclick="return false;">
+                                <span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 0.25rem; font-size: 1.2rem;">visibility</span> View Resume
+                            </a>
+                            <a class="nav-link mobile-only" href="Resume.pdf" download="Shashank_Mankala_Resume.pdf">
+                                <span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 0.25rem; font-size: 1.2rem;">download</span> Download Resume
+                            </a>
                         </nav>
                         <div class="resume-dropdown">
                             <button class="btn-primary desktop-only">
@@ -106,7 +112,7 @@
                                     style="margin-left: 0.25rem; font-size: 1.1rem;">expand_more</span>
                             </button>
                             <div class="resume-dropdown-content">
-                                <a href="#" id="view-resume-btn" onclick="return false;">
+                                <a href="#" id="view-resume-btn" class="view-resume-action" onclick="return false;">
                                     <span class="material-symbols-outlined">visibility</span> View
                                 </a>
                                 <a href="Resume.pdf" download="Shashank_Mankala_Resume.pdf">
@@ -318,14 +324,12 @@
                                         actionable merchandising recommendations
                                     </li>
                                     <li>Built a trend intelligence engine leveraging LLM-powered research, social media
-                                        signal extraction, and Trendalytics data, automatically generating structured
-                                        trend
-                                        attributes and mapping them to internal product taxonomies
+                                        signal extraction, and google trend signals data, automatically generating
+                                        structured trend attributes and mapping them to internal product taxonomies
                                     </li>
                                     <li>Developed demand forecasting and trend adoption models that combined historical
                                         sales, product metadata, and external trend indicators to predict future
-                                        category
-                                        performance and support assortment planning decisions
+                                        category performance and support assortment planning decisions
                                     </li>
                                 </ul>
                             </div>
@@ -1319,17 +1323,17 @@
         // Resume Modal Script
         document.addEventListener('DOMContentLoaded', () => {
             const modal = document.getElementById('resume-modal');
-            const viewBtn = document.getElementById('view-resume-btn');
+            const viewBtns = document.querySelectorAll('.view-resume-action');
             const closeBtn = document.querySelector('.close-modal');
             const closeFooterBtn = document.querySelector('.close-modal-btn');
 
-            if (viewBtn) {
-                viewBtn.addEventListener('click', (e) => {
+            viewBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
                     e.preventDefault();
                     modal.style.display = 'block';
                     document.body.style.overflow = 'hidden'; // Prevent background scrolling
                 });
-            }
+            });
 
             const closeModal = () => {
                 modal.style.display = 'none';

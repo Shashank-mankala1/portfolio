@@ -45,12 +45,23 @@
                     <div class="nav-menu">
                         <nav class="nav-links">
                             <a class="nav-link" href="index.html#about">About</a>
+                            <a class="nav-link" href="index.html#experience">Experience</a>
                             <a class="nav-link active" href="index.html#projects">Projects</a>
                             <a class="nav-link" href="index.html#skills">Skills</a>
-                            <a class="nav-link" href="index.html#experience">Experience</a>
                             <a class="nav-link" href="index.html#education">Education</a>
                             <a class="nav-link" href="index.html#achievements">Achievements</a>
                             <a class="nav-link" href="index.html#contact">Contact</a>
+                            <a class="nav-link mobile-only view-resume-action" href="index.html#resume"
+                                onclick="window.location.href='index.html'; return false;">
+                                <span class="material-symbols-outlined"
+                                    style="vertical-align: middle; margin-right: 0.25rem; font-size: 1.2rem;">visibility</span>
+                                View Resume
+                            </a>
+                            <a class="nav-link mobile-only" href="Resume.pdf" download="Shashank_Mankala_Resume.pdf">
+                                <span class="material-symbols-outlined"
+                                    style="vertical-align: middle; margin-right: 0.25rem; font-size: 1.2rem;">download</span>
+                                Download Resume
+                            </a>
                         </nav>
                         <a href="Resume.pdf" download="Shashank_Mankala_Resume.pdf" style="margin-left: 1rem;">
                             <button class="btn-primary desktop-only">
@@ -502,6 +513,41 @@
     <script>
         // Simple dark mode toggle logic if needed, but currently manual
         // to match the original "class='dark'" on html tag.
+
+        // Mobile Menu Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+
+                    const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                    if (icon) {
+                        icon.textContent = navLinks.classList.contains('active') ? 'close' : 'menu';
+                    }
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                        if (icon) icon.textContent = 'menu';
+                    }
+                });
+
+                const navLinkElements = navLinks.querySelectorAll('.nav-link');
+                navLinkElements.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                        if (icon) icon.textContent = 'menu';
+                    });
+                });
+            }
+        });
     </script>
 </body>
 
